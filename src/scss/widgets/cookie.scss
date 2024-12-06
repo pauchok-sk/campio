@@ -1,0 +1,89 @@
+.cookie {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px -6px 80px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+  transition: opacity .2s ease, visibility .2s ease;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  &__icon {
+    width: 48px;
+    flex-shrink: 0;
+    @include mobile {
+      width: 35px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 40px;
+    @include laptop-min {
+      font-size: 20px;
+      line-height: normal;
+    }
+    @include tablet-min {
+      font-size: 18px;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px 0px 55px 0px;
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    @include mobile {
+      font-size: 14px;
+      line-height: normal;
+    }
+    a {
+      font-weight: 600;
+      margin: 0px 0px 55px 0px;
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--gray);
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 24px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .btn {
+      flex: 1;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      @include tablet {
+        flex: 0 1 100%;
+      }
+      @include mobile {
+        min-height: 55px;
+      }
+    }
+  }
+}

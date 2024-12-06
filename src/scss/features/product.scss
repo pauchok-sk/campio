@@ -1,5 +1,43 @@
 .product {
   position: relative;
+  @include hover {
+    .product__sizes {
+      opacity: 1;
+    }
+  }
+  &__like {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    transition: color 0.2s ease;
+    &.active {
+      svg {
+        color: var(--black);
+      }
+    }
+    @include hover {
+      svg {
+        color: var(--black);
+      }
+    }
+    @include laptop-min {
+      top: 16px;
+      right: 16px;
+    }
+    @include mobile {
+      top: 8px;
+      right: 8px;
+    }
+  }
+  &__like-icon {
+    stroke: var(--black);
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    transition: color 0.2s ease;
+  }
   &__img {
     display: block;
     width: 100%;
@@ -13,7 +51,7 @@
       height: 245px;
     }
     @include laptop-min {
-      height: 230px;
+      height: 215px;
     }
     @include tablet {
       height: 185px;
@@ -61,6 +99,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
+    margin-top: 8px;
   }
   &__payment-icon {
     width: 55px;
@@ -69,11 +108,56 @@
     }
   }
   &__payment-content {
+    margin: 0;
     font-size: 14px;
     font-weight: 600;
     line-height: 100%;
     span {
       color: var(--gray);
+    }
+  }
+  &__sizes {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    @media (max-width: 1439px) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__size {
+    @include flex-center;
+    grid-column: 2 span;
+    min-height: 35px;
+    border: 1px solid var(--light-gray);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+    @include hover {
+      border-color: var(--black);
+      background-color: var(--black);
+      color: white;
+    }
+    &.active {
+      border-color: var(--black);
+      background-color: var(--black);
+      color: white;
+    }
+
+    @media (max-width: 1439px) {
+      grid-column: 4 span;
+    }
+    @include laptop-min {
+      font-size: 12px;
     }
   }
 }

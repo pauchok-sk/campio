@@ -9,6 +9,8 @@ import basket from "./files/basket.js";
 import modal from "./files/modal.js";
 import { triggerPassword } from "./files/form.js";
 import tab from "./files/tab.js";
+import { productLike, productSize } from "./files/product.js";
+import cookie from "./files/cookie.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -19,3 +21,6 @@ basket();
 modal();
 triggerPassword();
 tab();
+productSize();
+productLike();
+cookie();

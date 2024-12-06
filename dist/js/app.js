@@ -4221,6 +4221,50 @@
                         slidesPerView: 3,
                         spaceBetween: 24
                     }
+                },
+                navigation: {
+                    prevEl: ".rec__slider-btn._prev",
+                    nextEl: ".rec__slider-btn._next"
+                }
+            });
+        }));
+        const discountSliders = document.querySelectorAll(".discount__slider");
+        if (discountSliders.length) discountSliders.forEach((slider => {
+            new Swiper(slider, {
+                speed: 1e3,
+                modules: [ Autoplay, Pagination ],
+                autoplay: {
+                    delay: 3e3
+                },
+                pagination: {
+                    el: slider.querySelector(".discount__slider-pagination"),
+                    clickable: true
+                }
+            });
+        }));
+        const discountSlidersProducts = document.querySelectorAll(".discount__slider-products");
+        if (discountSlidersProducts.length && window.matchMedia("(max-width: 959px)").matches) discountSlidersProducts.forEach((slider => {
+            new Swiper(slider, {
+                speed: 1e3,
+                modules: [ Autoplay, Navigation ],
+                slidesPerView: 2,
+                spaceBetween: 16,
+                autoplay: {
+                    delay: 3e3
+                },
+                breakpoints: {
+                    943: {
+                        slidesPerView: 4,
+                        spaceBetween: 24
+                    },
+                    639: {
+                        slidesPerView: 3,
+                        spaceBetween: 24
+                    }
+                },
+                navigation: {
+                    prevEl: slider.closest(".discount__slider-wrapper").querySelector(".discount__slider-products-btn._prev"),
+                    nextEl: slider.closest(".discount__slider-wrapper").querySelector(".discount__slider-products-btn._next")
                 }
             });
         }));
@@ -4385,6 +4429,42 @@
             }));
         }));
     }
+    function productSize() {
+        const products = document.querySelectorAll(".product");
+        if (products.length) products.forEach((p => {
+            const sizesButtons = p.querySelectorAll(".product__size");
+            p.addEventListener("click", (e => {
+                if (e.target.hasAttribute("data-product-size")) {
+                    sizesButtons.forEach((b => b.classList.remove("active")));
+                    e.target.classList.add("active");
+                }
+            }));
+        }));
+    }
+    function productLike() {
+        const buttons = document.querySelectorAll(".btn-like");
+        if (buttons.length) buttons.forEach((b => {
+            b.addEventListener("click", (() => {
+                b.classList.toggle("active");
+            }));
+        }));
+    }
+    function cookie() {
+        const btnOn = document.querySelector("#cookie-on");
+        const btnOff = document.querySelector("#cookie-off");
+        const cookieHtml = document.querySelector(".cookie");
+        if (cookieHtml) {
+            if (!document.cookie.includes("cookie=on")) cookieHtml.classList.add("active");
+            btnOn.addEventListener("click", (() => {
+                const date = Date.now() + 60 * 60 * 1e3;
+                document.cookie = "cookie=on; expires=" + date;
+                cookieHtml.classList.remove("active");
+            }));
+            btnOff.addEventListener("click", (() => {
+                cookieHtml.classList.remove("active");
+            }));
+        }
+    }
     mediaAdaptive();
     spoller();
     slider();
@@ -4394,4 +4474,7 @@
     modal();
     triggerPassword();
     tab();
+    productSize();
+    productLike();
+    cookie();
 })();

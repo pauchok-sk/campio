@@ -9,7 +9,7 @@
 
 .btn-main {
   border: 2px solid var(--black);
-  padding: 20px;
+  padding: 10px 20px;
   min-height: 72px;
   background-color: var(--black);
 
@@ -30,6 +30,16 @@
     @include hover {
       color: white;
       background-color: var(--black);
+    }
+  }
+  &._white {
+    border-color: white;
+    background-color: white;
+    color: var(--black);
+    @include hover {
+      border-color: white;
+      background-color: transparent;
+      color: white;
     }
   }
 

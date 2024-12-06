@@ -9,7 +9,7 @@
   width: 100%;
   padding: 0 var(--offset-width);
   margin: 0 auto;
-  @include laptop {
+  @include tablet {
     padding: 0 16px;
   }
 }

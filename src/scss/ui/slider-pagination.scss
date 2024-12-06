@@ -1,0 +1,31 @@
+.slider-pagination {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  bottom: 24px;
+  left: 60px;
+  right: 60px;
+  z-index: 10;
+  @include laptop-min {
+    left: 44px;
+    right: 44px;
+  }
+  @include tablet {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    display: block;
+    flex: 1;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.5;
+    background-color: white;
+    transition: opacity 0.2s ease;
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+}

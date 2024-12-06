@@ -15,21 +15,28 @@
 @import "./ui/modal";
 @import "./ui/form";
 @import "./ui/tab";
+@import "./ui/slider-pagination";
+@import "./ui/slider-arrow";
 
 // features
 @import "./features/product-rec";
 @import "./features/product";
+@import "./features/article";
 
 // widgets
 @import "./widgets/search";
 @import "./widgets/basket";
 @import "./widgets/modal-auth";
 @import "./widgets/modal-order";
+@import "./widgets/cookie";
 
 // components
 @import "./components/header";
 
 @import "./components/hero";
 @import "./components/rec";
+@import "./components/discount";
+@import "./components/blog";
+@import "./components/about";
 
 @import "./components/footer";

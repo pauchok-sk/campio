@@ -88,12 +88,64 @@ export default function slider() {
           639: {
             slidesPerView: 3,
             spaceBetween: 24,
-          }
-        }
-        // navigation: {
-        //   prevEl: ".hero__slider-nav-btn._prev",
-        //   nextEl: ".hero__slider-nav-btn._next",
-        // },
+          },
+        },
+        navigation: {
+          prevEl: ".rec__slider-btn._prev",
+          nextEl: ".rec__slider-btn._next",
+        },
+      });
+    });
+  }
+
+  const discountSliders = document.querySelectorAll(".discount__slider");
+
+  if (discountSliders.length) {
+    discountSliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 1000,
+        modules: [Autoplay, Pagination],
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: slider.querySelector(".discount__slider-pagination"),
+          clickable: true,
+        },
+      });
+    });
+  }
+
+  const discountSlidersProducts = document.querySelectorAll(".discount__slider-products");
+
+  if (discountSlidersProducts.length && window.matchMedia("(max-width: 959px)").matches) {
+    discountSlidersProducts.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 1000,
+        modules: [Autoplay, Navigation],
+        slidesPerView: 2,
+        spaceBetween: 16,
+        autoplay: {
+          delay: 3000,
+        },
+        breakpoints: {
+          943: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+          639: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+        navigation: {
+          prevEl: slider
+            .closest(".discount__slider-wrapper")
+            .querySelector(".discount__slider-products-btn._prev"),
+          nextEl: slider
+            .closest(".discount__slider-wrapper")
+            .querySelector(".discount__slider-products-btn._next"),
+        },
       });
     });
   }
