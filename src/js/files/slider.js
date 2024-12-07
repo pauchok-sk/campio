@@ -10,6 +10,7 @@ export default function slider() {
     const swiper = new Swiper(headerTopSldier, {
       speed: 700,
       modules: [Autoplay],
+      direction: "vertical",
       spaceBetween: 10,
       slidesPerView: 1,
       autoplay: {
@@ -18,6 +19,7 @@ export default function slider() {
       breakpoints: {
         1024: {
           slidesPerView: 3,
+          direction: "horizontal",
         },
       },
     });
@@ -33,6 +35,7 @@ export default function slider() {
     const swiper = new Swiper(headerBottomSldier, {
       speed: 700,
       modules: [Autoplay],
+      direction: "vertical",
       spaceBetween: 10,
       slidesPerView: 1,
       autoplay: {
@@ -41,6 +44,7 @@ export default function slider() {
       breakpoints: {
         1024: {
           slidesPerView: 3,
+          direction: "horizontal",
         },
       },
     });

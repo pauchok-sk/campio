@@ -17,12 +17,17 @@
     z-index: 100;
   }
   &__top {
+    overflow: hidden;
     padding: 2px 0px;
     background-color: var(--black);
     color: white;
     @include mobile {
       display: none;
     }
+  }
+  &__top-slider {
+    overflow: hidden;
+    height: 24px !important;
   }
   &__top-slide {
     font-size: 16px;
@@ -328,6 +333,9 @@
     padding: 12px 0px;
     background-color: var(--black);
     color: white;
+  }
+  &__bottom-slider {
+    height: 24px;
   }
   &__bottom-slide {
     font-size: 20px;
