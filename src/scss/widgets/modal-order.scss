@@ -51,17 +51,17 @@
       content: "";
       left: 0;
       top: -1px;
-    }
-    &::before {
       width: 16px;
       height: 16px;
+    }
+    &::before {
       border: 1px solid var(--black);
     }
     &::after {
-      width: 16px;
-      height: 16px;
-      background-color: var(--black);
       display: none;
+      background: url('@img/check.png') 0 0 / 100% 100% no-repeat;
+      background-color: var(--black);
+      z-index: 1;
     }
   }
 }

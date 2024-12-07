@@ -1,3 +1,5 @@
+import noUiSlider from "nouislider"
+
 export function triggerPassword() {
   const buttons = document.querySelectorAll(".form__password-trigger");
 
@@ -13,6 +15,21 @@ export function triggerPassword() {
           currentInput.type = "text";
         }
       });
+    });
+  }
+}
+
+export function rangeSlider() {
+  const priceRange = document.querySelector("#price-range");
+
+  if (priceRange) {
+    noUiSlider.create(priceRange, {
+      start: [4000, 8000],
+      connect: true,
+      range: {
+        min: [2000],
+        max: [10000],
+      },
     });
   }
 }

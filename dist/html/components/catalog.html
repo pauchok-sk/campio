@@ -12,5 +12,71 @@
 			<li>Каталог</li>
 		</ul>
 		<h1 class="title title-2 catalog__title">Каталог</h1>
+		<div class="catalog__body">
+			<form data-spollers class="catalog__aside">
+				<input type="reset" placeholder="Сбросить" class="catalog__reset" />
+				<div class="catalog__selected">
+					<div class="catalog__selected-btn">
+						<span>Кроссовки</span>
+						<a href="/">
+							<svg class="catalog__selected-btn-close">
+								<use xlink:href="img/icons/icons.svg#icon-close"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="catalog__selected-btn">
+						<span>Nike</span>
+						<a href="/">
+							<svg class="catalog__selected-btn-close">
+								<use xlink:href="img/icons/icons.svg#icon-close"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="catalog__selected-btn">
+						<span>Унисекс</span>
+						<a href="/">
+							<svg class="catalog__selected-btn-close">
+								<use xlink:href="img/icons/icons.svg#icon-close"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="catalog__selected-btn">
+						<span>Черный</span>
+						<a href="/">
+							<svg class="catalog__selected-btn-close">
+								<use xlink:href="img/icons/icons.svg#icon-close"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="catalog__aside-item">
+					<div data-spoller class="catalog__spoller-btn">
+						<span>Категория</span>
+						<svg class="catalog__spoller-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</div>
+					<div class="catalog__spoller">
+						<input type="checkbox" id="Бейсболки" name="Бейсболки" class="form__input-check" />
+						<label for="Бейсболки" class="catalog__label-check">Бейсболки</label>
+						<input type="checkbox" id="Ботинки" name="Ботинки" class="form__input-check" />
+						<label for="Ботинки" class="catalog__label-check">Ботинки</label>
+						<input type="checkbox" id="Брюки" name="Брюки" class="form__input-check" />
+						<label for="Брюки" class="catalog__label-check">Брюки</label>
+					</div>
+				</div>
+				<div class="catalog__aside-item">
+					<div class="catalog__spoller-btn">
+						<span>Цена</span>
+						<svg class="catalog__spoller-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</div>
+					<div class="catalog__spoller">
+						<div class="catalog__range" id="price-range"></div>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 </section>
