@@ -2079,6 +2079,7 @@ body {
   transition: color .2s ease
 }
 .catalog {
+  overflow: hidden;
   padding: 40px 0 170px 0
 }
 .catalog__title {
@@ -2086,10 +2087,14 @@ body {
 }
 .catalog__body {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(12,1fr);
-  gap: 24px
+  gap: 24px;
+  margin-top: 52px
 }
 .catalog__aside {
+  position: sticky;
+  top: 110px;
   grid-column: 3 span
 }
 .catalog__aside-close {
@@ -2361,6 +2366,79 @@ body {
 }
 .catalog__products .product {
   grid-column: 4 span
+}
+.catalog__more {
+  margin-top: 55px;
+  width: 100%
+}
+.catalog__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+.catalog__navigation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--non-white);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 32px;
+  transition: color .2s ease,background-color .2s ease
+}
+.catalog__navigation-btn.active {
+  color: #fff;
+  background-color: var(--black)
+}
+.catalog__navigation-btn._prev {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.catalog__navigation-btn._next {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+.catalog__navigation-middle {
+  display: flex;
+  gap: 6px
+}
+.catalog__navigation-arrow {
+  width: 24px;
+  height: 24px
+}
+.catalog__rec {
+  margin-top: 88px;
+  padding-top: 25px;
+  border-top: 2px solid var(--light-gray)
+}
+.catalog__rec-title {
+  font-weight: 600;
+  margin: 0 0 16px 0
+}
+.catalog__rec-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px
+}
+.catalog__rec-btn {
+  display: block;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: var(--non-white);
+  transition: color .2s ease,background-color .2s ease
+}
+.catalog__rec-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 16px 0 0 0
 }
 .footer__top {
   padding: 60px 0 80px 0;
@@ -2986,6 +3064,9 @@ body {
   .brands__item {
     flex-basis: calc(50% - 15px)
   }
+  .catalog__body {
+    margin-top: 24px
+  }
   .catalog__aside {
     position: fixed;
     inset: 0;
@@ -3031,6 +3112,10 @@ body {
   }
   .catalog__products .product {
     grid-column: 3 span
+  }
+  .catalog__rec {
+    padding-top: 8px;
+    margin-top: 60px
   }
   .footer__nav-item {
     flex: 0 1 calc(50% - 15px)
@@ -3094,6 +3179,9 @@ body {
   }
   .title-2 {
     font-size: 32px
+  }
+  .title-3 {
+    font-size: 28px
   }
   .form__label {
     font-size: 16px
@@ -3277,12 +3365,26 @@ body {
     font-weight: 500;
     line-height: 24px
   }
+  .catalog__more {
+    margin-top: 45px
+  }
+  .catalog__rec-btn {
+    font-size: 14px;
+    line-height: 16px
+  }
   .footer__bottom-list {
     justify-content: start
   }
 }
 @media (max-width:479px) {
+  .btn-main {
+    font-size: 16px
+  }
   .title-2 {
+    font-size: 20px;
+    line-height: 32px
+  }
+  .title-3 {
     font-size: 20px;
     line-height: 32px
   }
@@ -3394,6 +3496,23 @@ body {
   }
   .catalog__size {
     grid-column: 4 span
+  }
+  .catalog__navigation-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 20px
+  }
+  .catalog__navigation-arrow {
+    width: 18px;
+    height: 18px
+  }
+  .catalog__rec-list {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0 -16px;
+    padding: 0 16px 6px 16px
   }
   .footer__top {
     padding: 40px 0
@@ -3513,6 +3632,14 @@ body {
   .catalog__filter-open:hover {
     color: var(--gray)
   }
+  .catalog__navigation-btn:hover {
+    color: #fff;
+    background-color: var(--black)
+  }
+  .catalog__rec-btn:hover {
+    color: #fff;
+    background-color: var(--black)
+  }
   .footer__list a:hover {
     color: var(--gray)
   }
@@ -3627,6 +3754,14 @@ body {
   }
   .catalog__filter-open:active {
     color: var(--gray)
+  }
+  .catalog__navigation-btn:active {
+    color: #fff;
+    background-color: var(--black)
+  }
+  .catalog__rec-btn:active {
+    color: #fff;
+    background-color: var(--black)
   }
   .footer__list a:active {
     color: var(--gray)
