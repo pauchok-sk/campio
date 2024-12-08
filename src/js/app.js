@@ -12,6 +12,7 @@ import tab from "./files/tab.js";
 import { productLike, productSize } from "./files/product.js";
 import cookie from "./files/cookie.js";
 import { filtersToggle } from "./files/filtersToggle.js";
+import fancy from "./files/fancy.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -27,3 +28,4 @@ productLike();
 cookie();
 rangeSlider();
 filtersToggle();
+fancy();

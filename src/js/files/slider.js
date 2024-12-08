@@ -153,4 +153,28 @@ export default function slider() {
       });
     });
   }
+
+  const singleSldier = document.querySelector(".single__slider");
+
+  if (singleSldier && window.matchMedia("(max-width:943px)").matches) {
+    const swiper = new Swiper(singleSldier, {
+      speed: 1000,
+      modules: [Autoplay, Pagination],
+      slidesPerView: 1,
+      spaceBetween: 8,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 8,
+        }
+      },
+      pagination: {
+        el: ".single__pagination-slider",
+        clickable: true,
+      },
+    });
+  }
 }

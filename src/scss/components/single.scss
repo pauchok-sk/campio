@@ -1,0 +1,336 @@
+.single {
+  overflow: hidden;
+  padding: 40px 0px 240px 0px;
+  @include laptop-min {
+    padding: 24px 0px 100px 0px;
+  }
+  @include tablet {
+    padding-bottom: 64px;
+  }
+  @include mobile {
+    padding-top: 0;
+  }
+  &__body {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    @include tablet-big {
+      flex-wrap: wrap;
+    }
+  }
+  &__slider {
+    flex: 1;
+    @include mobile {
+      margin-bottom: 16px;
+    }
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 8px;
+      @include laptop-min {
+        gap: 4px;
+      }
+      @include tablet-big {
+        display: flex;
+        gap: 0;
+      }
+    }
+  }
+  &__slide {
+    grid-column: 6 span;
+  }
+  &__slide-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__pagination-slider {
+    display: none;
+    gap: 8px;
+    z-index: 10;
+    .swiper-pagination-bullet {
+      cursor: pointer;
+      flex: 1;
+      height: 4px;
+      border-radius: 10px;
+      opacity: 0.5;
+      background-color: var(--non-black);
+      transition: opacity 0.2s ease;
+      @include hover {
+        opacity: 1;
+      }
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+    }
+    @include tablet-big {
+      @include flex-center;
+      margin-top: 16px;
+    }
+    @include mobile {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+  &__info {
+    flex: 0 1 520px;
+    @include laptop {
+      flex-basis: 338px;
+    }
+    @include tablet-big {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+  &__brand {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin: 0px 0px 8px 0px;
+    @include laptop {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include laptop-min {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+    @include laptop-middle {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 4px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &__content {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--gray);
+    margin: 0px 0px 8px 0px;
+    @include laptop {
+      font-size: 18px;
+    }
+    @include laptop-min {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__price-current {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  &__price-old {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--gray);
+    text-decoration: line-through;
+  }
+  &__credit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-bottom: 48px;
+    @include laptop-min {
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+  &__credit-icon {
+    max-width: 64px;
+    width: 100%;
+  }
+  &__credit-content {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    span {
+      color: var(--gray);
+    }
+  }
+  &__credit-arrow {
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+  &__colors {
+    margin-bottom: 48px;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+  }
+  &__colors-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0px 0px 8px 0px;
+  }
+  &__colors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    @include tablet {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      padding-bottom: 6px;
+      margin: 0 -16px;
+      padding: 0 16px 6px 16px;
+    }
+  }
+  &__color {
+    position: relative;
+    display: block;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    &.active {
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        border: 2px solid var(--black);
+      }
+    }
+    @include tablet {
+      width: 77px;
+      height: 77px;
+    }
+  }
+  &__color-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__sizes {
+    margin-bottom: 48px;
+  }
+  &__sizes-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &__sizes-title {
+  }
+  &__sizes-list {
+    display: flex;
+    gap: 4px;
+  }
+  &__sizes-body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+    @include laptop {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  &__size-input {
+    display: none;
+    &:checked + label {
+      background-color: var(--black);
+      border-color: var(--black);
+      color: white;
+    }
+  }
+  &__size {
+    @include flex-center;
+    cursor: pointer;
+    min-height: 48px;
+    border: 2px solid var(--light-gray);
+    grid-column: 2 span;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+    @include hover {
+      color: white;
+      background-color: var(--black);
+      border-color: var(--black);
+    }
+    @include laptop {
+      grid-column: 3 span;
+    }
+  }
+  &__soon {
+    @include flex-center;
+    background-color: var(--gray);
+    color: white;
+    min-height: 72px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    .btn {
+      font-size: 20px;
+    }
+  }
+  &__btn-order {
+    flex: 0 1 calc(100% - 88px);
+  }
+  &__btn-like {
+    flex: 1;
+    padding: 5px;
+    @include hover {
+      .single__icon-heart {
+        color: white;
+        stroke: white;
+      }
+    }
+  }
+  &__icon-heart {
+    width: 32px;
+    height: 32px;
+    stroke: var(--black);
+    color: transparent;
+    transition:
+      color 0.2s ease,
+      stroke 0.2s ease;
+  }
+  &__btn-buy {
+    width: 100%;
+    margin-top: 16px;
+  }
+}

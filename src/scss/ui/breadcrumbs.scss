@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   gap: 3px;
   margin-bottom: 24px;
+  @include mobile {
+    display: none;
+  }
   li {
     font-size: 16px;
     font-weight: 500;
