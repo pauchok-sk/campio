@@ -5954,14 +5954,33 @@
     }
     function rangeSlider() {
         const priceRange = document.querySelector("#price-range");
-        if (priceRange) nouislider.create(priceRange, {
-            start: [ 4e3, 8e3 ],
-            connect: true,
-            range: {
-                min: [ 2e3 ],
-                max: [ 1e4 ]
-            }
-        });
+        if (priceRange) {
+            const {min, max} = priceRange.dataset;
+            const inputMin = document.querySelector("#price-min");
+            const inputMax = document.querySelector("#price-max");
+            const inputs = [ inputMin, inputMax ];
+            nouislider.create(priceRange, {
+                start: [ +min, +max ],
+                connect: true,
+                range: {
+                    min: [ +min ],
+                    max: [ +max ]
+                }
+            });
+            priceRange.noUiSlider.on("update", ((values, handle) => {
+                inputs[handle].value = Math.round(values[handle]);
+            }));
+            const setRangeSlider = (i, value) => {
+                let arr = [ null, null ];
+                arr[i] = value;
+                priceRange.noUiSlider.set(arr);
+            };
+            inputs.forEach(((el, index) => {
+                el.addEventListener("change", (e => {
+                    setRangeSlider(index, e.currentTarget.value);
+                }));
+            }));
+        }
     }
     function tab() {
         const buttonsTab = document.querySelectorAll(".btn-tab");
@@ -6015,6 +6034,23 @@
             }));
         }
     }
+    function filtersToggle() {
+        const filterOpen = document.querySelector("#filter-open");
+        const filtersClose = document.querySelector("#filter-close");
+        const filters = document.querySelector("#filters");
+        if (filters) {
+            filterOpen.addEventListener("click", handleOpen);
+            filtersClose.addEventListener("click", handleClose);
+            function handleOpen() {
+                document.body.classList.add("body-hidden");
+                filters.classList.add("open");
+            }
+            function handleClose() {
+                document.body.classList.remove("body-hidden");
+                filters.classList.remove("open");
+            }
+        }
+    }
     mediaAdaptive();
     spoller();
     slider();
@@ -6028,4 +6064,5 @@
     productLike();
     cookie();
     rangeSlider();
+    filtersToggle();
 })();

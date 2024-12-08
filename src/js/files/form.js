@@ -1,4 +1,4 @@
-import noUiSlider from "nouislider"
+import noUiSlider from "nouislider";
 
 export function triggerPassword() {
   const buttons = document.querySelectorAll(".form__password-trigger");
@@ -23,13 +23,35 @@ export function rangeSlider() {
   const priceRange = document.querySelector("#price-range");
 
   if (priceRange) {
+    const { min, max } = priceRange.dataset;
+    const inputMin = document.querySelector("#price-min");
+    const inputMax = document.querySelector("#price-max");
+    const inputs = [inputMin, inputMax];
+
     noUiSlider.create(priceRange, {
-      start: [4000, 8000],
+      start: [+min, +max],
       connect: true,
       range: {
-        min: [2000],
-        max: [10000],
+        min: [+min],
+        max: [+max],
       },
+    });
+
+    priceRange.noUiSlider.on("update", (values, handle) => {
+      inputs[handle].value = Math.round(values[handle]);
+    });
+
+    const setRangeSlider = (i, value) => {
+      let arr = [null, null];
+      arr[i] = value;
+
+      priceRange.noUiSlider.set(arr);
+    };
+
+    inputs.forEach((el, index) => {
+      el.addEventListener("change", (e) => {
+        setRangeSlider(index, e.currentTarget.value);
+      });
     });
   }
 }

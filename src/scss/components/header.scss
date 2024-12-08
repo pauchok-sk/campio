@@ -170,6 +170,7 @@
     max-height: calc(100vh - 108px);
     padding: 70px 0px;
     overflow-y: auto;
+    box-shadow: none;
 
     &::-webkit-scrollbar {
       width: 0;

@@ -11,6 +11,7 @@ import { rangeSlider, triggerPassword } from "./files/form.js";
 import tab from "./files/tab.js";
 import { productLike, productSize } from "./files/product.js";
 import cookie from "./files/cookie.js";
+import { filtersToggle } from "./files/filtersToggle.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -25,3 +26,4 @@ productSize();
 productLike();
 cookie();
 rangeSlider();
+filtersToggle();
