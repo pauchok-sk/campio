@@ -1,8 +1,10 @@
 .single {
-  overflow: hidden;
   padding: 40px 0px 240px 0px;
   @include laptop-min {
     padding: 24px 0px 100px 0px;
+  }
+  @include tablet-big {
+    overflow: hidden;
   }
   @include tablet {
     padding-bottom: 64px;
@@ -18,8 +20,16 @@
       flex-wrap: wrap;
     }
   }
-  &__slider {
+  &__gallery {
+    position: sticky;
     flex: 1;
+    top: 110px;
+    @include tablet-big {
+      position: static;
+      width: 100%;
+    }
+  }
+  &__slider {
     @include mobile {
       margin-bottom: 16px;
     }
@@ -75,8 +85,35 @@
       bottom: 16px;
     }
   }
+  &__rec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 32px;
+    @include tablet-big {
+      margin-top: 16px;
+    }
+  }
+  &__rec-btn {
+    display: block;
+    padding: 12px 16px;
+    background-color: var(--non-white);
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      color: white;
+      background-color: var(--black);
+    }
+  }
   &__info {
     flex: 0 1 520px;
+    border-bottom: 1px solid var(--light-gray);
     @include laptop {
       flex-basis: 338px;
     }
@@ -128,6 +165,22 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 4px;
+    }
+  }
+  &__not {
+    @include flex-center;
+
+    background-color: var(--red);
+    text-align: center;
+    color: white;
+    min-height: 56px;
+    margin: 45px 0px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    @include tablet-min {
+      margin: 24px 0px;
     }
   }
   &__price {
@@ -287,6 +340,30 @@
       grid-column: 3 span;
     }
   }
+  &__sizes-grid {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__sizes-grid-head {
+    padding: 4px 0px 4px 50px;
+    display: flex;
+    background-color: var(--nobel);
+    font-weight: 700;
+    span {
+      flex: 1;
+    }
+  }
+  &__sizes-grid-row {
+    display: flex;
+    padding: 4px 0px 4px 50px;
+    font-weight: 500;
+    &:nth-child(odd) {
+      background-color: var(--nobel);
+    }
+    span {
+      flex: 1;
+    }
+  }
   &__soon {
     @include flex-center;
     background-color: var(--gray);
@@ -332,5 +409,90 @@
   &__btn-buy {
     width: 100%;
     margin-top: 16px;
+  }
+  &__article-number {
+    @include flex-between;
+    gap: 20px;
+    padding: 16px 0px;
+    border-top: 1px solid var(--light-gray);
+    @include tablet-min {
+      padding: 12px 0px;
+    }
+  }
+  &__article-content {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__article-btn {
+    width: 32px;
+    height: 32px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--gray);
+    }
+  }
+  &__article-icon {
+    width: 100%;
+    height: 100%;
+  }
+  &__spoller-item {
+    border-top: 1px solid var(--light-gray);
+  }
+  &__spoller-btn {
+    @include flex-between;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 16px 0px;
+    &._spoller-active {
+      .single__spoller-arrow {
+        transform: rotate(180deg);
+      }
+    }
+    @include tablet-min {
+      padding: 12px 0px;
+    }
+  }
+  &__spoller-arrow {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+  }
+  &__spoller {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 16px;
+    @include tablet-min {
+      padding-bottom: 12px;
+    }
+    p {
+      margin: 0;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      li {
+        display: flex;
+        gap: 8px;
+
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        span {
+          &:first-child {
+            color: var(--gray);
+          }
+          &:last-child {
+            font-weight: 600;
+          }
+        }
+      }
+    }
   }
 }

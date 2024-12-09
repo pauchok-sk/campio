@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241209003915">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241209171409">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -387,10 +387,10 @@
 									</li>
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
-										<div class="basket__item-menu-counter">
-											<button class="btn basket__counter-btn">+</button>
-											<span class="basket__item-menu-number">2</span>
-											<button class="btn basket__counter-btn">-</button>
+										<div class="basket__item-menu-counter parent-counter">
+											<button class="btn basket__counter-btn counter-plus">+</button>
+											<span class="basket__item-menu-number counter">2</span>
+											<button class="btn basket__counter-btn counter-minus">-</button>
 										</div>
 									</li>
 								</ul>
@@ -423,10 +423,10 @@
 									</li>
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
-										<div class="basket__item-menu-counter">
-											<button class="btn basket__counter-btn">+</button>
-											<span class="basket__item-menu-number">2</span>
-											<button class="btn basket__counter-btn">-</button>
+										<div class="basket__item-menu-counter parent-counter">
+											<button class="btn basket__counter-btn counter-plus">+</button>
+											<span class="basket__item-menu-number counter">2</span>
+											<button class="btn basket__counter-btn counter-minus">-</button>
 										</div>
 									</li>
 								</ul>
@@ -459,10 +459,10 @@
 									</li>
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
-										<div class="basket__item-menu-counter">
-											<button class="btn basket__counter-btn">+</button>
-											<span class="basket__item-menu-number">2</span>
-											<button class="btn basket__counter-btn">-</button>
+										<div class="basket__item-menu-counter parent-counter">
+											<button class="btn basket__counter-btn counter-plus">+</button>
+											<span class="basket__item-menu-number counter">2</span>
+											<button class="btn basket__counter-btn counter-minus">-</button>
 										</div>
 									</li>
 								</ul>
@@ -495,10 +495,10 @@
 									</li>
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
-										<div class="basket__item-menu-counter">
-											<button class="btn basket__counter-btn">+</button>
-											<span class="basket__item-menu-number">2</span>
-											<button class="btn basket__counter-btn">-</button>
+										<div class="basket__item-menu-counter parent-counter">
+											<button class="btn basket__counter-btn counter-plus">+</button>
+											<span class="basket__item-menu-number counter">2</span>
+											<button class="btn basket__counter-btn counter-minus">-</button>
 										</div>
 									</li>
 								</ul>
@@ -531,10 +531,10 @@
 									</li>
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
-										<div class="basket__item-menu-counter">
-											<button class="btn basket__counter-btn">+</button>
-											<span class="basket__item-menu-number">2</span>
-											<button class="btn basket__counter-btn">-</button>
+										<div class="basket__item-menu-counter parent-counter">
+											<button class="btn basket__counter-btn counter-plus">+</button>
+											<span class="basket__item-menu-number counter">2</span>
+											<button class="btn basket__counter-btn counter-minus">-</button>
 										</div>
 									</li>
 								</ul>
@@ -742,30 +742,38 @@
 					<li>Кроссовки</li>
 				</ul>
 				<div class="single__body">
-					<div data-da=".single, 479, 0" class="swiper single__slider">
-						<div class="swiper-wrapper">
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
-							<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
-								<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
-							</a>
+					<div class="single__gallery">
+						<div data-da=".single, 479, 0" class="swiper single__slider">
+							<div class="swiper-wrapper">
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+								<a data-fancybox="product-gallery" href="img/product-2.jpg" class="swiper-slide single__slide">
+									<img src="img/product-2.jpg" alt="image" class="single__slide-img" />
+								</a>
+							</div>
+							<div class="single__pagination-slider"></div>
 						</div>
-						<div class="single__pagination-slider"></div>
+						<ul class="list single__rec">
+							<li><a href="/" class="single__rec-btn">КРОССОВКИ</a></li>
+							<li><a href="/" class="single__rec-btn">КРОССОВКИ ADIDAS</a></li>
+							<li><a href="/" class="single__rec-btn">ADIDAS ORIGINALS</a></li>
+							<li><a href="/" class="single__rec-btn">OZELIA</a></li>
+						</ul>
 					</div>
-					<div class="single__info">
+					<div data-spollers class="single__info">
 						<h5 class="single__brand">Adidas</h5>
 						<h1 class="title single__title">Кроссовки adidas Originals Superstar Boot W</h1>
 						<p class="single__content">Carbon / Black / White</p>
@@ -841,7 +849,6 @@
 									<label for="405СМ" class="single__size">405СМ</label>
 								</div>
 							</div>
-							<div class="single__soon">02 дн, 16 час, 20 мин</div>
 							<div class="single__buttons">
 								<button type="submit" class="btn btn-main single__btn-order">Оформить заказ</button>
 								<button type="button" class="btn btn-main _stroke single__btn-like">
@@ -854,6 +861,507 @@
 						<button data-modal="order" class="btn btn-modal btn-main single__btn-buy _stroke">
 							Купить сейчас
 						</button>
+						<div class="single__article-number">
+							<p class="single__article-content">Артикул: S23669</p>
+							<button data-copy="S23669" class="btn single__article-btn">
+								<svg class="single__article-icon">
+									<use xlink:href="img/icons/icons.svg#icon-copy"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="single__spoller-item">
+							<button data-spoller class="btn single__spoller-btn">
+								<span>Описание</span>
+								<svg class="single__spoller-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="single__spoller">
+								<p>
+									Мужские кроссовки adidas Originals Ozelia от немецкого спортивного бренда. Входящие в
+									линейку adidas OZ World, эти кроссовки в футуристическом дизайне с тремя полосками.
+									Система амортизации Adiprene. Линии и панели подчеркивают силуэт, дополняя его форму и
+									естественную плотную посадку. Модель изготовлена из переработанных материалов, верхняя
+									часть этого изделия содержит не менее 50% переработанного материала.
+								</p>
+								<ul class="">
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+									<li>
+										<span>Бренд:</span>
+										<span>Adidas Originals</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="single__spoller-item">
+							<button data-spoller class="btn single__spoller-btn">
+								<span>Доставка и Оплата</span>
+								<svg class="single__spoller-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="single__spoller">
+								<p>
+									<strong>Доставка по Москве</strong> <br />
+									- Самовывоз бесплатно, сегодня <br />
+									- Доставка бесплатно при заказе от 15000 рублей <br />
+									- Доставка курьером в пределах МКАД (350 рублей, 1-3 дня)
+								</p>
+							</div>
+						</div>
+						<div class="single__spoller-item">
+							<button data-spoller class="btn single__spoller-btn">
+								<span>Размерная Сетка</span>
+								<svg class="single__spoller-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="single__spoller">
+								<div class="single__sizes-grid">
+									<div class="single__sizes-grid-head">
+										<span>EU</span>
+										<span>US</span>
+										<span>UK</span>
+										<span>CM</span>
+									</div>
+									<div class="single__sizes-grid-row">
+										<span>37.5</span>
+										<span>5</span>
+										<span>5</span>
+										<span>37.5</span>
+									</div>
+									<div class="single__sizes-grid-row">
+										<span>37.5</span>
+										<span>5</span>
+										<span>5</span>
+										<span>37.5</span>
+									</div>
+									<div class="single__sizes-grid-row">
+										<span>37.5</span>
+										<span>5</span>
+										<span>5</span>
+										<span>37.5</span>
+									</div>
+									<div class="single__sizes-grid-row">
+										<span>37.5</span>
+										<span>5</span>
+										<span>5</span>
+										<span>37.5</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rec">
+			<div class="container">
+				<h2 class="title title-2 rec__title">НОВИНКИ</h2>
+				<div class="rec__slider-wrapper">
+					<button class="btn slider-arrow rec__slider-btn _prev">
+						<svg class="slider-arrow__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<button class="btn slider-arrow rec__slider-btn _next">
+						<svg class="slider-arrow__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<div class="swiper rec__slider">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rec">
+			<div class="container">
+				<h2 class="title title-2 rec__title">НОВИНКИ</h2>
+				<div class="rec__slider-wrapper">
+					<button class="btn slider-arrow rec__slider-btn _prev">
+						<svg class="slider-arrow__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<button class="btn slider-arrow rec__slider-btn _next">
+						<svg class="slider-arrow__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<div class="swiper rec__slider">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+							<article class="swiper-slide product">
+								<button class="btn btn-like product__like">
+									<svg class="product__like-icon">
+										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+									</svg>
+								</button>
+								<img src="img/product.jpg" alt="image" class="product__img" />
+								<a href="/">
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+								</a>
+								<div class="product__sizes">
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+									<button data-product-size class="btn product__size">38.5 EU</button>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1011,7 +1519,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241209003915"></script>
+	<script src="js/app.min.js?_v=20241209171409"></script>
 </body>
 
 </html>

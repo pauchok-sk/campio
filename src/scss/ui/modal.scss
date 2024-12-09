@@ -79,6 +79,10 @@
     height: 24px;
     top: 16px;
     right: 20px;
+    transition: color .2s ease;
+    @include hover {
+      color: var(--gray);
+    }
   }
   &__close-icon {
     width: 100%;

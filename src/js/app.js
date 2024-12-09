@@ -9,10 +9,11 @@ import basket from "./files/basket.js";
 import modal from "./files/modal.js";
 import { rangeSlider, triggerPassword } from "./files/form.js";
 import tab from "./files/tab.js";
-import { productLike, productSize } from "./files/product.js";
+import { productCounter, productLike, productSize } from "./files/product.js";
 import cookie from "./files/cookie.js";
 import { filtersToggle } from "./files/filtersToggle.js";
 import fancy from "./files/fancy.js";
+import copy from "./files/copy.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -29,3 +30,5 @@ cookie();
 rangeSlider();
 filtersToggle();
 fancy();
+copy();
+productCounter();

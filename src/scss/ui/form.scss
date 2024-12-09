@@ -28,9 +28,22 @@
       min-height: 58px;
     }
 
+    &._textarea {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      resize: none;
+      min-height: 120px;
+    }
+
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       display: none;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+      line-height: 24px;
+      color: var(--gray);
     }
   }
   &__error {
