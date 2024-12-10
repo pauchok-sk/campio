@@ -1,0 +1,84 @@
+.archive {
+  padding: 40px 0px 155px 0px;
+  @include laptop-min {
+    padding-bottom: 55px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__body {
+    display: grid;
+    gap: 24px;
+    row-gap: 48px;
+    grid-template-columns: repeat(12, 1fr);
+    @include laptop-min {
+      row-gap: 40px;
+    }
+    @include tablet {
+      row-gap: 32px;
+    }
+
+    .article {
+      grid-column: 3 span;
+      @include laptop-min {
+        grid-column: 4 span !important;
+      }
+      @include tablet {
+        grid-column: 6 span !important;
+      }
+      @include mobile {
+        grid-column: 12 span !important;
+      }
+
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        grid-column: 6 span;
+        grid-row: 2 span;
+        @include laptop-min {
+          display: block;
+          grid-row: 1 span;
+        }
+        .article__img {
+          height: auto;
+          flex: 1;
+        }
+      }
+
+      &__img {
+        @include desktop {
+          height: 335px;
+        }
+        @include laptop {
+          height: 295px;
+        }
+        @include laptop-middle {
+          height: 210px;
+        }
+        @include laptop-min {
+          height: 295px !important;
+        }
+        @media (max-width: 899px) {
+          height: 210px !important;
+        }
+        @include tablet {
+          height: 250px !important;
+        }
+        @include mobile {
+          height: 345px !important;
+        }
+        @media (max-width: 399px) {
+          height: 340px !important;
+        }
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    margin-top: 95px;
+    @include laptop-min {
+      margin-top: 55px;
+    }
+  }
+}

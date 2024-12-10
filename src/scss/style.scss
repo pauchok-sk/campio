@@ -20,6 +20,7 @@
 @import "./ui/breadcrumbs";
 @import "./ui/nouislider";
 @import "./ui/dropdown-select";
+@import "./ui/navigation";
 
 // features
 @import "./features/product-rec";
@@ -46,5 +47,7 @@
 @import "./components/catalog";
 @import "./components/single";
 @import "./components/buy";
+@import "./components/archive";
+@import "./components/single-article";
 
 @import "./components/footer";
