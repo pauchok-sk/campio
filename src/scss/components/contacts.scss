@@ -1,0 +1,113 @@
+.contacts {
+  padding: 40px 0px 105px 0px;
+  &__title {
+    margin-bottom: 100px;
+    @include laptop {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include laptop {
+      max-width: 695px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @include tablet {
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+  &__item {
+    flex: 1;
+    @include laptop {
+      flex: 0 1 calc(50% - 12px);
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    a {
+      display: block;
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--gray);
+      }
+    }
+  }
+  &__item-icon {
+    width: 56px;
+    height: 65px;
+  }
+  &__item-content {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  &__requisites {
+    display: flex;
+    gap: 24px;
+    margin-top: 56px;
+    @include laptop {
+      max-width: 695px;
+      flex-direction: column;
+      gap: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mobile {
+      padding-top: 32px;
+      margin-top: 32px;
+      border-top: 1px solid var(--light-gray);
+      gap: 40px;
+    }
+  }
+  &__requisites-info {
+    flex: 1;
+  }
+  &__requisites-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0px 0px 32px 0px;
+    @include laptop {
+      margin-bottom: 24px;
+    }
+  }
+  &__requisites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @include laptop {
+      gap: 24px;
+    }
+    li {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  &__requisites-img {
+    width: 790px;
+    height: auto;
+  }
+  &__map {
+    margin-top: 105px;
+    width: 100%;
+    height: 560px;
+    @include tablet{
+      height: 380px;
+      margin-top: 40px;
+    }
+  }
+}

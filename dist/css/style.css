@@ -285,6 +285,10 @@ body {
   position: absolute;
   z-index: -1
 }
+.title-1 {
+  font-size: 48px;
+  line-height: 56px
+}
 .title-2 {
   font-size: 40px;
   line-height: 48px
@@ -3253,9 +3257,7 @@ body {
 }
 .single-article__title {
   text-align: center;
-  margin-bottom: 56px;
-  font-size: 48px;
-  line-height: 56px
+  margin-bottom: 56px
 }
 .single-article__head {
   display: flex;
@@ -3369,6 +3371,67 @@ body {
   align-items: center;
   justify-content: center;
   flex: 1
+}
+.contacts {
+  padding: 40px 0 105px 0
+}
+.contacts__title {
+  margin-bottom: 100px
+}
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px
+}
+.contacts__item {
+  flex: 1
+}
+.contacts__item a {
+  display: block;
+  transition: color .2s ease
+}
+.contacts__item-icon {
+  width: 56px;
+  height: 65px
+}
+.contacts__item-content {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px
+}
+.contacts__requisites {
+  display: flex;
+  gap: 24px;
+  margin-top: 56px
+}
+.contacts__requisites-info {
+  flex: 1
+}
+.contacts__requisites-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0 0 32px 0
+}
+.contacts__requisites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px
+}
+.contacts__requisites-list li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px
+}
+.contacts__requisites-img {
+  width: 790px;
+  height: auto
+}
+.contacts__map {
+  margin-top: 105px;
+  width: 100%;
+  height: 560px
 }
 .footer__top {
   padding: 60px 0 80px 0;
@@ -5313,6 +5376,31 @@ html.with-fancybox body.hide-scrollbar {
   .single-article__rec-slider .product {
     margin-bottom: 0
   }
+  .contacts__title {
+    text-align: center;
+    margin-bottom: 48px
+  }
+  .contacts__list {
+    max-width: 695px;
+    width: 100%;
+    margin: 0 auto
+  }
+  .contacts__item {
+    flex: 0 1 calc(50% - 12px)
+  }
+  .contacts__requisites {
+    max-width: 695px;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .contacts__requisites-title {
+    margin-bottom: 24px
+  }
+  .contacts__requisites-list {
+    gap: 24px
+  }
 }
 @media (max-width:1239px) {
   .slider-arrow {
@@ -5852,6 +5940,10 @@ html.with-fancybox body.hide-scrollbar {
   .btn-main {
     padding: 10px
   }
+  .title-1 {
+    font-size: 28px;
+    line-height: 32px
+  }
   .title-3 {
     font-size: 28px
   }
@@ -6024,10 +6116,6 @@ html.with-fancybox body.hide-scrollbar {
   .archive__body .article__img {
     height: 250px!important
   }
-  .single-article__title {
-    font-size: 28px;
-    line-height: 32px
-  }
   .single-article__head-img {
     width: 165px;
     height: 165px
@@ -6044,6 +6132,21 @@ html.with-fancybox body.hide-scrollbar {
   .single-article__nav-btn {
     flex: 0 1 100%;
     font-size: 16px
+  }
+  .contacts__list {
+    justify-content: center;
+    gap: 40px
+  }
+  .contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    text-align: center
+  }
+  .contacts__map {
+    height: 380px;
+    margin-top: 40px
   }
   .footer__bottom-list {
     gap: 16px
@@ -6120,6 +6223,9 @@ html.with-fancybox body.hide-scrollbar {
 @media (max-width:479px) {
   .btn-main {
     font-size: 16px
+  }
+  .title-1 {
+    font-size: 20px
   }
   .title-2 {
     font-size: 20px;
@@ -6289,7 +6395,6 @@ html.with-fancybox body.hide-scrollbar {
     height: 345px!important
   }
   .single-article__title {
-    font-size: 20px;
     margin-bottom: 24px
   }
   .single-article__head {
@@ -6301,6 +6406,15 @@ html.with-fancybox body.hide-scrollbar {
   }
   .single-article__head-content {
     order: -1
+  }
+  .contacts__requisites {
+    padding-top: 32px;
+    margin-top: 32px;
+    border-top: 1px solid var(--light-gray);
+    gap: 40px
+  }
+  .contacts__requisites-list li {
+    font-size: 16px
   }
   .footer__top {
     padding: 40px 0
@@ -6467,6 +6581,9 @@ html.with-fancybox body.hide-scrollbar {
   .single-article__rec-btn:hover {
     color: var(--gray)
   }
+  .contacts__item a:hover {
+    color: var(--gray)
+  }
   .footer__list a:hover {
     color: var(--gray)
   }
@@ -6622,6 +6739,9 @@ html.with-fancybox body.hide-scrollbar {
     color: var(--gray)
   }
   .single-article__rec-btn:active {
+    color: var(--gray)
+  }
+  .contacts__item a:active {
     color: var(--gray)
   }
   .footer__list a:active {

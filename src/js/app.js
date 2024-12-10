@@ -14,6 +14,7 @@ import cookie from "./files/cookie.js";
 import { filtersToggle } from "./files/filtersToggle.js";
 import fancy from "./files/fancy.js";
 import copy from "./files/copy.js";
+import map from "./files/map.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -32,3 +33,4 @@ filtersToggle();
 fancy();
 copy();
 productCounter();
+map();
