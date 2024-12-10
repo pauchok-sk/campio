@@ -55,7 +55,7 @@ Template Name: copy
           
               <li class="advantages__list-item">
                   <div class="advantages__card">
-                      <img src="<?php bloginfo("template_url") ?>/src/icons/i-1.svg" alt="icon" class="advantages__card-icon">
+                      <img src="<?php bloginfo("template_url") ?>/static/icons/i-1.svg" alt="icon" class="advantages__card-icon">
 
                       <div class="advantages__card-content">
                           <h3 class="advantages__card-title">
@@ -68,27 +68,83 @@ Template Name: copy
                       </div>
                   </div>
               </li>
-          <?php if ($text || $heading) : ?>
+              <li class="advantages__list-item">
+                  <div class="advantages__card">
+                      <img src="<?php bloginfo("template_url") ?>/static/icons/i-2.svg" alt="icon" class="advantages__card-icon">
+
+                      <div class="advantages__card-content">
+                          <h3 class="advantages__card-title">
+                            Object Recogation
+                          </h3>
+                          <div class="advantages__card-text">
+                              <p>Автоматическая фиксация и выгрузка 
+                              нарушений. Потоковая обработка и проверка</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="advantages__list-item">
+                  <div class="advantages__card">
+                      <img src="<?php bloginfo("template_url") ?>/static/icons/i-3.svg" alt="icon" class="advantages__card-icon">
+
+                      <div class="advantages__card-content">
+                          <h3 class="advantages__card-title">
+                            Транскрибация речи
+                          </h3>
+                          <div class="advantages__card-text">
+                              <p>Автоматическая фиксация и выгрузка 
+                              нарушений. Потоковая обработка и проверка</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="advantages__list-item">
+                  <div class="advantages__card">
+                      <img src="<?php bloginfo("template_url") ?>/static/icons/i-4.svg" alt="icon" class="advantages__card-icon">
+
+                      <div class="advantages__card-content">
+                          <h3 class="advantages__card-title">
+                          Машинное зрение
+                          </h3>
+                          <div class="advantages__card-text">
+                              <p>Автоматическая фиксация и выгрузка 
+                              нарушений. Потоковая обработка и проверка</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="advantages__list-item">
+                  <div class="advantages__card">
+                      <img src="<?php bloginfo("template_url") ?>/static/icons/i-5.svg" alt="icon" class="advantages__card-icon">
+
+                      <div class="advantages__card-content">
+                          <h3 class="advantages__card-title">
+                            Тепловые карты
+                          </h3>
+                          <div class="advantages__card-text">
+                              <p>Автоматическая фиксация и выгрузка 
+                              нарушений. Потоковая обработка и проверка</p>
+                          </div>
+                      </div>
+                  </div>
+              </li>
               <li class="advantages__list-item">
                   <a href="#" class="advantages__demo js-open-modal">
                       <div class="advantages__demo-content">
-                          <?php if ($heading) : ?>
-                              <h3 class="advantages__demo-title">
-                                  <?php echo $heading; ?>
-                              </h3>
-                          <?php endif; ?>
-                          <?php if ($text) : ?>
-                              <div class="advantages__demo-text">
-                                  <?php echo $text; ?>
-                              </div>
-                          <?php endif; ?>
+                          <h3 class="advantages__demo-title">
+                          ПО внесено в реестр Российского ПО Минцифры
+                          </h3>
+                          <div class="advantages__demo-text">
+                              <p>
+                              Запись в реестре от 21.03.2023 №16997 https://reestr.digital.gov.ru/reestr/1382984/ . Также ООО "Смарт Технлогии" являются Свидетельство № 2023612513
+                              </p>
+                          </div>
                       </div>
                       <svg width="14" height="14" aria-hidden="true">
                           <use xlink:href="#fat-arrow-right"></use>
                       </svg>
                   </a>
               </li>
-          <?php endif; ?>
 
       </ul>
   </div>

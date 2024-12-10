@@ -223,4 +223,21 @@ export default function slider() {
       },
     });
   }
+
+  const aboutSlider = document.querySelector(".about-main__slider");
+
+  if (aboutSlider) {
+    const swiper = new Swiper(aboutSlider, {
+      speed: 1000,
+      modules: [Autoplay, Pagination],
+      spaceBetween: 10,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: aboutSlider.querySelector(".slider-pagination"),
+        clickable: true,
+      },
+    });
+  }
 }

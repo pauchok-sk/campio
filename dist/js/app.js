@@ -4336,6 +4336,21 @@
                 }
             });
         }
+        const aboutSlider = document.querySelector(".about-main__slider");
+        if (aboutSlider) {
+            new Swiper(aboutSlider, {
+                speed: 1e3,
+                modules: [ Autoplay, Pagination ],
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 3e3
+                },
+                pagination: {
+                    el: aboutSlider.querySelector(".slider-pagination"),
+                    clickable: true
+                }
+            });
+        }
     }
     function search() {
         const searchBtn = document.querySelector("#search-open");
