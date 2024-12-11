@@ -677,51 +677,10 @@
 		</div>
 	</div>
 
-	<div data-modal="order" class="modal">
-		<div class="modal__overlay">
-			<div class="modal__window">
-				<button class="btn modal__close">
-					<svg class="modal__close-icon">
-						<use xlink:href="img/icons/icons.svg#icon-close"></use>
-					</svg>
-				</button>
-				<h3 class="title title-4 modal-order__title">БЫСТРЫЙ ЗАКАЗ</h3>
-				<p class="modal-order__content">Быстрый заказ с самавывозом из макгазина Campio</p>
-				<div class="modal-order__address">
-					<svg class="modal-order__address-icon">
-						<use xlink:href="img/icons/icons.svg#icon-location"></use>
-					</svg>
-					<p class="modal-order__address-content">125047, г. Москва, ул. 1-я Тверская-Ямская, д. 7</p>
-				</div>
-				<form action="#" class="form modal-order__form">
-					<div class="modal-order__form-item">
-						<label for="order-name" class="form__label"> ФИО </label>
-						<input type="text" id="order-name" name="ФИО" class="form__input" required />
-					</div>
-					<div class="modal-order__form-item">
-						<label for="order-tel" class="form__label"> Телефон </label>
-						<input type="tel" id="order-tel" name="Телефон" class="form__input" required />
-					</div>
-					<div class="modal-order__form-item">
-						<label for="order-email" class="form__label"> E-Mail </label>
-						<input type="email" id="order-email" name="Телефон" class="form__input" required />
-					</div>
-					<div class="modal-order__checkbox">
-						<input type="checkbox" id="order-policy" name="Политика конфиденциальности" class="form__input-check" required />
-						<label for="order-policy" class="modal-order__check-label">Соглашаюсь на обработку персональных данных</label>
-						<input type="checkbox" id="order-public" name="Публичная оферта" class="form__input-check" required />
-						<label for="order-public" class="modal-order__check-label">Соглашаюсь с публичной офертой</label>
-					</div>
-					<button type="submit" class="btn btn-main form__btn">Отправить</button>
-				</form>
-			</div>
-		</div>
-	</div>
-
 	<main>
 
-		<section class="archive">
-			<div class="container">
+		<section class="order-info">
+			<div class="container order-info__container">
 				<ul class="list breadcrumbs">
 					<li>
 						<a href="/">
@@ -731,87 +690,88 @@
 							</svg>
 						</a>
 					</li>
-					<li>Блог</li>
+					<li>
+						<a href="/">
+							Личный Кабинет
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</a>
+					</li>
+					<li>О Нас</li>
 				</ul>
-				<h1 class="title title-2 archive__title">БЛОГ</h1>
-				<div class="archive__body">
-					<article class="article">
-						<img src="img/article-2.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
-						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-				</div>
-				<button class="btn btn-main archive__btn">Показать еще</button>
-				<div class="navigation">
-					<button class="btn navigation__btn _prev">
-						<svg class="navigation__arrow">
-							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-						</svg>
-					</button>
-					<div class="navigation__middle">
-						<button class="btn navigation__btn">1</button>
-						<button class="btn navigation__btn active">2</button>
-						<button class="btn navigation__btn">3</button>
-						<button class="btn navigation__btn">4</button>
-						<button class="btn navigation__btn">5</button>
-						<button class="btn navigation__btn">6</button>
+				<a href="#" class="order-info__prev">
+					<svg class="order-info__prev-arrow">
+						<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+					</svg>
+					Назад
+				</a>
+				<div class="order-info__wrapper">
+					<div class="order-info__item">
+						<h2 class="order-info__item-title">Товары</h2>
+						<div class="order-info__product">
+							<img src="img/product-2.jpg" alt="image" class="order-info__product-img" />
+							<div class="order-info__product-body">
+								<div class="order-info__product-head">
+									<h5 class="order-info__product-title">New Balance 327</h5>
+									<span class="order-info__product-price"> 19990 ₽ </span>
+								</div>
+								<p class="order-info__product-content">White / White</p>
+								<ul class="list order-info__product-list">
+									<li>
+										<span>Pазмер:</span>
+										<span>38</span>
+									</li>
+									<li>
+										<span>Кол.</span>
+										<span>2</span>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<button class="btn navigation__btn _next">
-						<svg class="navigation__arrow">
-							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-						</svg>
-					</button>
+					<div class="order-info__item">
+						<h1 class="order-info__item-title">Заказ</h1>
+						<ul class="list order-info__spec">
+							<li>
+								<span class="order-info__content-title">Номер Заказа</span>
+								<span class="order-info__content-value">№122</span>
+							</li>
+							<li>
+								<span class="order-info__content-title">Номер Заказа</span>
+								<span class="order-info__content-value">№122</span>
+							</li>
+							<li>
+								<span class="order-info__content-title">Номер Заказа</span>
+								<span class="order-info__content-value">№122</span>
+							</li>
+							<li>
+								<span class="order-info__content-title">Номер Заказа</span>
+								<span class="order-info__content-value">№122</span>
+							</li>
+						</ul>
+						<div class="order-info__pay">
+							<h5 class="order-info__subtitle">Оплата</h5>
+							<div class="order-info__pay-info">
+								<span class="order-info__content-title">Способ Оплаты</span>
+								<span class="order-info__content-value">Счет №31808/1 от 16.02.2024, Не оплачено, Оплата при получении</span>
+								<button class="btn btn-main order-info__pay-btn">Оплатить</button>
+							</div>
+						</div>
+						<div class="order-info__delivery">
+							<h5 class="order-info__subtitle">Доставка</h5>
+							<ul class="list order-info__delivery-list">
+								<li>
+									<span class="order-info__content-title">Адрес Доставки</span>
+									<span class="order-info__content-value">Россия, Центр, Москва</span>
+								</li>
+								<li>
+									<span class="order-info__content-title">Способ Доставки</span>
+									<span class="order-info__content-value">Самавывоз</span>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

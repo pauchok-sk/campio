@@ -13,15 +13,19 @@
     display: flex;
     align-items: start;
     gap: 130px;
-    padding-bottom: 195px;
-    border-bottom: 1px solid var(--light-gray);
     margin-bottom: 56px;
+    &:not(:last-child) {
+      padding-bottom: 195px;
+      border-bottom: 1px solid var(--light-gray);
+    }
     @include desktop {
       gap: 40px;
     }
     @include tablet {
-      padding-bottom: 32px;
       margin-bottom: 32px;
+      &:not(:last-child) {
+        padding-bottom: 32px;
+      }
     }
   }
   &__sidebar {
@@ -200,6 +204,7 @@
     height: 100%;
   }
   &__form-btn {
+    @include flex-center;
     max-width: 385px;
     width: 100%;
     margin-top: 16px;
