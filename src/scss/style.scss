@@ -34,6 +34,7 @@
 @import "./widgets/modal-order";
 @import "./widgets/modal-map";
 @import "./widgets/cookie";
+@import "./widgets/modal-pay";
 
 // components
 @import "./components/header";
@@ -55,5 +56,7 @@
 @import "./components/questions";
 @import "./components/profile";
 @import "./components/order-info";
+@import "./components/thank";
+@import "./components/error-sect";
 
 @import "./components/footer";

@@ -206,6 +206,7 @@
   &__credit {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 8px;
     margin-bottom: 8px;
     margin-bottom: 48px;
@@ -221,6 +222,7 @@
     width: 100%;
   }
   &__credit-content {
+    text-align: start;
     margin: 0;
     font-size: 16px;
     font-weight: 500;
