@@ -15,6 +15,8 @@ import { filtersToggle } from "./files/filtersToggle.js";
 import fancy from "./files/fancy.js";
 import copy from "./files/copy.js";
 import map from "./files/map.js";
+import anchor from "./files/anchor.js";
+import discountNumber from "./files/discountNumber.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -34,3 +36,5 @@ fancy();
 copy();
 productCounter();
 map();
+anchor();
+discountNumber();

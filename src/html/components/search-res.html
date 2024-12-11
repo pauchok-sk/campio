@@ -11,21 +11,18 @@
       </li>
       <li>Каталог</li>
     </ul>
-    <h1 class="title title-2 catalog__title">Каталог</h1>
-    <ul class="list catalog__rec-list">
-      <li>
-        <a href="/" class="catalog__rec-btn">МУЖСКИЕ КРОССОВКИ</a>
-      </li>
-      <li>
-        <a href="/" class="catalog__rec-btn">ЖЕНСКИЕ КРОССОВКИ</a>
-      </li>
-      <li>
-        <a href="/" class="catalog__rec-btn">Adidas</a>
-      </li>
-      <li>
-        <a href="/" class="catalog__rec-btn">Adidas Samba</a>
-      </li>
-    </ul>
+    <div class="catalog__search">
+      <span class="catalog__search-title">Результатов по Поиску: 78</span>
+      <a href="#" class="catalog__search-cancel">Отменить</a>
+      <div class="catalog__search-wrapper">
+        <input type="search" placeholder="Поиск" value="Adidas" class="form__input">
+        <button class="btn catalog__search-btn">
+          <svg class="catalog__search-icon">
+            <use xlink:href='img/icons/icons.svg#icon-search'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <div class="catalog__body">
       <aside class="catalog__aside" id="filters">
         <button class="btn catalog__aside-close" id="filter-close">

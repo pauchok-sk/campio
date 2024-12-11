@@ -10914,6 +10914,47 @@
             ymaps.ready(init);
         }
     }
+    function anchor_anchor() {
+        const anchors = document.querySelectorAll(".anchor");
+        if (anchors.length) anchors.forEach((link => {
+            link.addEventListener("click", (function(e) {
+                e.preventDefault();
+                let href = this.getAttribute("href").substring(1);
+                const scrollTarget = document.getElementById(href);
+                if (scrollTarget) {
+                    const offsetPosition = scrollTarget.getBoundingClientRect().top - document.querySelector(".header").clientHeight;
+                    anchors.forEach((a => a.classList.remove("active")));
+                    link.classList.add("active");
+                    window.scrollBy({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }));
+        }));
+    }
+    function discountNumber() {
+        const discountNumber = document.querySelector("#discount-number");
+        const discountNumberBtn = document.querySelector("#discount-number-btn");
+        if (discountNumber) {
+            const initialNumber = discountNumber.textContent;
+            showNumber();
+            discountNumberBtn.addEventListener("click", (() => {
+                if (discountNumberBtn.classList.contains("active")) {
+                    showNumber();
+                    discountNumberBtn.classList.remove("active");
+                } else {
+                    discountNumber.textContent = initialNumber;
+                    discountNumberBtn.classList.add("active");
+                }
+            }));
+            function showNumber() {
+                const arrayNumber = initialNumber.split(" ");
+                for (let i = 0; i < arrayNumber.length - 1; i++) arrayNumber[i] = "****";
+                discountNumber.textContent = arrayNumber.join(" ");
+            }
+        }
+    }
     mediaAdaptive();
     spoller();
     slider();
@@ -10932,4 +10973,6 @@
     copy();
     productCounter();
     map();
+    anchor_anchor();
+    discountNumber();
 })();

@@ -4,6 +4,86 @@
   @include tablet {
     padding: 25px 0px 95px 0px;
   }
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+    @include tablet {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+  &__search-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--gray);
+    @include laptop-min {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    @include tablet-min {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+  &__search-cancel {
+    display: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--gray);
+    }
+    @include tablet {
+      display: block;
+    }
+  }
+  &__search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    @include tablet {
+      width: 100%;
+      flex: none;
+    }
+
+    .form__input {
+      min-height: 56px;
+      font-size: 20px;
+      padding-right: 65px;
+      @include tablet-min {
+        font-size: 16px;
+        min-height: 40px;
+      }
+    }
+  }
+  &__search-btn {
+    @include flex-center;
+    position: absolute;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    color: var(--gray);
+    @include tablet-min {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__search-icon {
+    width: 32px;
+    height: 32px;
+    @include tablet-min {
+      width: 23px;
+      height: 23px;
+    }
+  }
   &__title {
     margin-bottom: 24px;
     @include mobile {
@@ -436,7 +516,7 @@
     }
     @include tablet-min {
       font-size: 14px;
-      line-height: 16px
+      line-height: 16px;
     }
   }
   &__rec-content {

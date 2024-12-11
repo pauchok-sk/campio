@@ -39,6 +39,22 @@
     &::-webkit-inner-spin-button {
       display: none;
     }
+    &[type="search"]::-webkit-search-decoration,
+    &[type="search"]::-webkit-search-cancel-button,
+    &[type="search"]::-webkit-search-results-button,
+    &[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+    }
+
+    &[type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
 
     &::placeholder {
       font-weight: 500;
