@@ -17,6 +17,7 @@ import copy from "./files/copy.js";
 import map from "./files/map.js";
 import anchor from "./files/anchor.js";
 import discountNumber from "./files/discountNumber.js";
+import prevBtn from "./files/prevBtn.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -38,3 +39,4 @@ productCounter();
 map();
 anchor();
 discountNumber();
+prevBtn();

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241212015448">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241212120519">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -196,12 +196,26 @@
 								</svg>
 							</button>
 						</li>
-						<li>
-							<button data-modal="auth" class="btn btn-modal header__navigation-btn">
+						<li data-spollers class="dropdown-select">
+							<!-- <button data-modal="auth" class="btn btn-modal header__navigation-btn">
+              <svg class="header__navigation-icon">
+                <use xlink:href="img/icons/icons.svg#icon-user"></use>
+              </svg>
+            </button> -->
+							<button data-spoller data-spoller-close class="btn dropdown-select__btn header__navigation-btn">
 								<svg class="header__navigation-icon">
 									<use xlink:href="img/icons/icons.svg#icon-user"></use>
 								</svg>
 							</button>
+							<div class="header__profile-menu dropdown-select__item">
+								<a href="#" class="header__profile-btn">Смирнов Александр</a>
+								<a href="#" class="header__profile-btn">Адреса</a>
+								<a href="#" class="header__profile-btn">Сменить Пароль</a>
+								<a href="#" class="header__profile-btn">Заказы</a>
+								<a href="#" class="header__profile-btn">Дисконтная Система</a>
+								<a href="#" class="header__profile-btn">Избранные</a>
+								<a href="#" class="header__profile-btn">Выйти</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -1312,7 +1326,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241212015448"></script>
+	<script src="js/app.min.js?_v=20241212120519"></script>
 </body>
 
 </html>

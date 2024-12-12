@@ -1,0 +1,33 @@
+.payment-manage {
+  padding-bottom: 160px;
+  &__container {
+    max-width: 1152px;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    max-width: 790px;
+    text-align: center;
+    margin: 0px auto 16px auto;
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+  &__content {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    text-align: center;
+    @include laptop-min {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}

@@ -903,6 +903,23 @@ body {
   width: 24px;
   height: 24px
 }
+.prev-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: color .2s ease
+}
+.prev-btn__arrow {
+  width: 24px;
+  height: 24px
+}
 .product-rec {
   position: relative;
   overflow: hidden;
@@ -1996,6 +2013,25 @@ body {
   font-weight: 600;
   line-height: 24px;
   text-align: center
+}
+.header__profile-menu {
+  right: -16px;
+  left: auto;
+  width: 210px;
+  min-width: auto;
+  margin-top: 12px;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,.1)
+}
+.header__profile-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  background-color: #fff;
+  padding: 8px;
+  border-bottom: 1px solid var(--light-gray);
+  transition: color .2s ease,background-color .2s ease
 }
 .hero {
   color: #fff
@@ -4146,23 +4182,6 @@ body {
 .order-info__container {
   max-width: 1152px
 }
-.order-info__prev {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 24px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  transition: color .2s ease
-}
-.order-info__prev-arrow {
-  width: 24px;
-  height: 24px
-}
 .order-info__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -4368,6 +4387,193 @@ body {
   width: 100%;
   min-height: 64px;
   margin: 0 auto
+}
+.reklam-intro {
+  padding: 40px 0 160px 0
+}
+.reklam-intro__body {
+  display: flex;
+  align-items: center;
+  gap: 24px
+}
+.reklam-intro__info {
+  flex: 1
+}
+.reklam-intro__title {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 56px;
+  margin: 0 0 24px 0
+}
+.reklam-intro__content {
+  font-size: 24px;
+  line-height: 40px;
+  max-width: 575px;
+  margin: 0 0 56px 0
+}
+.reklam-intro__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 385px;
+  width: 100%
+}
+.reklam-intro__img {
+  width: calc(50% - 12px)
+}
+.reklam-intro__list {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 40px;
+  margin-top: 210px
+}
+.reklam-intro__item {
+  grid-column: 4 span
+}
+.reklam-intro__item-icon {
+  width: 56px;
+  margin-bottom: 8px
+}
+.reklam-intro__item-title {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px
+}
+.reklam-intro__item-content {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  max-width: 400px
+}
+.payment-work {
+  padding-bottom: 160px
+}
+.payment-work__title {
+  max-width: 660px;
+  margin: 0 auto 48px auto
+}
+.payment-work__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 24px
+}
+.payment-work__article {
+  grid-column: 4 span
+}
+.payment-work__article-img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 395px;
+  border-radius: 5px;
+  margin-bottom: 25px
+}
+.payment-work__article-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0 0 8px 0
+}
+.payment-work__article-content {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px
+}
+.payment-questions {
+  padding-bottom: 160px
+}
+.payment-questions__container {
+  max-width: 1115px
+}
+.payment-questions__title {
+  margin: 0 0 32px 0
+}
+.payment-questions__spoller:not(:last-child) {
+  border-bottom: 1px solid var(--light-gray)
+}
+.payment-questions__spoller-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 16px 0
+}
+.payment-questions__spoller-btn._spoller-active .payment-questions__spoller-arrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.payment-questions__spoller-arrow {
+  width: 24px;
+  height: 24px;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease,-webkit-transform .2s ease
+}
+.payment-questions__spoller-item {
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px
+}
+.payment-questions__spoller-item p {
+  margin: 0
+}
+.payment-manage {
+  padding-bottom: 160px
+}
+.payment-manage__container {
+  max-width: 1152px
+}
+.payment-manage__img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 40px
+}
+.payment-manage__title {
+  max-width: 790px;
+  text-align: center;
+  margin: 0 auto 16px auto
+}
+.payment-manage__content {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  text-align: center
+}
+.restore-password {
+  padding: 40px 0 95px 0
+}
+.restore-password__container {
+  max-width: 1152px
+}
+.restore-password__body {
+  margin-top: 95px
+}
+.restore-password__body .prev-btn {
+  display: none
+}
+.restore-password__title {
+  margin: 0 0 32px 0
+}
+.restore-password__form-item {
+  margin-bottom: 8px
+}
+.restore-password__content {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 40px 0
+}
+.restore-password__form-btn {
+  display: block;
+  max-width: 385px;
+  width: 100%;
+  margin-left: auto
 }
 .footer__top {
   padding: 60px 0 80px 0;
@@ -6358,6 +6564,21 @@ html.with-fancybox body.hide-scrollbar {
   .refund__img {
     width: 500px
   }
+  .reklam-intro__list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin-top: 120px
+  }
+  .reklam-intro__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+  }
+  .payment-work__article-img {
+    height: 310px
+  }
 }
 @media (max-width:1239px) {
   .slider-arrow {
@@ -6436,6 +6657,27 @@ html.with-fancybox body.hide-scrollbar {
   }
   .profile__sidebar {
     display: none
+  }
+  .reklam-intro__body {
+    flex-direction: column-reverse;
+    gap: 48px
+  }
+  .reklam-intro__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: none;
+    text-align: center
+  }
+  .reklam-intro__img {
+    width: 935px
+  }
+  .payment-work__article {
+    grid-column: 6 span
+  }
+  .payment-work__article-img {
+    height: 355px
   }
 }
 @media (max-width:1024px) {
@@ -6833,6 +7075,38 @@ html.with-fancybox body.hide-scrollbar {
   .order-info__product-img {
     width: 100px;
     height: 100px
+  }
+  .reklam-intro {
+    padding-bottom: 130px
+  }
+  .payment-work {
+    padding-bottom: 135px
+  }
+  .payment-work__title {
+    text-align: center
+  }
+  .payment-work__article {
+    grid-column: 12 span;
+    text-align: center
+  }
+  .payment-work__article-img {
+    height: auto
+  }
+  .payment-questions {
+    padding-bottom: 135px
+  }
+  .payment-manage__img {
+    margin-bottom: 16px
+  }
+  .payment-manage__content {
+    font-size: 16px;
+    line-height: 28px
+  }
+  .restore-password {
+    padding-bottom: 120px
+  }
+  .restore-password__body {
+    margin-top: 32px
   }
   .footer__nav-item {
     flex: 0 1 calc(50% - 15px)
@@ -7347,6 +7621,61 @@ html.with-fancybox body.hide-scrollbar {
   .order-info__product-list {
     gap: 8px
   }
+  .reklam-intro {
+    padding-bottom: 80px
+  }
+  .reklam-intro__body {
+    gap: 24px
+  }
+  .reklam-intro__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px
+  }
+  .reklam-intro__content {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px
+  }
+  .reklam-intro__list {
+    gap: 56px;
+    margin-top: 56px
+  }
+  .reklam-intro__item-title {
+    font-size: 20px;
+    line-height: 28px
+  }
+  .reklam-intro__item-content {
+    max-width: 320px;
+    font-size: 16px;
+    line-height: 24px
+  }
+  .payment-work {
+    padding-bottom: 80px
+  }
+  .payment-work__article-img {
+    margin-bottom: 16px
+  }
+  .payment-work__article-title {
+    font-size: 20px;
+    line-height: 28px
+  }
+  .payment-work__article-content {
+    font-size: 16px;
+    line-height: 28px
+  }
+  .payment-questions {
+    padding-bottom: 80px
+  }
+  .payment-questions__title {
+    margin-bottom: 24px
+  }
+  .restore-password {
+    padding: 24px 0 95px 0
+  }
+  .restore-password__title {
+    margin-bottom: 16px
+  }
   .footer__bottom-list {
     gap: 16px
   }
@@ -7689,6 +8018,24 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 16px;
     line-height: 24px
   }
+  .reklam-intro__btn {
+    max-width: none
+  }
+  .payment-manage__title {
+    margin-bottom: 8px
+  }
+  .restore-password__body {
+    margin-top: 0
+  }
+  .restore-password__body .prev-btn {
+    display: flex
+  }
+  .restore-password__title {
+    margin-bottom: 8px
+  }
+  .restore-password__form-btn {
+    max-width: none
+  }
   .footer__top {
     padding: 40px 0
   }
@@ -7741,6 +8088,9 @@ html.with-fancybox body.hide-scrollbar {
   .navigation__btn:hover {
     color: #fff;
     background-color: var(--black)
+  }
+  .prev-btn:hover {
+    color: var(--gray)
   }
   .product-rec:hover .header__rec-img {
     -webkit-transform: scale(1.1);
@@ -7800,6 +8150,10 @@ html.with-fancybox body.hide-scrollbar {
   }
   .header__navigation-btn:hover {
     color: var(--gray)
+  }
+  .header__profile-btn:hover {
+    color: #fff;
+    background-color: var(--black)
   }
   .brands__list a:hover {
     color: var(--gray)
@@ -7878,9 +8232,6 @@ html.with-fancybox body.hide-scrollbar {
   .profile__discount-check:hover {
     color: var(--gray)
   }
-  .order-info__prev:hover {
-    color: var(--gray)
-  }
   .footer__list a:hover {
     color: var(--gray)
   }
@@ -7925,6 +8276,9 @@ html.with-fancybox body.hide-scrollbar {
   .navigation__btn:active {
     color: #fff;
     background-color: var(--black)
+  }
+  .prev-btn:active {
+    color: var(--gray)
   }
   .product-rec:active .header__rec-img {
     -webkit-transform: scale(1.1);
@@ -7984,6 +8338,10 @@ html.with-fancybox body.hide-scrollbar {
   }
   .header__navigation-btn:active {
     color: var(--gray)
+  }
+  .header__profile-btn:active {
+    color: #fff;
+    background-color: var(--black)
   }
   .brands__list a:active {
     color: var(--gray)
@@ -8060,9 +8418,6 @@ html.with-fancybox body.hide-scrollbar {
     color: var(--gray)
   }
   .profile__discount-check:active {
-    color: var(--gray)
-  }
-  .order-info__prev:active {
     color: var(--gray)
   }
   .footer__list a:active {
