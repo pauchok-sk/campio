@@ -2303,7 +2303,6 @@ body {
   transition: color .2s ease
 }
 .catalog {
-  overflow: hidden;
   padding: 40px 0 170px 0
 }
 .catalog__search {
@@ -2355,16 +2354,15 @@ body {
   margin-bottom: 24px
 }
 .catalog__body {
-  display: grid;
+  display: flex;
   align-items: start;
-  grid-template-columns: repeat(12,1fr);
   gap: 24px;
   margin-top: 52px
 }
 .catalog__aside {
   position: sticky;
   top: 110px;
-  grid-column: 3 span
+  flex: 0 1 385px
 }
 .catalog__aside-close {
   position: absolute;
@@ -2557,7 +2555,7 @@ body {
   line-height: 24px
 }
 .catalog__main {
-  grid-column: 9 span
+  flex: 1
 }
 .catalog__head {
   display: flex;
@@ -6397,6 +6395,9 @@ html.with-fancybox body.hide-scrollbar {
     gap: 30px;
     row-gap: 55px
   }
+  .catalog__aside {
+    flex-basis: 250px
+  }
   .archive__body .article__img {
     height: 335px
   }
@@ -6625,6 +6626,9 @@ html.with-fancybox body.hide-scrollbar {
   }
   .brands__body {
     gap: 100px
+  }
+  .catalog__aside {
+    flex-basis: 220px
   }
   .single__title {
     font-size: 20px;
@@ -6911,9 +6915,6 @@ html.with-fancybox body.hide-scrollbar {
   .catalog__size {
     grid-column: 2 span
   }
-  .catalog__main {
-    grid-column: 12 span
-  }
   .catalog__show {
     display: none
   }
@@ -7151,6 +7152,9 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 @media (max-width:943px) {
+  .catalog__main {
+    width: 100%
+  }
   .catalog__products .product {
     grid-column: 4 span
   }

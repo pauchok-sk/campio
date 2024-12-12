@@ -1,5 +1,5 @@
 .catalog {
-  overflow: hidden;
+  // overflow: hidden;
   padding: 40px 0px 170px 0px;
   @include tablet {
     padding: 25px 0px 95px 0px;
@@ -92,9 +92,8 @@
     }
   }
   &__body {
-    display: grid;
+    display: flex;
     align-items: start;
-    grid-template-columns: repeat(12, 1fr);
     gap: 24px;
     margin-top: 52px;
     @include laptop-min {
@@ -104,7 +103,13 @@
   &__aside {
     position: sticky;
     top: 110px;
-    grid-column: 3 span;
+    flex: 0 1 385px;
+    @include desktop {
+      flex-basis: 250px;
+    }
+    @include laptop-middle {
+      flex-basis: 220px;
+    }
     @include laptop-min {
       position: fixed;
       inset: 0;
@@ -355,9 +360,9 @@
     line-height: 24px;
   }
   &__main {
-    grid-column: 9 span;
-    @include laptop-min {
-      grid-column: 12 span;
+    flex: 1;
+    @include tablet-big {
+      width: 100%;
     }
   }
   &__head {
