@@ -16,10 +16,10 @@
     gap: 24px;
     margin-bottom: 48px;
     @include desktop {
-      flex-wrap: wrap;
-      justify-content: center;
     }
     @include laptop-min {
+      flex-wrap: wrap;
+      justify-content: center;
       margin-bottom: 30px;
       gap: 16px;
     }
@@ -31,17 +31,13 @@
     width: 384px;
     height: 384px;
     object-fit: cover;
-    @include laptop {
+    @include desktop {
       width: 320px;
       height: 320px;
     }
-    @include laptop-middle {
-      width: 280px;
-      height: 280px;
-    }
-    @include laptop-min {
-      width: 225px;
-      height: 225px;
+    @include laptop {
+      width: 215px;
+      height: 215px;
     }
     @include tablet {
       width: 165px;
@@ -59,14 +55,15 @@
   &__head-content {
     margin: 0;
     font-size: 20px;
+    flex: 1;
     line-height: 40px;
-    @include desktop {
-      flex: 0 1 100%;
-      order: 3;
-    }
-    @include laptop-min {
+    @include laptop {
       font-size: 16px;
       line-height: 30px;
+    }
+    @include tablet-big {
+      flex: 0 1 100%;
+      order: 3;
     }
     @include mobile {
       order: 0;

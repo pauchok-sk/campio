@@ -986,6 +986,14 @@ body {
   height: 100%;
   transition: color .2s ease
 }
+.product__signature {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%
+}
 .product__img {
   display: block;
   width: 100%;
@@ -1006,6 +1014,21 @@ body {
   line-height: 100%;
   font-weight: 400;
   margin: 0 0 8px 0
+}
+.product__price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px
+}
+.product__price-wrapper .product__price {
+  margin-bottom: 0
+}
+.product__price-old {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%
 }
 .product__price {
   display: block;
@@ -2167,10 +2190,13 @@ body {
   z-index: 20
 }
 .discount__slider-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   font-size: 32px;
-  line-height: 42px
+  line-height: 42px;
+  font-weight: 700
 }
 .discount__slider-pagination {
   position: static;
@@ -2254,7 +2280,21 @@ body {
 .about__content ul {
   display: flex;
   flex-direction: column;
-  gap: 15px
+  list-style: none;
+  gap: 25px
+}
+.about__content ul li {
+  position: relative
+}
+.about__content ul li::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--black);
+  left: -20px;
+  top: 18px
 }
 .brands {
   padding: 40px 0 170px 0
@@ -2363,7 +2403,7 @@ body {
   display: flex;
   align-items: start;
   gap: 24px;
-  margin-top: 52px
+  margin-top: 90px
 }
 .catalog__aside {
   position: sticky;
@@ -2493,11 +2533,12 @@ body {
   margin-top: 16px
 }
 .catalog__price-wrapper {
-  flex: 0 1 90px
+  flex: 0 1 130px
 }
 .catalog__price-input {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2px;
   padding: 10px 13px;
   min-height: 40px
@@ -2511,6 +2552,7 @@ body {
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
+  flex: 1;
   width: 50px
 }
 .catalog__price-input::-webkit-inner-spin-button,
@@ -2868,12 +2910,20 @@ body {
 }
 .single__sizes-list {
   display: flex;
-  gap: 4px
+  gap: 16px
+}
+.single__sizes-list .btn-tab {
+  cursor: pointer
+}
+.single__sizes-list .btn-tab.active {
+  font-weight: 800
 }
 .single__sizes-body {
-  display: grid;
   grid-template-columns: repeat(10,1fr);
   gap: 8px
+}
+.single__sizes-body.open {
+  display: grid!important
 }
 .single__size-input {
   display: none
@@ -2958,6 +3008,26 @@ body {
 .single__btn-buy {
   width: 100%;
   margin-top: 16px
+}
+.single__btn-dol {
+  display: none;
+  gap: 16px;
+  margin: 16px 0 24px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px
+}
+.single__dol-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 24px;
+  background-color: #000
+}
+.single__dol-logo {
+  width: 95px
 }
 .single__article-number {
   display: flex;
@@ -3248,7 +3318,7 @@ body {
 .buy__order-item-body {
   display: flex;
   flex-direction: column;
-  gap: 16px
+  gap: 40px
 }
 .buy__order-item-body._flex {
   flex-direction: row;
@@ -3644,6 +3714,7 @@ body {
 .about-main__head-content {
   margin: 0;
   font-size: 20px;
+  flex: 1;
   line-height: 40px
 }
 .about-main__slider {
@@ -3738,6 +3809,28 @@ body {
   font-weight: 600;
   line-height: 32px;
   margin-bottom: 8px
+}
+.refund__content h5:first-child {
+  margin-top: 24px
+}
+.refund__content p span {
+  color: var(--gray)
+}
+.refund__content ul {
+  list-style: none
+}
+.refund__content ul li {
+  position: relative
+}
+.refund__content ul li::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--black);
+  left: -20px;
+  top: 12px
 }
 .refund__img {
   width: 655px;
@@ -4315,11 +4408,7 @@ body {
   gap: 16px
 }
 .thank {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 40px 0
+  padding: 170px 0
 }
 .thank__container {
   display: flex;
@@ -4355,11 +4444,7 @@ body {
   line-height: 24px
 }
 .error-sect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  min-height: 100vh
+  padding: 170px 0
 }
 .error-sect__subcontent {
   font-size: 14px;
@@ -6415,13 +6500,9 @@ html.with-fancybox body.hide-scrollbar {
     order: 3;
     flex: 0 1 100%
   }
-  .about-main__head {
-    flex-wrap: wrap;
-    justify-content: center
-  }
-  .about-main__head-content {
-    flex: 0 1 100%;
-    order: 3
+  .about-main__head-img {
+    width: 320px;
+    height: 320px
   }
   .profile__body {
     gap: 40px
@@ -6565,8 +6646,12 @@ html.with-fancybox body.hide-scrollbar {
     gap: 24px
   }
   .about-main__head-img {
-    width: 320px;
-    height: 320px
+    width: 215px;
+    height: 215px
+  }
+  .about-main__head-content {
+    font-size: 16px;
+    line-height: 30px
   }
   .refund__img {
     width: 500px
@@ -6645,17 +6730,13 @@ html.with-fancybox body.hide-scrollbar {
     flex-basis: 455px
   }
   .buy__title {
-    font-size: 24px;
+    font-size: 24px!important;
     line-height: 32px
   }
   .archive__body .article__img {
     height: 210px
   }
   .single-article__head-img {
-    width: 280px;
-    height: 280px
-  }
-  .about-main__head-img {
     width: 280px;
     height: 280px
   }
@@ -6731,8 +6812,14 @@ html.with-fancybox body.hide-scrollbar {
     top: 16px;
     right: 16px
   }
+  .product__signature {
+    display: none
+  }
   .product__img {
     height: 215px
+  }
+  .product__sizes {
+    display: none
   }
   .product__size {
     font-size: 12px
@@ -6860,6 +6947,9 @@ html.with-fancybox body.hide-scrollbar {
   .hero__slider-nav-btn._next {
     right: 4px
   }
+  .discount {
+    padding-top: 80px
+  }
   .discount__slider-nav {
     left: 16px;
     right: 16px
@@ -6950,7 +7040,13 @@ html.with-fancybox body.hide-scrollbar {
     margin-bottom: 4px
   }
   .single__credit {
-    margin-bottom: 32px
+    margin-bottom: 32px;
+    display: none
+  }
+  .single__btn-dol {
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
   .buy__title {
     margin-bottom: 16px
@@ -7012,7 +7108,8 @@ html.with-fancybox body.hide-scrollbar {
   }
   .single-article__head-img {
     width: 225px;
-    height: 225px
+    height: 225px;
+    display: none
   }
   .single-article__head-content {
     font-size: 16px;
@@ -7033,16 +7130,10 @@ html.with-fancybox body.hide-scrollbar {
     margin-bottom: 24px
   }
   .about-main__head {
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 30px;
     gap: 16px
-  }
-  .about-main__head-img {
-    width: 225px;
-    height: 225px
-  }
-  .about-main__head-content {
-    font-size: 16px;
-    line-height: 30px
   }
   .about-main__slider {
     margin-bottom: 32px
@@ -7057,6 +7148,9 @@ html.with-fancybox body.hide-scrollbar {
   }
   .refund {
     padding: 24px 0 150px 0
+  }
+  .refund__title {
+    text-align: center
   }
   .refund__img {
     display: none
@@ -7082,6 +7176,12 @@ html.with-fancybox body.hide-scrollbar {
   .order-info__product-img {
     width: 100px;
     height: 100px
+  }
+  .thank {
+    padding: 120px 0
+  }
+  .error-sect {
+    padding: 120px 0
   }
   .reklam-intro {
     padding-bottom: 130px
@@ -7226,7 +7326,7 @@ html.with-fancybox body.hide-scrollbar {
     display: block
   }
   .buy__title {
-    font-size: 20px;
+    font-size: 20px!important;
     text-align: center;
     border-bottom: 0;
     padding-bottom: 0
@@ -7236,6 +7336,10 @@ html.with-fancybox body.hide-scrollbar {
   }
   .buy__order {
     flex-basis: 100%
+  }
+  .about-main__head-content {
+    flex: 0 1 100%;
+    order: 3
   }
   .thank__title {
     font-size: 48px;
@@ -7304,9 +7408,6 @@ html.with-fancybox body.hide-scrollbar {
   .product__img {
     height: 185px
   }
-  .product__sizes {
-    display: none
-  }
   .search__body {
     flex-wrap: wrap;
     gap: 8px
@@ -7372,7 +7473,7 @@ html.with-fancybox body.hide-scrollbar {
     margin-bottom: 16px
   }
   .discount {
-    padding-bottom: 40px
+    padding: 40px 0
   }
   .discount__title {
     margin-bottom: 16px
@@ -7405,6 +7506,9 @@ html.with-fancybox body.hide-scrollbar {
   .about__content h6 {
     font-size: 16px;
     line-height: 24px
+  }
+  .about__content ul li::before {
+    top: 11px
   }
   .brands__body {
     gap: 30px
@@ -7491,6 +7595,9 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 28px;
     line-height: 32px;
     text-align: center
+  }
+  .refund__content ul li::before {
+    top: 11px
   }
   .questions__item:not(:last-child) {
     margin-bottom: 32px
@@ -7755,6 +7862,9 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 14px;
     line-height: 16px
   }
+  .single__rec {
+    display: none
+  }
   .single__not {
     margin: 24px 0
   }
@@ -7780,6 +7890,9 @@ html.with-fancybox body.hide-scrollbar {
     width: 200px;
     height: 200px
   }
+  .thank {
+    padding: 95px 0
+  }
   .thank__title {
     font-size: 32px;
     line-height: 40px;
@@ -7791,6 +7904,9 @@ html.with-fancybox body.hide-scrollbar {
   }
   .thank__btn {
     max-width: none
+  }
+  .error-sect {
+    padding: 95px 0
   }
   .error-sect__btn {
     max-width: none
@@ -7850,6 +7966,9 @@ html.with-fancybox body.hide-scrollbar {
   .product__title {
     margin-bottom: 4px;
     font-size: 14px
+  }
+  .product__price-wrapper {
+    margin-bottom: 4px
   }
   .product__price {
     margin-bottom: 4px;
@@ -7943,6 +8062,9 @@ html.with-fancybox body.hide-scrollbar {
     margin: 0 -16px;
     padding: 0 16px 6px 16px
   }
+  .catalog__navigation {
+    display: none
+  }
   .single {
     padding-top: 0
   }
@@ -7959,7 +8081,11 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 18px
   }
   .single__credit {
+    display: flex;
     margin-bottom: 24px
+  }
+  .single__btn-dol {
+    display: none
   }
   .buy__old-price {
     font-weight: 500
@@ -7983,8 +8109,8 @@ html.with-fancybox body.hide-scrollbar {
     width: 100%;
     height: auto
   }
-  .single-article__head-content {
-    order: -1
+  .single-article__head-img:first-child {
+    display: block
   }
   .contacts__requisites {
     padding-top: 32px;

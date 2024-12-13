@@ -1,7 +1,11 @@
 .error-sect {
-  @include flex-center;
-  padding: 40px 0px;
-  min-height: 100vh;
+  padding: 170px 0px;
+  @include laptop-min {
+    padding: 120px 0px;
+  }
+  @include tablet-min {
+    padding: 95px 0px;
+  }
   &__subcontent {
     font-size: 14px;
     font-weight: 500;

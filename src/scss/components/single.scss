@@ -93,6 +93,9 @@
     @include tablet-big {
       margin-top: 16px;
     }
+    @include tablet-min {
+      display: none;
+    }
   }
   &__rec-btn {
     display: block;
@@ -212,8 +215,10 @@
     margin-bottom: 48px;
     @include laptop-min {
       margin-bottom: 32px;
+      display: none;
     }
     @include mobile {
+      display: flex;
       margin-bottom: 24px;
     }
   }
@@ -301,12 +306,20 @@
   }
   &__sizes-list {
     display: flex;
-    gap: 4px;
+    gap: 16px;
+    .btn-tab {
+      cursor: pointer;
+      &.active {
+        font-weight: 800;
+      }
+    }
   }
   &__sizes-body {
-    display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 8px;
+    &.open {
+      display: grid !important;
+    }
     @include laptop {
       grid-template-columns: repeat(12, 1fr);
     }
@@ -411,6 +424,30 @@
   &__btn-buy {
     width: 100%;
     margin-top: 16px;
+  }
+  &__btn-dol {
+    display: none;
+    gap: 16px;
+    margin: 16px 0px 24px 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    @include laptop-min {
+      @include flex-center;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  &__dol-wrapper {
+    @include flex-center;
+    width: 100px;
+    height: 24px;
+    background-color: black;
+  }
+  &__dol-logo {
+    width: 95px;
   }
   &__article-number {
     @include flex-between;

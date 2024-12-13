@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241213095545">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241213175812">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -831,7 +831,7 @@
 
 		<section class="rec">
 			<div class="container">
-				<h2 class="title title-2 rec__title">НОВИНКИ</h2>
+				<h2 class="title title-2 rec__title">@@title</h2>
 				<div class="rec__slider-wrapper">
 					<button class="btn slider-arrow rec__slider-btn _prev">
 						<svg class="slider-arrow__icon">
@@ -1065,11 +1065,15 @@
 											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 										</svg>
 									</button>
+									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
 									<a href="/">
 										<span class="product__brand">Brand</span>
 										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
+										<div class="product__price-wrapper">
+											<span class="product__price">12990 ₽</span>
+											<span class="product__price-old">12990 ₽ </span>
+										</div>
 										<div data-modal="product-pay" class="btn-modal product__payment">
 											<img src="img/payments.svg" alt="" class="product__payment-icon" />
 											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
@@ -1082,11 +1086,15 @@
 											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 										</svg>
 									</button>
+									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
 									<a href="/">
 										<span class="product__brand">Brand</span>
 										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
+										<div class="product__price-wrapper">
+											<span class="product__price">12990 ₽</span>
+											<span class="product__price-old">12990 ₽ </span>
+										</div>
 										<div data-modal="product-pay" class="btn-modal product__payment">
 											<img src="img/payments.svg" alt="" class="product__payment-icon" />
 											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
@@ -1099,11 +1107,15 @@
 											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 										</svg>
 									</button>
+									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
 									<a href="/">
 										<span class="product__brand">Brand</span>
 										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
+										<div class="product__price-wrapper">
+											<span class="product__price">12990 ₽</span>
+											<span class="product__price-old">12990 ₽ </span>
+										</div>
 										<div data-modal="product-pay" class="btn-modal product__payment">
 											<img src="img/payments.svg" alt="" class="product__payment-icon" />
 											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
@@ -1116,11 +1128,15 @@
 											<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 										</svg>
 									</button>
+									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
 									<a href="/">
 										<span class="product__brand">Brand</span>
 										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
+										<div class="product__price-wrapper">
+											<span class="product__price">12990 ₽</span>
+											<span class="product__price-old">12990 ₽ </span>
+										</div>s
 										<div data-modal="product-pay" class="btn-modal product__payment">
 											<img src="img/payments.svg" alt="" class="product__payment-icon" />
 											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
@@ -1136,7 +1152,7 @@
 
 		<section class="rec">
 			<div class="container">
-				<h2 class="title title-2 rec__title">НОВИНКИ</h2>
+				<h2 class="title title-2 rec__title">@@title</h2>
 				<div class="rec__slider-wrapper">
 					<button class="btn slider-arrow rec__slider-btn _prev">
 						<svg class="slider-arrow__icon">
@@ -1332,7 +1348,7 @@
 
 		<section class="discount">
 			<div class="container">
-				<h2 class="title title-2 discount__title">СКИДКИ</h2>
+				<h2 class="title title-2 discount__title">ПО СТИЛЮ</h2>
 				<div class="discount__body _reverse">
 					<div class="swiper discount__slider">
 						<div class="swiper-wrapper">
@@ -1443,27 +1459,21 @@
 			<div class="container">
 				<h2 class="title title-2 blog__title">Блог</h2>
 				<div class="blog__body">
-					<article class="article">
+					<a href="#" class="article">
 						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
+						<time datetime="2023-10-31" class="article__time">31.10.2023</time>
+						<h5 class="article__title">Reebok Question & Answer</h5>
+					</a>
+					<a href="#" class="article">
 						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
-					<article class="article">
+						<time datetime="2023-10-31" class="article__time">31.10.2023</time>
+						<h5 class="article__title">Reebok Question & Answer</h5>
+					</a>
+					<a href="#" class="article">
 						<img src="img/blog.jpg" alt="image" class="article__img" />
-						<a href="/">
-							<time datetime="2023-10-31" class="article__time">31.10.2023</time>
-							<h5 class="article__title">Reebok Question & Answer</h5>
-						</a>
-					</article>
+						<time datetime="2023-10-31" class="article__time">31.10.2023</time>
+						<h5 class="article__title">Reebok Question & Answer</h5>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -1530,7 +1540,7 @@
 						</ul>
 					</div>
 					<div class="footer__nav-item">
-						<h5 class="title footer__title">БРЕНДЫ</h5>
+						<h5 class="title footer__title">ПОМОЩЬ</h5>
 						<ul class="list footer__list">
 							<li><a href="/">Adidas Originals</a></li>
 							<li><a href="/">Adidas Originals</a></li>
@@ -1568,7 +1578,7 @@
 						</ul>
 					</div>
 					<div class="footer__nav-item">
-						<h5 class="title footer__title">БРЕНДЫ</h5>
+						<h5 class="title footer__title">ПОПУЛЯРНЫЕ МОДЕЛИ</h5>
 						<ul class="list footer__list">
 							<li><a href="/">Adidas Originals</a></li>
 							<li><a href="/">Adidas Originals</a></li>
@@ -1645,7 +1655,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241213095545"></script>
+	<script src="js/app.min.js?_v=20241213175812"></script>
 </body>
 
 </html>

@@ -5,6 +5,9 @@
   }
   &__title {
     margin-bottom: 24px;
+    @include laptop-min {
+      text-align: center;
+    }
   }
   &__body {
     display: flex;
@@ -28,6 +31,33 @@
       font-weight: 600;
       line-height: 32px;
       margin-bottom: 8px;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+    p {
+      span {
+        color: var(--gray);
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: var(--black);
+          left: -20px;
+          top: 12px;
+          @include tablet {
+            top: 11px;
+          }
+        }
+      }
     }
   }
   &__img {

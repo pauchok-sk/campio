@@ -68,9 +68,27 @@
     ul {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      list-style: none;
+      gap: 25px;
       @include mobile {
         padding-left: 40px;
+      }
+
+      li {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: var(--black);
+          left: -20px;
+          top: 18px;
+          @include tablet {
+            top: 11px;
+          }
+        }
       }
     }
   }

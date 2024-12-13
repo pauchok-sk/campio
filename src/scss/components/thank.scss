@@ -1,7 +1,11 @@
 .thank {
-  @include flex-center;
-  min-height: 100vh;
-  padding: 40px 0px;
+  padding: 170px 0px;
+  @include laptop-min {
+    padding: 120px 0px;
+  }
+  @include tablet-min {
+    padding: 95px 0px;
+  }
   &__container {
     display: flex;
     align-items: center;

@@ -1,8 +1,11 @@
 .discount {
   padding: 40px 0px 65px;
   overflow: hidden;
+  @include laptop-min {
+    padding-top: 80px;
+  }
   @include tablet {
-    padding-bottom: 40px;
+    padding: 40px 0px;
   }
   &__title {
     text-align: center;
@@ -59,11 +62,12 @@
     }
   }
   &__slider-btn {
-    display: block;
+    @include flex-center;
     width: 100%;
 
     font-size: 32px;
     line-height: 42px;
+    font-weight: 700;
 
     @include laptop-min {
       font-size: 24px;

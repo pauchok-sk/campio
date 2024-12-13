@@ -68,14 +68,14 @@
     border-bottom: 1px solid var(--light-gray);
     margin-bottom: 24px;
     @include laptop-middle {
-      font-size: 24px;
+      font-size: 24px !important;
       line-height: 32px;
     }
     @include laptop-min {
       margin-bottom: 16px;
     }
     @include tablet-big {
-      font-size: 20px;
+      font-size: 20px !important;
       text-align: center;
       border-bottom: 0;
       padding-bottom: 0;
@@ -340,7 +340,7 @@
   &__order-item-body {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 40px;
     &._flex {
       flex-direction: row;
       flex-wrap: wrap;
