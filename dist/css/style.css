@@ -3322,7 +3322,8 @@ body {
 }
 .buy__order-item-body._flex {
   flex-direction: row;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  gap: 16px
 }
 .buy__order-check {
   display: flex;
