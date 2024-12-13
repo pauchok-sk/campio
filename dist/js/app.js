@@ -4156,7 +4156,7 @@
                 spaceBetween: 10,
                 slidesPerView: 1,
                 autoplay: {
-                    delay: 3e3
+                    delay: 5e3
                 },
                 breakpoints: {
                     1024: {
@@ -4176,7 +4176,7 @@
                 spaceBetween: 10,
                 slidesPerView: 1,
                 autoplay: {
-                    delay: 3e3
+                    delay: 4e3
                 },
                 breakpoints: {
                     1024: {
@@ -4238,7 +4238,7 @@
                 speed: 1e3,
                 modules: [ Autoplay, Pagination ],
                 autoplay: {
-                    delay: 3e3
+                    delay: 3500
                 },
                 spaceBetween: 10,
                 pagination: {
@@ -4255,7 +4255,7 @@
                 slidesPerView: 2,
                 spaceBetween: 16,
                 autoplay: {
-                    delay: 3e3
+                    delay: 4e3
                 },
                 breakpoints: {
                     943: {
@@ -4281,7 +4281,7 @@
                 slidesPerView: 1,
                 spaceBetween: 8,
                 autoplay: {
-                    delay: 3e3
+                    delay: 3500
                 },
                 breakpoints: {
                     480: {
@@ -4318,7 +4318,7 @@
                 slidesPerView: 2,
                 spaceBetween: 16,
                 autoplay: {
-                    delay: 3e3
+                    delay: 4e3
                 },
                 breakpoints: {
                     943: {

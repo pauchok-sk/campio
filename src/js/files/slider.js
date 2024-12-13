@@ -14,7 +14,7 @@ export default function slider() {
       spaceBetween: 10,
       slidesPerView: 1,
       autoplay: {
-        delay: 3000,
+        delay: 5000,
       },
       breakpoints: {
         1024: {
@@ -39,7 +39,7 @@ export default function slider() {
       spaceBetween: 10,
       slidesPerView: 1,
       autoplay: {
-        delay: 3000,
+        delay: 4000,
       },
       breakpoints: {
         1024: {
@@ -110,7 +110,7 @@ export default function slider() {
         speed: 1000,
         modules: [Autoplay, Pagination],
         autoplay: {
-          delay: 3000,
+          delay: 3500,
         },
         spaceBetween: 10,
         pagination: {
@@ -131,7 +131,7 @@ export default function slider() {
         slidesPerView: 2,
         spaceBetween: 16,
         autoplay: {
-          delay: 3000,
+          delay: 4000,
         },
         breakpoints: {
           943: {
@@ -164,7 +164,7 @@ export default function slider() {
       slidesPerView: 1,
       spaceBetween: 8,
       autoplay: {
-        delay: 3000,
+        delay: 3500,
       },
       breakpoints: {
         480: {
@@ -205,7 +205,7 @@ export default function slider() {
       slidesPerView: 2,
       spaceBetween: 16,
       autoplay: {
-        delay: 3000,
+        delay: 4000,
       },
       breakpoints: {
         943: {
