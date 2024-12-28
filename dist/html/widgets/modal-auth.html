@@ -1,0 +1,106 @@
+<div data-modal="auth" class="modal">
+	<div class="modal__overlay">
+		<div class="modal__window parent-tab">
+			<button class="btn modal__close">
+				<svg class="modal__close-icon">
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div data-tab="reg" class="tab open">
+				<h3 class="title title-4 modal-auth__title">РЕГИСТРАЦИЯ В CAMPIO</h3>
+				<form action="#" class="modal-auth__form form">
+					<div class="modal-auth__item">
+						<label for="reg-email" class="form__label">E-Mail</label>
+						<input type="email" id="reg-email" class="form__input" />
+						<span class="form__error">Аккаунт не найден</span>
+					</div>
+					<div class="modal-auth__item">
+						<label for="reg-password" class="form__label">Пароль</label>
+						<div class="form__input-wrapper">
+							<input type="password" id="reg-password" class="form__input" />
+							<button type="button" class="btn form__password-trigger">
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye-off"></use>
+								</svg>
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="modal-auth__item">
+						<label for="reg-password-2" class="form__label">Подтверждение пароля</label>
+						<div class="form__input-wrapper">
+							<input type="password" id="reg-password-2" class="form__input" />
+							<button type="button" class="btn form__password-trigger">
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye-off"></use>
+								</svg>
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-main form__btn">Регистрация</button>
+				</form>
+				<div class="modal-auth__footer">
+					<p class="modal-auth__footer-content">Уже есть аккаунт?</p>
+					<button data-tab="login" class="btn btn-tab modal-auth__btn-tab">Войти</button>
+				</div>
+			</div>
+			<div data-tab="login" class="tab">
+				<h3 class="title title-4 modal-auth__title">ВХОД</h3>
+				<form action="#" class="modal-auth__form form">
+					<div class="modal-auth__item">
+						<label for="login-email" class="form__label">E-Mail</label>
+						<input type="email" id="login-email" class="form__input" />
+					</div>
+					<div class="modal-auth__item">
+						<label for="login-password" class="form__label">Пароль</label>
+						<div class="form__input-wrapper">
+							<input type="password" id="login-password" class="form__input" />
+							<button type="button" class="btn form__password-trigger">
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye-off"></use>
+								</svg>
+								<svg class="form__password-icon">
+									<use xlink:href="img/icons/icons.svg#icon-eye"></use>
+								</svg>
+							</button>
+						</div>
+						<span class="form__error">Аккаунт не найден</span>
+						<p class="modal-auth__repair-password">
+							Забыли пороль?
+							<button data-tab="repair-password" class="btn btn-tab">Востановить</button>
+						</p>
+					</div>
+					<button type="submit" class="btn btn-main form__btn">Регистрация</button>
+				</form>
+				<div class="modal-auth__footer">
+					<p class="modal-auth__footer-content">Нет аккаунта?</p>
+					<button data-tab="reg" class="btn btn-tab modal-auth__btn-tab">РЕГИСТРАЦИЯ</button>
+				</div>
+			</div>
+			<div data-tab="repair-password" class="tab">
+				<h3 class="title title-4 modal-auth__title">Восстановление пароля</h3>
+				<form action="#" class="modal-auth__form form">
+					<div class="modal-auth__item">
+						<label for="repair-email" class="form__label">E-Mail</label>
+						<input type="email" id="repair-email" class="form__input" />
+					</div>
+					<p class="modal-auth__repair-content">
+						Введите электронную почту и мы вышлем вам новые данные для входа в личный кабинет.
+					</p>
+					<button type="submit" class="btn btn-main form__btn">Выслать</button>
+				</form>
+				<button data-tab="login" class="btn btn-tab modal-auth__prev">
+					<svg class="modal-auth__prev-icon">
+						<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+					</svg>
+					<span>Назад</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
