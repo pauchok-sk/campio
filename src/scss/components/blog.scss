@@ -1,0 +1,52 @@
+.blog {
+  padding: 30px 0px 120px 0px;
+  @include tablet {
+    padding-bottom: 90px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 24px;
+    }
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+
+    .article {
+      grid-column: 4 span;
+      @include tablet {
+        grid-column: 6 span;
+      }
+      @include mobile {
+        grid-column: 12 span;
+      }
+      &__img {
+        height: 520px;
+        @include desktop {
+          height: 410px;
+        }
+        @include laptop {
+          height: 335px;
+        }
+        @include laptop-middle {
+          height: 295px;
+        }
+        @media (max-width: 899px) {
+          height: 210px;
+        }
+        @include tablet {
+          height: 250px;
+        }
+        @include mobile {
+          height: 345px;
+        }
+      }
+    }
+  }
+}

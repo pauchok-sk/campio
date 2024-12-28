@@ -1,0 +1,19 @@
+.prev-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+  width: fit-content;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: color 0.2s ease;
+  @include hover {
+    color: var(--gray);
+  }
+  &__arrow {
+    width: 24px;
+    height: 24px;
+  }
+}

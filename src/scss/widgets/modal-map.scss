@@ -1,0 +1,15 @@
+.modal-map {
+  .modal__window {
+    padding: 24px;
+    width: 1064px;
+  }
+  &__title {
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

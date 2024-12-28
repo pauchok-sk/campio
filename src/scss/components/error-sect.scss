@@ -1,0 +1,53 @@
+.error-sect {
+  padding: 170px 0px;
+  @include laptop-min {
+    padding: 120px 0px;
+  }
+  @include tablet-min {
+    padding: 95px 0px;
+  }
+  &__subcontent {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 8px 0px;
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 300px;
+    line-height: 300px;
+    margin: 0px 0px 24px 0px;
+    @include tablet-big {
+      font-size: 128px;
+      line-height: 128px;
+      margin: 0;
+    }
+  }
+  &__content {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0px 0px 24px 0px;
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__btn {
+    @include flex-center;
+    max-width: 295px;
+    width: 100%;
+    min-height: 64px;
+    margin: 0 auto;
+    @include tablet-min {
+      max-width: none;
+    }
+  }
+}

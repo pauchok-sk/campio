@@ -1,0 +1,81 @@
+.brands {
+  padding: 40px 0px 170px 0px;
+  &__title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__body {
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    padding-right: 130px;
+    gap: 115px;
+    @include desktop {
+      gap: 50px;
+      justify-content: space-between;
+    }
+    @include laptop {
+      padding-right: 0;
+    }
+    @include laptop-middle {
+      gap: 100px;
+    }
+    @include tablet {
+      gap: 30px;
+    }
+  }
+  &__main {
+    display: flex;
+    flex: 0 1 1065px;
+    flex-wrap: wrap;
+    gap: 155px;
+    row-gap: 55px;
+    @include desktop {
+      gap: 30px;
+      row-gap: 55px;
+    }
+  }
+  &__item {
+    flex: 0 1 250px;
+    @include laptop-min {
+      flex-basis: calc(50% - 15px);
+    }
+    @include mobile {
+      flex-basis: 100%;
+    }
+  }
+  &__item-title {
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    a {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: color .2s ease;
+      @include hover {
+        color: var(--gray);
+      }
+    }
+  }
+  &__filters {
+    position: sticky;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__filter-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--gray);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--black);
+    }
+  }
+}

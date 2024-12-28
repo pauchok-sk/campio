@@ -1,0 +1,24 @@
+.dropdown {
+  position: relative;
+  &:hover {
+    .dropdown__item {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__item {
+    position: fixed;
+    color: var(--black);
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    box-shadow: 0px 10px 44px 0px rgba(0, 0, 0, 0.15);
+    z-index: 50;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+}

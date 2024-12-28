@@ -1,0 +1,76 @@
+.refund {
+  padding: 40px 0px 170px 0px;
+  @include laptop-min {
+    padding: 24px 0px 150px 0px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    @include laptop-min {
+      text-align: center;
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 26px;
+    strong {
+      font-weight: 600;
+    }
+    a {
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--gray);
+      }
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 8px;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+    p {
+      span {
+        color: var(--gray);
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: var(--black);
+          left: -20px;
+          top: 12px;
+          @include tablet {
+            top: 11px;
+          }
+        }
+      }
+    }
+  }
+  &__img {
+    width: 655px;
+    height: auto;
+    @include laptop {
+      width: 500px;
+    }
+    @include laptop-middle {
+      width: 420px;
+    }
+    @include laptop-min {
+      display: none;
+    }
+  }
+}

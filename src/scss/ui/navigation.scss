@@ -1,0 +1,50 @@
+.navigation {
+  @include flex-center;
+  gap: 10px;
+  margin-top: 32px;
+  &__btn {
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--non-white);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+    @include hover {
+      color: white;
+      background-color: var(--black);
+    }
+    &.active {
+      color: white;
+      background-color: var(--black);
+    }
+
+    &._prev {
+      transform: rotate(90deg);
+    }
+    &._next {
+      transform: rotate(-90deg);
+    }
+    @include mobile {
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__middle {
+    display: flex;
+    gap: 6px;
+  }
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    @include mobile {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

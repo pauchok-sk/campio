@@ -1,0 +1,67 @@
+.modal-order {
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px 0px 15px 0px;
+  }
+  &__address {
+    @include flex-center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  &__address-icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__address-content {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @include tablet {
+      gap: 16px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__check-label {
+    position: relative;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 100%;
+    padding-left: 24px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: -1px;
+      width: 16px;
+      height: 16px;
+    }
+    &::before {
+      border: 1px solid var(--black);
+    }
+    &::after {
+      display: none;
+      background: url('@img/check.png') 0 0 / 100% 100% no-repeat;
+      background-color: var(--black);
+      z-index: 1;
+    }
+  }
+}

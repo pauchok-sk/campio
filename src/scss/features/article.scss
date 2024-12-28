@@ -1,0 +1,24 @@
+.article {
+  grid-column: 4 span;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  &__time {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--gray);
+    margin-bottom: 8px;
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}

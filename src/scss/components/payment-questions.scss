@@ -1,0 +1,50 @@
+.payment-questions {
+  padding-bottom: 160px;
+  @include laptop-min {
+    padding-bottom: 135px;
+  }
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  &__container {
+    max-width: 1115px;
+  }
+  &__title {
+    margin: 0px 0px 32px 0px;
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+  &__spoller {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--light-gray);
+    }
+  }
+  &__spoller-btn {
+    @include flex-between;
+    width: 100%;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 16px 0px;
+    &._spoller-active {
+      .payment-questions__spoller-arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__spoller-arrow {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  &__spoller-item {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    p {
+      margin: 0;
+    }
+  }
+}

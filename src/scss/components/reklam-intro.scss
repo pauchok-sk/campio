@@ -1,0 +1,114 @@
+.reklam-intro {
+  padding: 40px 0px 160px 0px;
+  @include laptop-min {
+    padding-bottom: 130px;
+  }
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include laptop-middle {
+      flex-direction: column-reverse;
+      gap: 48px;
+    }
+    @include tablet {
+      gap: 24px;
+    }
+  }
+  &__info {
+    flex: 1;
+    @include laptop-middle {
+      @include flex-center;
+      flex-direction: column;
+      flex: none;
+      text-align: center;
+    }
+  }
+  &__title {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 56px;
+    margin: 0px 0px 24px 0px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 575px;
+    margin: 0px 0px 56px 0px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  &__btn {
+    @include flex-center;
+    max-width: 385px;
+    width: 100%;
+    @include mobile {
+      max-width: none;
+    }
+  }
+  &__img {
+    width: calc(50% - 12px);
+    @include laptop-middle {
+      width: 935px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+    margin-top: 210px;
+    @include laptop {
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      margin-top: 120px;
+    }
+    @include tablet {
+      gap: 56px;
+      margin-top: 56px;
+    }
+  }
+  &__item {
+    grid-column: 4 span;
+    @include laptop {
+      @include flex-center;
+      flex-direction: column;
+    }
+  }
+  &__item-icon {
+    width: 56px;
+    margin-bottom: 8px;
+  }
+  &__item-title {
+    margin: 0px 0px 8px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__item-content {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    max-width: 400px;
+    @include tablet {
+      max-width: 320px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

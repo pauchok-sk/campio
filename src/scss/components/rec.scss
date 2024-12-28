@@ -1,0 +1,17 @@
+.rec {
+  padding: 75px 0px 25px 0px;
+  overflow: hidden;
+  @include tablet {
+    padding: 25px 0px 45px 0px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__slider-wrapper {
+    position: relative;
+  }
+}

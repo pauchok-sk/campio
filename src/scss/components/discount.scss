@@ -1,0 +1,113 @@
+.discount {
+  padding: 40px 0px 65px;
+  overflow: hidden;
+  @include laptop-min {
+    padding-top: 80px;
+  }
+  @include tablet {
+    padding: 40px 0px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    &._reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &__slider {
+    width: calc(50% - 11px);
+    @media (max-width: 959px) {
+      width: 100%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 200px;
+      background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, rgba(30, 30, 30, 0.5) 100%);
+      z-index: 10;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__slider-nav {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 20;
+
+    @include laptop-min {
+      left: 16px;
+      right: 16px;
+    }
+    @include mobile {
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+    }
+  }
+  &__slider-btn {
+    @include flex-center;
+    width: 100%;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+
+    @include laptop-min {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  &__slider-pagination {
+    position: static;
+    width: 100%;
+    margin-top: 24px;
+    @include mobile {
+      margin-top: 12px;
+    }
+  }
+  &__slider-wrapper {
+    position: relative;
+    width: calc(50% - 11px);
+    @media (max-width: 959px) {
+      width: 100%;
+    }
+    .slider-arrow {
+      display: none;
+      @media (max-width: 959px) {
+        display: flex;
+      }
+    }
+  }
+  &__slider-products {
+    width: 100%;
+    .swiper-wrapper {
+      display: grid !important;
+      gap: 24px;
+      grid-template-columns: repeat(12, 1fr);
+      @media (max-width: 959px) {
+        gap: 0;
+        display: flex !important;
+      }
+    }
+    .product {
+      grid-column: 6 span;
+    }
+  }
+}

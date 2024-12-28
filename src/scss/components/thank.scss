@@ -1,0 +1,58 @@
+.thank {
+  padding: 170px 0px;
+  @include laptop-min {
+    padding: 120px 0px;
+  }
+  @include tablet-min {
+    padding: 95px 0px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__title {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 88px;
+    max-width: 710px;
+    text-transform: uppercase;
+    margin: 0;
+    @include tablet-big {
+      font-size: 48px;
+      line-height: normal;
+      max-width: 475px;
+    }
+    @include tablet-min {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 315px;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 56px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    @include tablet-min {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__btn {
+    @include flex-center;
+    max-width: 295px;
+    min-height: 64px;
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    @include tablet-min {
+      max-width: none;
+    }
+  }
+}

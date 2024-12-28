@@ -1,0 +1,68 @@
+@import "./fonts/fonts";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/dropdown";
+@import "./ui/title";
+@import "./ui/modal";
+@import "./ui/form";
+@import "./ui/tab";
+@import "./ui/slider-pagination";
+@import "./ui/slider-arrow";
+@import "./ui/breadcrumbs";
+@import "./ui/nouislider";
+@import "./ui/dropdown-select";
+@import "./ui/navigation";
+@import "./ui/prev-btn";
+
+// features
+@import "./features/product-rec";
+@import "./features/product";
+@import "./features/article";
+
+// widgets
+@import "./widgets/search";
+@import "./widgets/basket";
+@import "./widgets/modal-auth";
+@import "./widgets/modal-order";
+@import "./widgets/modal-map";
+@import "./widgets/cookie";
+@import "./widgets/modal-pay";
+
+// components
+@import "./components/header";
+
+@import "./components/hero";
+@import "./components/rec";
+@import "./components/discount";
+@import "./components/blog";
+@import "./components/about";
+@import "./components/brands";
+@import "./components/catalog";
+@import "./components/single";
+@import "./components/buy";
+@import "./components/archive";
+@import "./components/single-article";
+@import "./components/contacts";
+@import "./components/about-main";
+@import "./components/refund";
+@import "./components/questions";
+@import "./components/profile";
+@import "./components/order-info";
+@import "./components/thank";
+@import "./components/error-sect";
+@import "./components/reklam-intro";
+@import "./components/payment-work";
+@import "./components/payment-questions";
+@import "./components/payment-manage";
+@import "./components/restore-password";
+
+@import "./components/footer";

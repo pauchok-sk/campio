@@ -1,0 +1,218 @@
+.single-article {
+  padding: 40px 0px 290px 0px;
+  @include laptop-min {
+    padding: 24px 0px 150px 0px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 56px;
+    @include laptop-min {
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 48px;
+    @include desktop {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include laptop-min {
+      margin-bottom: 24px;
+      gap: 16px;
+    }
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
+  &__head-img {
+    width: 385px;
+    height: 385px;
+    object-fit: cover;
+    @include laptop {
+      width: 320px;
+      height: 320px;
+    }
+    @include laptop-middle {
+      width: 280px;
+      height: 280px;
+    }
+    @include laptop-min {
+      width: 225px;
+      height: 225px;
+      display: none;
+    }
+    @include tablet {
+      width: 165px;
+      height: 165px;
+    }
+    @include tablet-min {
+      width: 200px;
+      height: 200px;
+    }
+    @include mobile {
+      width: 100%;
+      height: auto;
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+  &__head-content {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0;
+    flex: 1;
+    @include desktop {
+      order: 3;
+      flex: 0 1 100%;
+    }
+    @include laptop-min {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  &__slider {
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
+    @include laptop-min {
+      margin-bottom: 24px;
+    }
+    .swiper-wrapper {
+      align-items: stretch;
+    }
+    .swiper-slide {
+      height: auto;
+    }
+  }
+  &__slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__body {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 48px;
+    @include laptop {
+      display: block;
+    }
+  }
+  &__content {
+    flex: 0 1 1064px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    @include laptop {
+      flex-basis: 100%;
+      margin-bottom: 48px;
+    }
+    @include laptop-min {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h2,
+    h3 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+      @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  &__rec {
+    position: sticky;
+    top: 110px;
+    flex: 0 1 384px;
+    @include laptop {
+      position: static;
+      flex-basis: 100%;
+    }
+  }
+  &__rec-head {
+    @include flex-between;
+    margin-bottom: 8px;
+  }
+  &__rect-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+  }
+  &__rec-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--gray);
+    }
+  }
+  &__rec-arrow {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+  }
+  &__rec-slider-wrapper {
+    position: relative;
+  }
+  &__slider-btn {
+    display: none;
+    @include laptop {
+      display: flex;
+    }
+  }
+  &__rec-slider {
+    .swiper-wrapper {
+      display: block;
+      @include laptop {
+        display: flex;
+      }
+    }
+    .product {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+      @include laptop {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 95px;
+    @include laptop-min {
+      margin-top: 80px;
+    }
+    @include tablet {
+      margin-top: 48px;
+      gap: 8px;
+    }
+  }
+  &__nav-btn {
+    @include flex-center;
+    flex: 1;
+    @include tablet {
+      flex: 0 1 100%;
+      font-size: 16px;
+    }
+  }
+}
