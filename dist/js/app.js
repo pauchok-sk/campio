@@ -531,16 +531,27 @@
     }
     function utils_elementChildren(element, selector) {
         if (selector === void 0) selector = "";
+        const window = ssr_window_esm_getWindow();
         const children = [ ...element.children ];
-        if (element instanceof HTMLSlotElement) children.push(...element.assignedElements());
+        if (window.HTMLSlotElement && element instanceof HTMLSlotElement) children.push(...element.assignedElements());
         if (!selector) return children;
         return children.filter((el => el.matches(selector)));
     }
+    function elementIsChildOfSlot(el, slot) {
+        const elementsQueue = [ slot ];
+        while (elementsQueue.length > 0) {
+            const elementToCheck = elementsQueue.shift();
+            if (el === elementToCheck) return true;
+            elementsQueue.push(...elementToCheck.children, ...elementToCheck.shadowRoot?.children || [], ...elementToCheck.assignedElements?.() || []);
+        }
+    }
     function elementIsChildOf(el, parent) {
-        const isChild = parent.contains(el);
-        if (!isChild && parent instanceof HTMLSlotElement) {
+        const window = ssr_window_esm_getWindow();
+        let isChild = parent.contains(el);
+        if (!isChild && window.HTMLSlotElement && parent instanceof HTMLSlotElement) {
             const children = [ ...parent.assignedElements() ];
-            return children.includes(el);
+            isChild = children.includes(el);
+            if (!isChild) isChild = elementIsChildOfSlot(el, parent);
         }
         return isChild;
     }
@@ -1228,9 +1239,9 @@
             if (slideIndex >= swiper.virtual.slides.length) slideIndex -= swiper.virtual.slides.length;
             activeSlide = getFilteredSlide(`[data-swiper-slide-index="${slideIndex}"]`);
         } else activeSlide = getFilteredSlide(`[data-swiper-slide-index="${activeIndex}"]`); else if (gridEnabled) {
-            activeSlide = slides.filter((slideEl => slideEl.column === activeIndex))[0];
-            nextSlide = slides.filter((slideEl => slideEl.column === activeIndex + 1))[0];
-            prevSlide = slides.filter((slideEl => slideEl.column === activeIndex - 1))[0];
+            activeSlide = slides.find((slideEl => slideEl.column === activeIndex));
+            nextSlide = slides.find((slideEl => slideEl.column === activeIndex + 1));
+            prevSlide = slides.find((slideEl => slideEl.column === activeIndex - 1));
         } else activeSlide = slides[activeIndex];
         if (activeSlide) if (!gridEnabled) {
             nextSlide = elementNextAll(activeSlide, `.${params.slideClass}, swiper-slide`)[0];
@@ -1332,7 +1343,7 @@
         const gridEnabled = swiper.grid && params.grid && params.grid.rows > 1;
         let realIndex;
         if (swiper.virtual && params.virtual.enabled && params.loop) realIndex = getVirtualRealIndex(activeIndex); else if (gridEnabled) {
-            const firstSlideInColumn = swiper.slides.filter((slideEl => slideEl.column === activeIndex))[0];
+            const firstSlideInColumn = swiper.slides.find((slideEl => slideEl.column === activeIndex));
             let activeSlideIndex = parseInt(firstSlideInColumn.getAttribute("data-swiper-slide-index"), 10);
             if (Number.isNaN(activeSlideIndex)) activeSlideIndex = Math.max(swiper.slides.indexOf(firstSlideInColumn), 0);
             realIndex = Math.floor(activeSlideIndex / params.grid.rows);
@@ -1667,7 +1678,7 @@
             let targetSlideIndex;
             if (gridEnabled) {
                 const slideIndex = newIndex * swiper.params.grid.rows;
-                targetSlideIndex = swiper.slides.filter((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === slideIndex))[0].column;
+                targetSlideIndex = swiper.slides.find((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === slideIndex)).column;
             } else targetSlideIndex = swiper.getSlideIndexByData(newIndex);
             const cols = gridEnabled ? Math.ceil(swiper.slides.length / swiper.params.grid.rows) : swiper.slides.length;
             const {centeredSlides} = swiper.params;
@@ -1690,7 +1701,7 @@
             }
             if (gridEnabled) {
                 const slideIndex = newIndex * swiper.params.grid.rows;
-                newIndex = swiper.slides.filter((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === slideIndex))[0].column;
+                newIndex = swiper.slides.find((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === slideIndex)).column;
             } else newIndex = swiper.getSlideIndexByData(newIndex);
         }
         requestAnimationFrame((() => {
@@ -1911,7 +1922,7 @@
         const prependSlidesIndexes = [];
         const appendSlidesIndexes = [];
         let activeIndex = swiper.activeIndex;
-        if (typeof activeSlideIndex === "undefined") activeSlideIndex = swiper.getSlideIndex(slides.filter((el => el.classList.contains(params.slideActiveClass)))[0]); else activeIndex = activeSlideIndex;
+        if (typeof activeSlideIndex === "undefined") activeSlideIndex = swiper.getSlideIndex(slides.find((el => el.classList.contains(params.slideActiveClass)))); else activeIndex = activeSlideIndex;
         const isNext = direction === "next" || !direction;
         const isPrev = direction === "prev" || !direction;
         let slidesPrepended = 0;
@@ -2163,7 +2174,7 @@
         }
         let targetTouch;
         if (e.type === "touchmove") {
-            targetTouch = [ ...e.changedTouches ].filter((t => t.identifier === data.touchId))[0];
+            targetTouch = [ ...e.changedTouches ].find((t => t.identifier === data.touchId));
             if (!targetTouch || targetTouch.identifier !== data.touchId) return;
         } else targetTouch = e;
         if (!data.isTouched) {
@@ -2344,7 +2355,7 @@
             if (e.pointerId !== data.pointerId) return;
             targetTouch = e;
         } else {
-            targetTouch = [ ...e.changedTouches ].filter((t => t.identifier === data.touchId))[0];
+            targetTouch = [ ...e.changedTouches ].find((t => t.identifier === data.touchId));
             if (!targetTouch || targetTouch.identifier !== data.touchId) return;
         }
         if ([ "pointercancel", "pointerout", "pointerleave", "contextmenu" ].includes(e.type)) {
@@ -2575,7 +2586,10 @@
         const {realIndex, initialized, params, el} = swiper;
         const breakpoints = params.breakpoints;
         if (!breakpoints || breakpoints && Object.keys(breakpoints).length === 0) return;
-        const breakpoint = swiper.getBreakpoint(breakpoints, swiper.params.breakpointsBase, swiper.el);
+        const document = ssr_window_esm_getDocument();
+        const breakpointsBase = params.breakpointsBase === "window" || !params.breakpointsBase ? params.breakpointsBase : "container";
+        const breakpointContainer = [ "window", "container" ].includes(params.breakpointsBase) || !params.breakpointsBase ? swiper.el : document.querySelector(params.breakpointsBase);
+        const breakpoint = swiper.getBreakpoint(breakpoints, breakpointsBase, breakpointContainer);
         if (!breakpoint || swiper.currentBreakpoint === breakpoint) return;
         const breakpointOnlyParams = breakpoint in breakpoints ? breakpoints[breakpoint] : void 0;
         const breakpointParams = breakpointOnlyParams || swiper.originalParams;
@@ -2986,7 +3000,7 @@
             return utils_elementIndex(slideEl) - firstSlideIndex;
         }
         getSlideIndexByData(index) {
-            return this.getSlideIndex(this.slides.filter((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === index))[0]);
+            return this.getSlideIndex(this.slides.find((slideEl => slideEl.getAttribute("data-swiper-slide-index") * 1 === index)));
         }
         recalcSlides() {
             const swiper = this;
@@ -3640,10 +3654,10 @@
             if (!el || el.length === 0) return;
             if (swiper.params.uniqueNavElements && typeof params.el === "string" && Array.isArray(el) && el.length > 1) {
                 el = [ ...swiper.el.querySelectorAll(params.el) ];
-                if (el.length > 1) el = el.filter((subEl => {
+                if (el.length > 1) el = el.find((subEl => {
                     if (utils_elementParents(subEl, ".swiper")[0] !== swiper.el) return false;
                     return true;
-                }))[0];
+                }));
             }
             if (Array.isArray(el) && el.length === 1) el = el[0];
             Object.assign(swiper.pagination, {
@@ -3814,7 +3828,7 @@
         };
         const getSlideDelay = () => {
             let activeSlideEl;
-            if (swiper.virtual && swiper.params.virtual.enabled) activeSlideEl = swiper.slides.filter((slideEl => slideEl.classList.contains("swiper-slide-active")))[0]; else activeSlideEl = swiper.slides[swiper.activeIndex];
+            if (swiper.virtual && swiper.params.virtual.enabled) activeSlideEl = swiper.slides.find((slideEl => slideEl.classList.contains("swiper-slide-active"))); else activeSlideEl = swiper.slides[swiper.activeIndex];
             if (!activeSlideEl) return;
             const currentSlideDelay = parseInt(activeSlideEl.getAttribute("data-swiper-autoplay"), 10);
             return currentSlideDelay;
@@ -4066,7 +4080,7 @@
         const {activeIndex} = swiper;
         const getSlide = el => {
             if (!el.parentElement) {
-                const slide = swiper.slides.filter((slideEl => slideEl.shadowRoot && slideEl.shadowRoot === el.parentNode))[0];
+                const slide = swiper.slides.find((slideEl => slideEl.shadowRoot && slideEl.shadowRoot === el.parentNode));
                 return slide;
             }
             return el.parentElement;
@@ -4208,16 +4222,12 @@
         }
         const recSliders = document.querySelectorAll(".rec__slider");
         if (recSliders.length) recSliders.forEach((slider => {
-            const autoplayFalse = slider.dataset.autoplayFalse;
+            slider.dataset.autoplayFalse;
             new Swiper(slider, {
                 speed: 1e3,
                 modules: [ Autoplay, Navigation ],
                 slidesPerView: 2,
                 spaceBetween: 16,
-                autoplay: {
-                    delay: 3e3
-                },
-                autoplay: autoplayFalse ? false : true,
                 breakpoints: {
                     943: {
                         slidesPerView: 4,

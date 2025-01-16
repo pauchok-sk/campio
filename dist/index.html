@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241228173628">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250117021953">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -47,7 +47,9 @@
 							</svg>
 						</button>
 						<ul class="list header__nav-list">
-							<li class="header__nav-btn-wrapper"><a href="/" class="header__nav-btn">Новинки</a></li>
+							<li class="header__nav-btn-wrapper">
+								<a href="/" class="header__nav-btn">Новинки</a>
+							</li>
 							<li class="dropdown header__nav-btn-wrapper">
 								<div data-spoller class="header__nav-btn">
 									<span>Мужчинам</span>
@@ -166,12 +168,76 @@
 							<li class="header__nav-btn-wrapper">
 								<a href="/" class="header__nav-btn">Аксессуары</a>
 							</li>
-							<li class="header__nav-btn-wrapper"><a href="/" class="header__nav-btn">Бренды</a></li>
-							<li class="header__nav-btn-wrapper"><a href="/" class="header__nav-btn">Скидки</a></li>
+							<li class="dropdown header__nav-btn-wrapper">
+								<div data-spoller class="header__nav-btn">
+									<span>Бренды</span>
+									<svg class="header__nav-arrow">
+										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+									</svg>
+								</div>
+								<div class="dropdown__item header__dropdown-item">
+									<div class="container header__dropdown-container">
+										<ul class="list header__dropdown-list">
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+											<li><a href="/">Adidas Performance</a></li>
+										</ul>
+										<div class="header__dropdown-rec">
+											<a href="/" class="product-rec">
+												<img src="img/brand-nike.jpg" alt="image" class="product-rec__img" />
+												<div class="product-rec__info">
+													<img src="img/nike.svg" alt="icon" class="product-rec__logo" />
+													<h5 class="title product-rec__title">NIKE</h5>
+												</div>
+											</a>
+											<a href="/" class="product-rec">
+												<img src="img/brand-nike.jpg" alt="image" class="product-rec__img" />
+												<div class="product-rec__info">
+													<img src="img/nike.svg" alt="icon" class="product-rec__logo" />
+													<h5 class="title product-rec__title">NIKE</h5>
+												</div>
+											</a>
+											<a href="/" class="product-rec">
+												<img src="img/brand-nike.jpg" alt="image" class="product-rec__img" />
+												<div class="product-rec__info">
+													<img src="img/nike.svg" alt="icon" class="product-rec__logo" />
+													<h5 class="title product-rec__title">NIKE</h5>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="header__nav-btn-wrapper">
+								<a href="/" class="header__nav-btn">Скидки</a>
+							</li>
 						</ul>
 						<div class="header__nav-footer">
 							<a href="tel:+74956646981" class="header__nav-tel">+7 (495) 664-69-81</a>
-							<p class="header__nav-address">125047, г. Москва, ул. 1-я Тверская-Ямская, д. 7</p>
+							<p class="header__nav-address">
+								125047, г. Москва, ул. 1-я Тверская-Ямская, д. 7
+							</p>
 						</div>
 					</nav>
 					<ul class="list header__navigation">
@@ -338,11 +404,12 @@
 								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 							</svg>
 						</button>
-						<a href="/">
-							<span class="basket__product-brand">BRAND</span>
-							<h5 class="basket__product-title">Product Name</h5>
-							<span class="basket__product-price">12990 ₽</span>
-						</a>
+
+						<a href="#" class="product__link"></a>
+
+						<span class="basket__product-brand">BRAND</span>
+						<h5 class="basket__product-title">Product Name</h5>
+						<span class="basket__product-price">12990 ₽</span>
 					</article>
 					<article class="basket__product">
 						<img src="img/product.jpg" alt="image" class="basket__product-img" />
@@ -351,11 +418,11 @@
 								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 							</svg>
 						</button>
-						<a href="/">
-							<span class="basket__product-brand">BRAND</span>
-							<h5 class="basket__product-title">Product Name</h5>
-							<span class="basket__product-price">12990 ₽</span>
-						</a>
+						<a href="#" class="product__link"></a>
+
+						<span class="basket__product-brand">BRAND</span>
+						<h5 class="basket__product-title">Product Name</h5>
+						<span class="basket__product-price">12990 ₽</span>
 					</article>
 					<article class="basket__product">
 						<img src="img/product.jpg" alt="image" class="basket__product-img" />
@@ -364,11 +431,11 @@
 								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 							</svg>
 						</button>
-						<a href="/">
-							<span class="basket__product-brand">BRAND</span>
-							<h5 class="basket__product-title">Product Name</h5>
-							<span class="basket__product-price">12990 ₽</span>
-						</a>
+						<a href="#" class="product__link"></a>
+
+						<span class="basket__product-brand">BRAND</span>
+						<h5 class="basket__product-title">Product Name</h5>
+						<span class="basket__product-price">12990 ₽</span>
 					</article>
 				</div>
 			</div>
@@ -404,9 +471,13 @@
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
 										<div class="basket__item-menu-counter parent-counter">
-											<button class="btn basket__counter-btn counter-plus">+</button>
+											<button class="btn basket__counter-btn counter-plus">
+												+
+											</button>
 											<span class="basket__item-menu-number counter">2</span>
-											<button class="btn basket__counter-btn counter-minus">-</button>
+											<button class="btn basket__counter-btn counter-minus">
+												-
+											</button>
 										</div>
 									</li>
 								</ul>
@@ -440,9 +511,13 @@
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
 										<div class="basket__item-menu-counter parent-counter">
-											<button class="btn basket__counter-btn counter-plus">+</button>
+											<button class="btn basket__counter-btn counter-plus">
+												+
+											</button>
 											<span class="basket__item-menu-number counter">2</span>
-											<button class="btn basket__counter-btn counter-minus">-</button>
+											<button class="btn basket__counter-btn counter-minus">
+												-
+											</button>
 										</div>
 									</li>
 								</ul>
@@ -476,9 +551,13 @@
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
 										<div class="basket__item-menu-counter parent-counter">
-											<button class="btn basket__counter-btn counter-plus">+</button>
+											<button class="btn basket__counter-btn counter-plus">
+												+
+											</button>
 											<span class="basket__item-menu-number counter">2</span>
-											<button class="btn basket__counter-btn counter-minus">-</button>
+											<button class="btn basket__counter-btn counter-minus">
+												-
+											</button>
 										</div>
 									</li>
 								</ul>
@@ -512,9 +591,13 @@
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
 										<div class="basket__item-menu-counter parent-counter">
-											<button class="btn basket__counter-btn counter-plus">+</button>
+											<button class="btn basket__counter-btn counter-plus">
+												+
+											</button>
 											<span class="basket__item-menu-number counter">2</span>
-											<button class="btn basket__counter-btn counter-minus">-</button>
+											<button class="btn basket__counter-btn counter-minus">
+												-
+											</button>
 										</div>
 									</li>
 								</ul>
@@ -548,9 +631,13 @@
 									<li class="basket__list-item">
 										<span class="basket__item-menu-title">Кол.:</span>
 										<div class="basket__item-menu-counter parent-counter">
-											<button class="btn basket__counter-btn counter-plus">+</button>
+											<button class="btn basket__counter-btn counter-plus">
+												+
+											</button>
 											<span class="basket__item-menu-number counter">2</span>
-											<button class="btn basket__counter-btn counter-minus">-</button>
+											<button class="btn basket__counter-btn counter-minus">
+												-
+											</button>
 										</div>
 									</li>
 								</ul>
@@ -579,7 +666,9 @@
 					</div>
 					<div class="basket__buttons">
 						<a href="/" class="btn btn-main">Оформить</a>
-						<button data-modal="order" class="btn btn-modal btn-main _stroke">Купить сейчас</button>
+						<button data-modal="order" class="btn btn-modal btn-main _stroke">
+							Купить сейчас
+						</button>
 					</div>
 				</form>
 			</div>
@@ -851,16 +940,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption"><span class="product__payment-caption">Частями</span></span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -881,15 +969,15 @@
 									</svg>
 								</button>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<a href="#" class="product__link"></a>
+
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -909,16 +997,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -938,16 +1025,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -967,16 +1053,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -996,16 +1081,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"> <span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1024,7 +1108,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="discount">
 			<div class="container">
 				<h2 class="title title-2 discount__title">СКИДКИ</h2>
@@ -1067,18 +1150,29 @@
 									</button>
 									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<div class="product__price-wrapper">
-											<span class="product__price">12990 ₽</span>
-											<span class="product__price-old">12990 ₽ </span>
-										</div>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<div class="product__price-wrapper">
+										<span class="product__price">12990 ₽</span>
+										<span class="product__price-old">12990 ₽ </span>
+									</div>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+									<div class="product__sizes">
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+									</div>
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1088,18 +1182,30 @@
 									</button>
 									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<div class="product__price-wrapper">
-											<span class="product__price">12990 ₽</span>
-											<span class="product__price-old">12990 ₽ </span>
-										</div>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<div class="product__price-wrapper">
+										<span class="product__price">12990 ₽</span>
+										<span class="product__price-old">12990 ₽ </span>
+									</div>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+									<div class="product__sizes">
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+									</div>
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1109,18 +1215,30 @@
 									</button>
 									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<div class="product__price-wrapper">
-											<span class="product__price">12990 ₽</span>
-											<span class="product__price-old">12990 ₽ </span>
-										</div>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<div class="product__price-wrapper">
+										<span class="product__price">12990 ₽</span>
+										<span class="product__price-old">12990 ₽ </span>
+									</div>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+									<div class="product__sizes">
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+									</div>
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1130,18 +1248,31 @@
 									</button>
 									<span class="product__signature">SALE</span>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<div class="product__price-wrapper">
-											<span class="product__price">12990 ₽</span>
-											<span class="product__price-old">12990 ₽ </span>
-										</div>s
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<div class="product__price-wrapper">
+										<span class="product__price">12990 ₽</span>
+										<span class="product__price-old">12990 ₽ </span>
+									</div>s
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+									<div class="product__sizes">
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+										<button data-product-size="" class="btn product__size">38.5 EU</button>
+									</div>
+
 								</article>
 							</div>
 						</div>
@@ -1172,16 +1303,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption"><span class="product__payment-caption">Частями</span></span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1202,15 +1332,15 @@
 									</svg>
 								</button>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<a href="#" class="product__link"></a>
+
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1230,16 +1360,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1259,16 +1388,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1288,16 +1416,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"><span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1317,16 +1444,15 @@
 										<use xlink:href="img/icons/icons.svg#icon-heart"></use>
 									</svg>
 								</button>
+								<a href="#" class="product__link"></a>
 								<img src="img/product.jpg" alt="image" class="product__img" />
-								<a href="/">
-									<span class="product__brand">Brand</span>
-									<h5 class="product__title">Product Name</h5>
-									<span class="product__price">12990 ₽</span>
-									<div data-modal="product-pay" class="btn-modal product__payment">
-										<img src="img/payments.svg" alt="" class="product__payment-icon" />
-										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-									</div>
-								</a>
+								<span class="product__brand">Brand</span>
+								<h5 class="product__title">Product Name</h5>
+								<span class="product__price">12990 ₽</span>
+								<div class="product__payment">
+									<img src="img/payments.svg" alt="" class="product__payment-icon" />
+									<p class="product__payment-content"> <span class="product__payment-caption">Частями</span> по 1122 ₽ <span class="product__payment-multiplier">х4</span></p>
+								</div>
 								<div class="product__sizes">
 									<button data-product-size class="btn product__size">38.5 EU</button>
 									<button data-product-size class="btn product__size">38.5 EU</button>
@@ -1345,7 +1471,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="discount">
 			<div class="container">
 				<h2 class="title title-2 discount__title">ПО СТИЛЮ</h2>
@@ -1387,15 +1512,15 @@
 										</svg>
 									</button>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1404,15 +1529,16 @@
 										</svg>
 									</button>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1421,15 +1547,16 @@
 										</svg>
 									</button>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+
 								</article>
 								<article class="swiper-slide product">
 									<button class="btn btn-like product__like">
@@ -1438,15 +1565,16 @@
 										</svg>
 									</button>
 									<img src="img/product.jpg" alt="image" class="product__img" />
-									<a href="/">
-										<span class="product__brand">Brand</span>
-										<h5 class="product__title">Product Name</h5>
-										<span class="product__price">12990 ₽</span>
-										<div data-modal="product-pay" class="btn-modal product__payment">
-											<img src="img/payments.svg" alt="" class="product__payment-icon" />
-											<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-										</div>
-									</a>
+									<a href="#" class="product__link"></a>
+
+									<span class="product__brand">Brand</span>
+									<h5 class="product__title">Product Name</h5>
+									<span class="product__price">12990 ₽</span>
+									<div class="product__payment">
+										<img src="img/payments.svg" alt="" class="product__payment-icon" />
+										<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+									</div>
+
 								</article>
 							</div>
 						</div>
@@ -1655,7 +1783,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241228173628"></script>
+	<script src="js/app.min.js?_v=20250117021953"></script>
 </body>
 
 </html>
