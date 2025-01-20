@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250117021953">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250120144110">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -395,7 +395,14 @@
 
 		<div class="basket" id="basket">
 			<div class="basket__wrapper basket__rec">
-				<h5 class="basket__title">Рекомендуем</h5>
+				<div class="basket__rec-head">
+					<h5 class="basket__title">Рекомендуем</h5>
+					<button class="btn basket__rec-close">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
 				<div class="basket__rec-container">
 					<article class="basket__product">
 						<img src="img/product.jpg" alt="image" class="basket__product-img" />
@@ -675,7 +682,7 @@
 		</div>
 	</header>
 
-	<div data-modal="auth" class="modal">
+	<div data-modal="auth" class="modal modal-auth">
 		<div class="modal__overlay">
 			<div class="modal__window parent-tab">
 				<button class="btn modal__close">
@@ -683,7 +690,7 @@
 						<use xlink:href="img/icons/icons.svg#icon-close"></use>
 					</svg>
 				</button>
-				<div data-tab="reg" class="tab open">
+				<div data-tab="reg" class="tab open ">
 					<h3 class="title title-4 modal-auth__title">РЕГИСТРАЦИЯ В CAMPIO</h3>
 					<form action="#" class="modal-auth__form form">
 						<div class="modal-auth__item">
@@ -1518,7 +1525,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20250117021953"></script>
+	<script src="js/app.min.js?_v=20250120144110"></script>
 </body>
 
 </html>

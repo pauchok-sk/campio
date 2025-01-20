@@ -4401,6 +4401,8 @@
         const basket = document.querySelector("#basket");
         const basketClose = document.querySelector("#basket-close");
         const basketWrapper = basket.querySelectorAll(".basket__wrapper");
+        const basketRec = document.querySelector(".basket__rec");
+        const basketRecClose = document.querySelector(".basket__rec-close");
         if (basket) {
             basketBtn.addEventListener("click", (e => {
                 e.stopPropagation();
@@ -4412,13 +4414,16 @@
                 burgerClose();
                 basket.classList.add("open");
                 basketWrapper.forEach((b => b.addEventListener("click", (e => e.stopPropagation()))));
+                basketRecClose.addEventListener("click", (() => basketRec.classList.add("close")));
                 document.body.addEventListener("click", closeBasket);
             }
         }
     }
     function closeBasket() {
+        const basketRec = document.querySelector(".basket__rec");
         const basket = document.querySelector("#basket");
         basket.classList.remove("open");
+        setTimeout((() => basketRec.classList.remove("close")), 300);
         document.body.removeEventListener("click", closeBasket);
     }
     function burger() {
@@ -11004,6 +11009,20 @@
             input.addEventListener("keydown", mask, false);
         }));
     }
+    function email() {
+        const inputs = document.querySelectorAll("input[type='email']");
+        if (inputs.length) inputs.forEach((input => {
+            const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+            function onInput() {
+                console.log("fa");
+                if (isEmailValid(input.value)) input.style.borderColor = "green"; else input.style.borderColor = "#FF4158";
+            }
+            input.addEventListener("input", onInput);
+            function isEmailValid(value) {
+                return EMAIL_REGEXP.test(value);
+            }
+        }));
+    }
     mediaAdaptive();
     spoller();
     slider();
@@ -11026,4 +11045,5 @@
     discountNumber();
     prevBtn();
     mask();
+    email();
 })();
