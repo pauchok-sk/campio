@@ -4070,6 +4070,9 @@ body {
   padding-right: 10px;
   transition: color .2s ease
 }
+.profile__sidebar-btn.active {
+  color: var(--gray)
+}
 .profile__sidebar-btn.active::after {
   position: absolute;
   content: "";
@@ -6607,6 +6610,9 @@ html.with-fancybox body.hide-scrollbar {
   .slider-arrow {
     top: 142px
   }
+  .header__nav-btn-wrapper {
+    font-size: 16px
+  }
   .brands__body {
     gap: 50px;
     justify-content: space-between
@@ -6629,12 +6635,9 @@ html.with-fancybox body.hide-scrollbar {
     flex: 1
   }
 }
-@media (max-width:1365px) {
+@media (max-width:1439px) {
   .product-rec {
     grid-column: 6 span
-  }
-  .header__nav-btn-wrapper {
-    font-size: 18px
   }
   .header__dropdown-list {
     flex: 0 0 565px
@@ -6780,7 +6783,6 @@ html.with-fancybox body.hide-scrollbar {
     padding-top: 88px
   }
   .header__nav-btn-wrapper {
-    font-size: 16px;
     padding: 20px 10px
   }
   .header__dropdown-item {
