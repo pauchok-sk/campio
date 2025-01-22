@@ -6645,6 +6645,9 @@ html.with-fancybox body.hide-scrollbar {
   .header__navigation {
     gap: 15px
   }
+  .hero__slider {
+    height: 500px
+  }
   .brands__body {
     padding-right: 0
   }
