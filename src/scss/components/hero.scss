@@ -3,7 +3,7 @@
   &__slider {
     width: 100%;
     z-index: 1;
-    @include laptop {
+    @include tablet {
       height: 360px;
     }
     .swiper-slide {
