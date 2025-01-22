@@ -68,11 +68,13 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
     margin-top: 210px;
-    @include laptop {
+    @include laptop-min {
+      margin-top: 120px;
+    }
+    @include laptop-middle {
       display: flex;
       flex-direction: column;
       gap: 72px;
-      margin-top: 120px;
     }
     @include tablet {
       gap: 56px;
@@ -81,7 +83,7 @@
   }
   &__item {
     grid-column: 4 span;
-    @include laptop {
+    @include laptop-middle {
       @include flex-center;
       flex-direction: column;
     }

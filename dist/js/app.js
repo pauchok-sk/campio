@@ -4169,6 +4169,7 @@
                 direction: "vertical",
                 spaceBetween: 10,
                 slidesPerView: 1,
+                autoHeight: true,
                 autoplay: {
                     delay: 5e3
                 },

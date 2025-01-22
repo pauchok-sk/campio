@@ -1,4 +1,9 @@
 .modal-auth {
+  .tab {
+    &.open {
+      display: block !important;
+    }
+  }
   &__title {
     text-align: center;
     margin-bottom: 32px;

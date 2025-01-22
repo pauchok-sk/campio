@@ -19,6 +19,8 @@ import anchor from "./files/anchor.js";
 import discountNumber from "./files/discountNumber.js";
 import prevBtn from "./files/prevBtn.js";
 import mask from "./files/mask.js";
+import email from "./files/email.js";
+import profile from "./files/profile.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -42,3 +44,5 @@ anchor();
 discountNumber();
 prevBtn();
 mask();
+email();
+profile();

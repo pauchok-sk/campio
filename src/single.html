@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   @@include('html/head.html',{ "title":"pauchoo0k" })
   <body class="body">
@@ -7,11 +7,10 @@
     @@include('html/widgets/modal-order.html')
     @@include('html/widgets/modal-pay.html')
     <main>
-      
       @@include('html/components/single.html')
       <section class="rec">
         <div class="container">
-          <h2 class="title title-2 rec__title">ВАМ МОЖЕТ ПОНРАВИТСЯ</h2>
+          <h2 class="title title-2 rec__title">Вам может понравиться</h2>
           <div class="rec__slider-wrapper">
             <button class="btn slider-arrow rec__slider-btn _prev">
               <svg class="slider-arrow__icon">
@@ -23,7 +22,7 @@
                 <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div data-autoplay-false="true" class="swiper rec__slider">
+            <div class="swiper rec__slider">
               <div class="swiper-wrapper">
                 <article class="swiper-slide product">
                   <button class="btn btn-like product__like">
@@ -31,27 +30,92 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption"
+                        ><span class="product__payment-caption"
+                          >Частями</span
+                        ></span
+                      >
+                      по 1122 ₽
+                      <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -60,27 +124,88 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <a href="#" class="product__link"></a>
+
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -89,27 +214,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -118,27 +303,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -147,27 +392,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -176,27 +481,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
               </div>
@@ -206,7 +571,7 @@
       </section>
       <section class="rec">
         <div class="container">
-          <h2 class="title title-2 rec__title">ПРОСМОТРЕННЫЕ ТОВАРЫ</h2>
+          <h2 class="title title-2 rec__title">Просмотренные товары</h2>
           <div class="rec__slider-wrapper">
             <button class="btn slider-arrow rec__slider-btn _prev">
               <svg class="slider-arrow__icon">
@@ -218,7 +583,7 @@
                 <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div data-autoplay-false="true" class="swiper rec__slider">
+            <div class="swiper rec__slider">
               <div class="swiper-wrapper">
                 <article class="swiper-slide product">
                   <button class="btn btn-like product__like">
@@ -226,27 +591,92 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption"
+                        ><span class="product__payment-caption"
+                          >Частями</span
+                        ></span
+                      >
+                      по 1122 ₽
+                      <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -255,27 +685,88 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <a href="#" class="product__link"></a>
+
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -284,27 +775,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -313,27 +864,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -342,27 +953,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
                 <article class="swiper-slide product">
@@ -371,27 +1042,87 @@
                       <use xlink:href="img/icons/icons.svg#icon-heart"></use>
                     </svg>
                   </button>
-                  <img src="@img/product.jpg" alt="image" class="product__img" />
-                  <a href="/">
-                    <span class="product__brand">Brand</span>
-                    <h5 class="product__title">Product Name</h5>
-                    <span class="product__price">12990 ₽</span>
-                    <div data-modal="product-pay" class="btn-modal product__payment">
-                      <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                      <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-                    </div>
-                  </a>
+                  <a href="#" class="product__link"></a>
+                  <img
+                    src="@img/product.jpg"
+                    alt="image"
+                    class="product__img"
+                  />
+                  <span class="product__brand">Brand</span>
+                  <h5 class="product__title">Product Name</h5>
+                  <span class="product__price">12990 ₽</span>
+                  <div class="product__payment">
+                    <img
+                      src="@img/payments.svg"
+                      alt=""
+                      class="product__payment-icon"
+                    />
+                    <p class="product__payment-content">
+                      <span class="product__payment-caption">Частями</span> по
+                      1122 ₽ <span class="product__payment-multiplier">х4</span>
+                    </p>
+                  </div>
                   <div class="product__sizes">
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
-                    <button data-product-size class="btn product__size">38.5 EU</button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
+                    <button data-product-size class="btn product__size">
+                      38.5 EU
+                    </button>
                   </div>
                 </article>
               </div>
@@ -399,7 +1130,6 @@
           </div>
         </div>
       </section>
-
     </main>
     @@include('html/widgets/cookie.html')
     @@include('html/components/footer.html')

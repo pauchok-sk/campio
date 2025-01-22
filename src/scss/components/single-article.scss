@@ -20,7 +20,7 @@
     margin-bottom: 48px;
     @include desktop {
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
     }
     @include laptop-min {
       margin-bottom: 24px;

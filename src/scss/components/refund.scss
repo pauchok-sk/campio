@@ -64,13 +64,8 @@
     width: 655px;
     height: auto;
     @include laptop {
-      width: 500px;
-    }
-    @include laptop-middle {
-      width: 420px;
-    }
-    @include laptop-min {
       display: none;
     }
+   
   }
 }

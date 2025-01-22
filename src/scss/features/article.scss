@@ -3,7 +3,8 @@
   &__img {
     display: block;
     width: 100%;
-    height: 385px;
+    // height: 385px;
+    aspect-ratio: 1 /1;
     object-fit: cover;
     margin-bottom: 15px;
   }
@@ -20,5 +21,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 100%;
+
+    transition: color .2s ease;
+
+    &:hover {
+      color: var(--gray);
+    }
   }
 }

@@ -14,8 +14,8 @@ export default function anchor() {
             scrollTarget.getBoundingClientRect().top -
             document.querySelector(".header").clientHeight;
 
-          anchors.forEach((a) => a.classList.remove("active"));
-          link.classList.add("active");
+          // anchors.forEach((a) => a.classList.remove("active"));
+          // link.classList.add("active");
 
           window.scrollBy({
             top: offsetPosition,

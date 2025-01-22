@@ -6,6 +6,8 @@ export default function basket() {
   const basket = document.querySelector("#basket");
   const basketClose = document.querySelector("#basket-close");
   const basketWrapper = basket.querySelectorAll(".basket__wrapper");
+  const basketRec = document.querySelector(".basket__rec");
+  const basketRecClose = document.querySelector(".basket__rec-close");
 
   if (basket) {
     basketBtn.addEventListener("click", (e) => {
@@ -25,6 +27,7 @@ export default function basket() {
       burgerClose();
       basket.classList.add("open");
       basketWrapper.forEach((b) => b.addEventListener("click", (e) => e.stopPropagation()));
+      basketRecClose.addEventListener("click", () => basketRec.classList.add("close"));
 
       document.body.addEventListener("click", closeBasket);
     }
@@ -32,8 +35,11 @@ export default function basket() {
 }
 
 export function closeBasket() {
+  const basketRec = document.querySelector(".basket__rec");
   const basket = document.querySelector("#basket");
   basket.classList.remove("open");
+  
+  setTimeout(() => basketRec.classList.remove("close"), 300)
 
   document.body.removeEventListener("click", closeBasket);
 }

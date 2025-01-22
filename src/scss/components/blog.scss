@@ -2,6 +2,7 @@
   padding: 30px 0px 120px 0px;
   @include tablet {
     padding-bottom: 90px;
+    padding-top: 45px;
   }
   &__title {
     text-align: center;
@@ -27,25 +28,26 @@
         grid-column: 12 span;
       }
       &__img {
-        height: 520px;
-        @include desktop {
-          height: 410px;
-        }
-        @include laptop {
-          height: 335px;
-        }
-        @include laptop-middle {
-          height: 295px;
-        }
-        @media (max-width: 899px) {
-          height: 210px;
-        }
-        @include tablet {
-          height: 250px;
-        }
-        @include mobile {
-          height: 345px;
-        }
+        aspect-ratio: 1 / 1;
+        // height: 520px;
+        // @include desktop {
+        //   height: 410px;
+        // }
+        // @include laptop {
+        //   height: 335px;
+        // }
+        // @include laptop-middle {
+        //   height: 295px;
+        // }
+        // @media (max-width: 899px) {
+        //   height: 210px;
+        // }
+        // @include tablet {
+        //   height: 250px;
+        // }
+        // @include mobile {
+        //   height: 345px;
+        // }
       }
     }
   }

@@ -1,10 +1,11 @@
 .profile {
-  padding: 40px 0px 280px 0px;
+  padding: 40px 0px 140px 0px;
   @include laptop-min {
     padding-bottom: 120px;
   }
   &__title {
     margin-bottom: 32px;
+    font-weight: 600;
     @include laptop-min {
       text-align: center;
     }
@@ -15,7 +16,7 @@
     gap: 130px;
     margin-bottom: 56px;
     &:not(:last-child) {
-      padding-bottom: 195px;
+      padding-bottom: 95px;
       border-bottom: 1px solid var(--light-gray);
     }
     @include desktop {
@@ -55,6 +56,7 @@
       color: var(--gray);
     }
     &.active {
+      color: var(--gray);
       &::after {
         position: absolute;
         content: "";
@@ -303,6 +305,10 @@
   &__product-title {
     margin: 0;
     font-weight: 600;
+    transition: color .2s ease;
+    @include hover {
+      color: var(--gray);
+    }
   }
   &__product-price {
   }

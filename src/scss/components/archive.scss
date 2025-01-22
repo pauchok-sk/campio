@@ -47,29 +47,10 @@
       }
 
       &__img {
-        @include desktop {
-          height: 335px;
-        }
-        @include laptop {
-          height: 295px;
-        }
-        @include laptop-middle {
-          height: 210px;
-        }
-        @include laptop-min {
-          height: 295px !important;
-        }
-        @media (max-width: 899px) {
-          height: 210px !important;
-        }
-        @include tablet {
-          height: 250px !important;
-        }
-        @include mobile {
-          height: 345px !important;
-        }
-        @media (max-width: 399px) {
-          height: 340px !important;
+        transition: filter .2s ease;
+       
+        &:hover {
+          filter: brightness(70%);
         }
       }
     }

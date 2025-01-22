@@ -16,32 +16,46 @@
       <aside class="profile__sidebar">
         <ul class="list profile__sidebar-list">
           <li>
-            <a href="#profile-data" class="profile__sidebar-btn anchor active">Личные Данные</a>
+            <a href="#profile-data" class="profile__sidebar-btn anchor active"
+              >Личные Данные</a
+            >
           </li>
           <li>
-            <a href="#profile-address" class="profile__sidebar-btn anchor">Адрес</a>
+            <a href="#profile-address" class="profile__sidebar-btn anchor"
+              >Адрес</a
+            >
           </li>
           <li>
-            <a href="#profile-password" class="profile__sidebar-btn anchor">Сменить Пароль</a>
+            <a href="#profile-password" class="profile__sidebar-btn anchor"
+              >Сменить Пароль</a
+            >
           </li>
           <li>
-            <a href="#profile-orders" class="profile__sidebar-btn anchor">Заказы</a>
+            <a href="#profile-orders" class="profile__sidebar-btn anchor"
+              >Заказы</a
+            >
           </li>
           <li>
-            <a href="#profile-discount" class="profile__sidebar-btn anchor">Дисконтная Система</a>
+            <a href="#profile-discount" class="profile__sidebar-btn anchor"
+              >Дисконтная Система</a
+            >
           </li>
           <li>
-            <a href="#profile-favourites" class="profile__sidebar-btn anchor">Избранные</a>
+            <a href="#profile-favourites" class="profile__sidebar-btn anchor"
+              >Избранные</a
+            >
           </li>
         </ul>
       </aside>
       <div class="profile__main">
         <form action="#">
-          <div class="profile__item" id="profile-data">
-            <h2 class="title-3 profile__item-title">Личные Данные</h2>
+          <div class="profile__item profile-sect" id="profile-data">
+            <h2 class="title-3 profile__item profile-sect-title">Личные Данные</h2>
             <div class="profile__form">
               <div class="profile__form-item">
-                <label for="profile-name" class="profile__form-title">ФИО</label>
+                <label for="profile-name" class="profile__form-title"
+                  >ФИО</label
+                >
                 <div class="form__input-wrapper">
                   <input
                     type="text"
@@ -52,7 +66,9 @@
                 </div>
               </div>
               <div class="profile__form-item _half">
-                <label for="profile-mail" class="profile__form-title">E-Mail</label>
+                <label for="profile-mail" class="profile__form-title"
+                  >E-Mail</label
+                >
                 <div class="form__input-wrapper">
                   <input
                     type="email"
@@ -60,11 +76,17 @@
                     id="profile-mail"
                     class="form__input"
                   />
-                  <img src="@img/check.svg" alt="icon" class="profile__input-icon" />
+                  <img
+                    src="@img/close.svg"
+                    alt="icon"
+                    class="profile__input-icon"
+                  />
                 </div>
               </div>
               <div class="profile__form-item _half">
-                <label for="profile-tel" class="profile__form-title">Номер телефона</label>
+                <label for="profile-tel" class="profile__form-title"
+                  >Номер телефона</label
+                >
                 <div class="form__input-wrapper">
                   <input
                     type="tel"
@@ -72,13 +94,24 @@
                     id="profile-tel"
                     class="form__input"
                   />
-                  <img src="@img/check.svg" alt="icon" class="profile__input-icon" />
+                  <img
+                    src="@img/check.svg"
+                    alt="icon"
+                    class="profile__input-icon"
+                  />
                 </div>
               </div>
               <div class="profile__form-item _half">
-                <label for="profile-date" class="profile__form-title">Дата Рождения </label>
+                <label for="profile-date" class="profile__form-title"
+                  >Дата Рождения
+                </label>
                 <div class="form__input-wrapper">
-                  <input type="date" value="2003-02-01" id="profile-date" class="form__input" />
+                  <input
+                    type="date"
+                    value="2003-02-01"
+                    id="profile-date"
+                    class="form__input"
+                  />
                 </div>
               </div>
               <div class="profile__form-item _half">
@@ -91,7 +124,9 @@
                     id="gender-men"
                     class="form__input-check"
                   />
-                  <label for="gender-men" class="profile__label-check">Мужской</label>
+                  <label for="gender-men" class="profile__label-check"
+                    >Мужской</label
+                  >
                   <input
                     type="radio"
                     value="Женский"
@@ -99,13 +134,15 @@
                     id="gender-women"
                     class="form__input-check"
                   />
-                  <label for="gender-women" class="profile__label-check">Женский</label>
+                  <label for="gender-women" class="profile__label-check"
+                    >Женский</label
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="profile__item" id="profile-address">
-            <h2 class="title-3 profile__item-title">Адреса</h2>
+          <div class="profile__item profile-sect" id="profile-address">
+            <h2 class="title-3 profile__item profile-sect-title">Адреса</h2>
             <div class="profile__form">
               <ul class="list profile__list-addresses">
                 <li>
@@ -126,7 +163,9 @@
                       </a>
                       <a href="#" class="profile__address-btn">
                         <svg class="profile__address-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+                          <use
+                            xlink:href="img/icons/icons.svg#icon-trash"
+                          ></use>
                         </svg>
                       </a>
                     </span>
@@ -150,14 +189,18 @@
                       </a>
                       <a href="#" class="profile__address-btn">
                         <svg class="profile__address-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+                          <use
+                            xlink:href="img/icons/icons.svg#icon-trash"
+                          ></use>
                         </svg> </a
                     ></span>
                   </label>
                 </li>
               </ul>
               <div class="profile__form-item">
-                <label for="profile-address-added" class="profile__form-title">Адрес</label>
+                <label for="profile-address-added" class="profile__form-title"
+                  >Адрес</label
+                >
                 <div class="form__input-wrapper">
                   <input
                     type="text"
@@ -167,14 +210,18 @@
                   />
                 </div>
               </div>
-              <button class="btn btn-main profile__form-btn">Добавить адрес</button>
+              <button class="btn btn-main profile__form-btn">
+                Добавить адрес
+              </button>
             </div>
           </div>
-          <div class="profile__item" id="profile-password">
-            <h2 class="title-3 profile__item-title">Сменить пароль</h2>
+          <div class="profile__item profile-sect" id="profile-password">
+            <h2 class="title-3 profile__item profile-sect-title">Сменить пароль</h2>
             <div class="profile__form">
               <div class="profile__form-item _half">
-                <label for="new-password" class="profile__form-title">Новый пароль</label>
+                <label for="new-password" class="profile__form-title"
+                  >Новый пароль</label
+                >
                 <div class="form__input-wrapper">
                   <input
                     type="password"
@@ -197,24 +244,32 @@
                   />
                 </div>
               </div>
-              <button class="btn btn-main profile__form-btn">Сохранить изменения</button>
+              <button class="btn btn-main profile__form-btn">
+                Сохранить изменения
+              </button>
             </div>
           </div>
         </form>
-        <div class="profile__item" id="profile-orders">
-          <h2 class="title title-2 profile__item-title _big">Заказы</h2>
+        <div class="profile__item profile-sect" id="profile-orders">
+          <h2 class="title title-2 profile__item profile-sect-title _big">Заказы</h2>
           <div class="profile__orders">
             <div class="profile__order">
               <div class="profile__order-left">
-                <div class="profile__order-info">
+                <a href="#" class="profile__order-info">
                   <span class="profile__order-number">Заказ №123</span>
                   <span class="profile__order-date">16.02.2024</span>
-                </div>
+                </a>
                 <div class="profile__product">
-                  <img src="@img/product-2.jpg" alt="image" class="profile__product-img" />
+                  <img
+                    src="@img/product-2.jpg"
+                    alt="image"
+                    class="profile__product-img"
+                  />
                   <div class="profile__product-body">
                     <div class="profile__product-head">
-                      <h5 class="profile__product-title">New Balance 327</h5>
+                      <a href="#" class="profile__product-title"
+                        >New Balance 327</a
+                      >
                       <span class="profile__product-price"> 19990 ₽ </span>
                     </div>
                     <p class="profile__product-content">White / White</p>
@@ -239,11 +294,11 @@
                     <span>12990 ₽</span>
                   </li>
                   <li class="profile__order-right-item">
-                    <span>Сумма</span>
-                    <span>12990 ₽</span>
+                    <span>Доставка</span>
+                    <span>0 ₽</span>
                   </li>
                   <li class="profile__order-right-item">
-                    <span>Сумма</span>
+                    <span>Сумма Заказа</span>
                     <span>12990 ₽</span>
                   </li>
                 </ul>
@@ -251,15 +306,21 @@
             </div>
             <div class="profile__order">
               <div class="profile__order-left">
-                <div class="profile__order-info">
+                <a href="#" class="profile__order-info">
                   <span class="profile__order-number">Заказ №123</span>
                   <span class="profile__order-date">16.02.2024</span>
-                </div>
+                </a>
                 <div class="profile__product">
-                  <img src="@img/product-2.jpg" alt="image" class="profile__product-img" />
+                  <img
+                    src="@img/product-2.jpg"
+                    alt="image"
+                    class="profile__product-img"
+                  />
                   <div class="profile__product-body">
                     <div class="profile__product-head">
-                      <h5 class="profile__product-title">New Balance 327</h5>
+                      <a href="#" class="profile__product-title"
+                        >New Balance 327</a
+                      >
                       <span class="profile__product-price"> 19990 ₽ </span>
                     </div>
                     <p class="profile__product-content">White / White</p>
@@ -284,29 +345,40 @@
                     <span>12990 ₽</span>
                   </li>
                   <li class="profile__order-right-item">
-                    <span>Сумма</span>
-                    <span>12990 ₽</span>
+                    <span>Доставка</span>
+                    <span>0 ₽</span>
                   </li>
                   <li class="profile__order-right-item">
-                    <span>Сумма</span>
+                    <span>Сумма Заказа</span>
                     <span>12990 ₽</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn-main profile__form-btn">Посмотреть еще Заказы</a>
+          <a href="#" class="btn btn-main profile__form-btn"
+            >Посмотреть еще Заказы</a
+          >
         </div>
-        <div class="profile__item" id="profile-discount">
-          <h2 class="title title-2 profile__item-title _big">ДИСКОНТНАЯ СИСТЕМА</h2>
+        <div class="profile__item profile-sect" id="profile-discount">
+          <h2 class="title title-2 profile__item profile-sect-title _big">
+            ДИСКОНТНАЯ СИСТЕМА
+          </h2>
           <div class="profile__discount">
             <div class="profile__discount-head">
-              <img src="@img/logo-white.svg" alt="logo" class="profile__discount-logo" />
+              <img
+                src="@img/logo-white.svg"
+                alt="logo"
+                class="profile__discount-logo"
+              />
               <div class="profile__discount-head-nav">
                 <span class="profile__discount-number" id="discount-number"
                   >1234 1234 1234 1234</span
                 >
-                <button class="btn profile__discount-check" id="discount-number-btn">
+                <button
+                  class="btn profile__discount-check"
+                  id="discount-number-btn"
+                >
                   <svg class="profile__discount-icon-eye">
                     <use xlink:href="img/icons/icons.svg#icon-eye"></use>
                   </svg>
@@ -326,7 +398,10 @@
                   До скидки <span>7%</span> осталось <span>20 000 ₽</span>
                 </p>
                 <div class="profile__discount-line">
-                  <div class="profile__discount-line-el" style="width: 40%"></div>
+                  <div
+                    class="profile__discount-line-el"
+                    style="width: 40%"
+                  ></div>
                 </div>
                 <div class="profile__discount-line-values">
                   <p class="profile__discount-item-content"><span>0%</span></p>
@@ -338,7 +413,7 @@
         </div>
       </div>
     </div>
-    <h2 class="title title-2 rec__title">ИЗБРАННЫЕ</h2>
+    <h2 class="title title-2 rec__title profile-sect">ИЗБРАННЫЕ</h2>
     <div class="rec__slider-wrapper" id="profile-favourites">
       <button class="btn slider-arrow rec__slider-btn _prev">
         <svg class="slider-arrow__icon">
@@ -364,8 +439,14 @@
               <h5 class="product__title">Product Name</h5>
               <span class="product__price">12990 ₽</span>
               <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
               </div>
             </a>
           </article>
@@ -381,8 +462,52 @@
               <h5 class="product__title">Product Name</h5>
               <span class="product__price">12990 ₽</span>
               <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide product product--out-stock">
+            <button class="btn btn-like product__like active">
+              <svg class="product__like-icon">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <div class="product__imgbox">
+              <img src="@img/product.jpg" alt="image" class="product__img" />
+              <p class="product__status-caption">Нет в Наличии</p>
+            </div>
+            <a href="/">
+              <span class="product__brand">Brand</span>
+              <h5 class="product__title">Product Name</h5>
+            </a>
+          </article>
+          <article class="swiper-slide product">
+            <button class="btn btn-like product__like active">
+              <svg class="product__like-icon">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <img src="@img/product.jpg" alt="image" class="product__img" />
+            <a href="/">
+              <span class="product__brand">Brand</span>
+              <h5 class="product__title">Product Name</h5>
+              <span class="product__price">12990 ₽</span>
+              <div data-modal="product-pay" class="btn-modal product__payment">
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
               </div>
             </a>
           </article>
@@ -398,8 +523,14 @@
               <h5 class="product__title">Product Name</h5>
               <span class="product__price">12990 ₽</span>
               <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
               </div>
             </a>
           </article>
@@ -415,8 +546,14 @@
               <h5 class="product__title">Product Name</h5>
               <span class="product__price">12990 ₽</span>
               <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
               </div>
             </a>
           </article>
@@ -432,42 +569,14 @@
               <h5 class="product__title">Product Name</h5>
               <span class="product__price">12990 ₽</span>
               <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-              </div>
-            </a>
-          </article>
-          <article class="swiper-slide product">
-            <button class="btn btn-like product__like active">
-              <svg class="product__like-icon">
-                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
-              </svg>
-            </button>
-            <img src="@img/product.jpg" alt="image" class="product__img" />
-            <a href="/">
-              <span class="product__brand">Brand</span>
-              <h5 class="product__title">Product Name</h5>
-              <span class="product__price">12990 ₽</span>
-              <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
-              </div>
-            </a>
-          </article>
-          <article class="swiper-slide product">
-            <button class="btn btn-like product__like active">
-              <svg class="product__like-icon">
-                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
-              </svg>
-            </button>
-            <img src="@img/product.jpg" alt="image" class="product__img" />
-            <a href="/">
-              <span class="product__brand">Brand</span>
-              <h5 class="product__title">Product Name</h5>
-              <span class="product__price">12990 ₽</span>
-              <div data-modal="product-pay" class="btn-modal product__payment">
-                <img src="@img/payments.svg" alt="" class="product__payment-icon" />
-                <p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+                <img
+                  src="@img/payments.svg"
+                  alt=""
+                  class="product__payment-icon"
+                />
+                <p class="product__payment-content">
+                  Частями по 1122 ₽ <span>х4</span>
+                </p>
               </div>
             </a>
           </article>

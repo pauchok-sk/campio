@@ -8,7 +8,7 @@
   max-height: calc(100vh - 108px);
   height: 910px;
   z-index: 100;
-  gap: 16px;
+  gap: 8px;
   opacity: 0;
   transform: translateY(30px);
   visibility: hidden;
@@ -16,6 +16,7 @@
     opacity 0.4s ease,
     transform 0.4s ease,
     visibility 0.4s ease;
+    
   &.open {
     opacity: 1;
     transform: translateY(0);
@@ -40,18 +41,42 @@
     background-color: white;
   }
   &__rec {
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex: 0 1 300px;
+    flex: 0 1 240px;
+    transition: opacity .2s ease, visibility .2s ease;
     @include tablet {
       display: none;
+    }
+
+    &.close {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__rec-head {
+    @include flex-between;
+    margin: 0px 0px 24px 0px;
+  }
+  &__rec-close {
+    width: 30px;
+    height: 30px;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.5;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
   &__title {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    margin: 0px 0px 24px 0px;
+    margin: 0;
   }
   &__rec-container {
     @include scrollbar;
@@ -64,19 +89,35 @@
   }
   &__product {
     position: relative;
+  
+    @include hover {
+      .product__sizes {
+        opacity: 1;
+      }
+    }
+
+    .product__sizes {
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .product__size {
+      grid-column: 4 span;
+    }
   }
   &__product-img {
     width: 100%;
-    height: 250px;
+    // height: 250px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     margin-bottom: 8px;
   }
   &__product-like {
+    z-index: 2;
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 32px;
-    height: 32px;
+    top: 19px;
+    right: 19px;
+    width: 25px;
+    height: 25px;
     transition: color 0.2s ease;
     &.active {
       svg {
@@ -115,7 +156,7 @@
     line-height: 100%;
   }
   &__main {
-    flex: 0 1 520px;
+    flex: 0 1 420px;
     display: flex;
     flex-direction: column;
   }
@@ -146,6 +187,7 @@
     flex: 1;
     &::-webkit-scrollbar {
       width: 0;
+      height: 0;
     }
   }
   &__item {
@@ -284,6 +326,10 @@
     min-height: 40px;
     padding: 5px 10px;
     flex: 1;
+    transition: border-color .2s ease;
+    &:focus-visible {
+      border-color: var(--black);
+    }
   }
   &__promo-btn {
     @include flex-center;

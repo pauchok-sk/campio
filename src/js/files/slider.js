@@ -13,6 +13,7 @@ export default function slider() {
       direction: "vertical",
       spaceBetween: 10,
       slidesPerView: 1,
+      autoHeight: true,
       autoplay: {
         delay: 5000,
       },
@@ -82,10 +83,10 @@ export default function slider() {
         modules: [Autoplay, Navigation],
         slidesPerView: 2,
         spaceBetween: 16,
-        autoplay: {
-          delay: 3000,
-        },
-        autoplay: autoplayFalse ? false : true,
+        // autoplay: {
+        //   delay: 3000,
+        // },
+        // autoplay: autoplayFalse ? false : true,
         breakpoints: {
           943: {
             slidesPerView: 4,
