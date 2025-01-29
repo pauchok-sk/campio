@@ -16,7 +16,7 @@
     opacity 0.4s ease,
     transform 0.4s ease,
     visibility 0.4s ease;
-    
+
   &.open {
     opacity: 1;
     transform: translateY(0);
@@ -45,7 +45,9 @@
     display: flex;
     flex-direction: column;
     flex: 0 1 240px;
-    transition: opacity .2s ease, visibility .2s ease;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
     @include tablet {
       display: none;
     }
@@ -62,7 +64,7 @@
   &__rec-close {
     width: 30px;
     height: 30px;
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.5;
     }
@@ -89,10 +91,13 @@
   }
   &__product {
     position: relative;
-  
+
     @include hover {
       .product__sizes {
         opacity: 1;
+      }
+      .basket__product-img {
+        filter: brightness(70%);
       }
     }
 
@@ -110,6 +115,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin-bottom: 8px;
+    transition: filter 0.2s ease;
   }
   &__product-like {
     z-index: 2;
@@ -188,6 +194,10 @@
     &::-webkit-scrollbar {
       width: 0;
       height: 0;
+    }
+    &::-moz-scrollbar {
+      width: 0px;
+      height: 0px;
     }
   }
   &__item {
@@ -326,7 +336,7 @@
     min-height: 40px;
     padding: 5px 10px;
     flex: 1;
-    transition: border-color .2s ease;
+    transition: border-color 0.2s ease;
     &:focus-visible {
       border-color: var(--black);
     }
