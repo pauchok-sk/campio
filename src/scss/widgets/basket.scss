@@ -321,6 +321,7 @@
   }
   &__promo {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 8px;
     padding-bottom: 15px;
@@ -358,6 +359,10 @@
       color: var(--black);
       background-color: transparent;
     }
+  }
+  &__promo-error {
+    width: 100%;
+    color: var(--red)
   }
   &__discount {
     @include flex-between;

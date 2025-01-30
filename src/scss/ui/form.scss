@@ -43,17 +43,20 @@
     &[type="search"]::-webkit-search-cancel-button,
     &[type="search"]::-webkit-search-results-button,
     &[type="search"]::-webkit-search-results-decoration {
-      -webkit-appearance: none;
+      // display: none;
+      // -webkit-appearance: none;
     }
 
     &[type="date"]::-webkit-calendar-picker-indicator {
-      opacity: 0;
-      width: 100%;
-      height: 100%;
+      // opacity: 0;
+      width: 32px;
+      height: 32px;
       cursor: pointer;
       position: absolute;
-      left: 0;
-      top: 0;
+      // left: 0;
+      top: 16px;
+      bottom: 0;
+      right: 16px;
     }
 
     &::placeholder {
