@@ -1,0 +1,384 @@
+<section class="catalog">
+	<div class="container">
+		<ul class="list breadcrumbs">
+			<li>
+				<a href="/">
+					Главная
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+					</svg>
+				</a>
+			</li>
+			<li>Каталог</li>
+		</ul>
+		<div class="catalog__search">
+			<span class="catalog__search-title">Результатов по Поиску: 78</span>
+			<a href="#" class="catalog__search-cancel">Отменить</a>
+			<div class="catalog__search-wrapper">
+				<input type="search" placeholder="Поиск" value="Adidas" class="form__input">
+				<button class="btn catalog__search-btn">
+					<svg class="catalog__search-icon">
+						<use xlink:href='img/icons/icons.svg#icon-search'></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="catalog__body">
+			<aside class="catalog__aside" id="filters">
+				<button class="btn catalog__aside-close" id="filter-close">
+					<svg class="catalog__aside-close-icon">
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<form data-spollers class="catalog__aside-form">
+					<input type="reset" value="Сбросить" class="catalog__reset" />
+					<div class="catalog__selected">
+						<div class="catalog__selected-btn">
+							<span>Кроссовки</span>
+							<a href="/">
+								<svg class="catalog__selected-btn-close">
+									<use xlink:href="img/icons/icons.svg#icon-close"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="catalog__selected-btn">
+							<span>Nike</span>
+							<a href="/">
+								<svg class="catalog__selected-btn-close">
+									<use xlink:href="img/icons/icons.svg#icon-close"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="catalog__selected-btn">
+							<span>Унисекс</span>
+							<a href="/">
+								<svg class="catalog__selected-btn-close">
+									<use xlink:href="img/icons/icons.svg#icon-close"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="catalog__selected-btn">
+							<span>Черный</span>
+							<a href="/">
+								<svg class="catalog__selected-btn-close">
+									<use xlink:href="img/icons/icons.svg#icon-close"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="catalog__aside-item">
+						<div data-spoller class="catalog__spoller-btn">
+							<span>Категория</span>
+							<svg class="catalog__spoller-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</div>
+						<div class="catalog__spoller">
+							<input type="checkbox" id="Бейсболки" name="Бейсболки" class="form__input-check" />
+							<label for="Бейсболки" class="catalog__label-check">Бейсболки</label>
+							<input type="checkbox" id="Ботинки" name="Ботинки" class="form__input-check" />
+							<label for="Ботинки" class="catalog__label-check">Ботинки</label>
+							<input type="checkbox" id="Брюки" name="Брюки" class="form__input-check" />
+							<label for="Брюки" class="catalog__label-check">Брюки</label>
+						</div>
+					</div>
+					<div class="catalog__aside-item">
+						<div data-spoller class="catalog__spoller-btn">
+							<span>Цена</span>
+							<svg class="catalog__spoller-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</div>
+						<div class="catalog__spoller">
+							<div class="catalog__range" data-min="100" data-max="10000" id="price-range"></div>
+							<div class="catalog__price-row">
+								<div class="catalog__price-wrapper">
+									<span class="catalog__price-title">От</span>
+									<div class="form__input catalog__price-input">
+										<input type="number" id="price-min" />
+										<span>₽</span>
+									</div>
+								</div>
+								<div class="catalog__price-wrapper">
+									<span class="catalog__price-title">От</span>
+									<div class="form__input catalog__price-input">
+										<input type="number" id="price-max" />
+										<span>₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__aside-item">
+						<div data-spoller class="catalog__spoller-btn">
+							<span>Бренд</span>
+							<svg class="catalog__spoller-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</div>
+						<div class="catalog__spoller">
+							<input type="checkbox" id="Adidas_Performance" name="Adidas_Performance" class="form__input-check" />
+							<label for="Adidas_Performance" class="catalog__label-check">Adidas Performance</label>
+							<input type="checkbox" id="Adidas_Originals" name="Adidas_Originals" class="form__input-check" />
+							<label for="Adidas_Originals" class="catalog__label-check">Adidas Originals</label>
+							<input type="checkbox" id="Nike" name="Nike" class="form__input-check" />
+							<label for="Nike" class="catalog__label-check">Nike</label>
+						</div>
+					</div>
+					<div class="catalog__aside-item">
+						<div data-spoller class="catalog__spoller-btn">
+							<span>Размер</span>
+							<svg class="catalog__spoller-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</div>
+						<div class="catalog__spoller">
+							<span class="catalog__size-title">EU</span>
+							<div class="catalog__sizes">
+								<input type="checkbox" name="100СМ" id="100СМ" class="form__input-check" />
+								<label for="100СМ" class="catalog__size">100СМ</label>
+								<input type="checkbox" name="105СМ" id="105СМ" class="form__input-check" />
+								<label for="105СМ" class="catalog__size">105СМ</label>
+								<input type="checkbox" name="1SIZE" id="1SIZE" class="form__input-check" />
+								<label for="1SIZE" class="catalog__size">1SIZE</label>
+								<input type="checkbox" name="25" id="25" class="form__input-check" />
+								<label for="25" class="catalog__size">25</label>
+								<input type="checkbox" name="28" id="28" class="form__input-check" />
+								<label for="28" class="catalog__size">28</label>
+								<input type="checkbox" name="28/32" id="28/32" class="form__input-check" />
+								<label for="28/32" class="catalog__size">28/32</label>
+								<input type="checkbox" name="29" id="29" class="form__input-check" />
+								<label for="29" class="catalog__size">29</label>
+								<input type="checkbox" name="29/31" id="29/31" class="form__input-check" />
+								<label for="29/31" class="catalog__size">29/31</label>
+								<input type="checkbox" name="29/32" id="29/32" class="form__input-check" />
+								<label for="29/32" class="catalog__size">29/32</label>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-main catalog__aside-btn">Применить</button>
+				</form>
+			</aside>
+			<div class="catalog__main">
+				<div data-spollers class="catalog__head">
+					<div class="dropdown-select catalog__sort">
+						<button data-spoller data-spoller-close class="btn dropdown-select__btn">
+							<span>Сортировать по</span>
+							<svg class="dropdown-select__arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+						<div class="dropdown-select__item">
+							<a href="/" class="dropdown-select__el">По убыванию</a>
+							<a href="/" class="dropdown-select__el">По возрастанию</a>
+							<a href="/" class="dropdown-select__el">По цене</a>
+							<a href="/" class="dropdown-select__el">По популярности</a>
+						</div>
+					</div>
+					<div class="catalog__show">
+						<span class="catalog__show-title">Показать по</span>
+						<ul class="list catalog__show-list">
+							<li><a href="/" class="catalog__show-btn">30</a></li>
+							<li><a href="/" class="catalog__show-btn active">60</a></li>
+							<li><a href="/" class="catalog__show-btn">90</a></li>
+						</ul>
+					</div>
+					<div class="catalog__filter-open" id="filter-open">
+						<span>Фильтр</span>
+						<div class="catalog__filter-wrapper">
+							<span class="catalog__filter-number">12</span>
+							<svg class="catalog__filter-icon">
+								<use xlink:href="img/icons/icons.svg#icon-filter"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__products">
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+					<article class="swiper-slide product">
+						<button class="btn btn-like product__like">
+							<svg class="product__like-icon">
+								<use xlink:href="img/icons/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+						<img src="img/product.jpg" alt="image" class="product__img" />
+						<a href="/">
+							<span class="product__brand">Brand</span>
+							<div class="product__title">Product Name</div>
+							<span class="product__price">12990 ₽</span>
+							<div data-modal="product-pay" class="btn-modal product__payment">
+								<img src="img/payments.svg" alt="" class="product__payment-icon" />
+								<p class="product__payment-content">Частями по 1122 ₽ <span>х4</span></p>
+							</div>
+						</a>
+					</article>
+				</div>
+				<button class="btn btn-main catalog__more">Показать еще товары</button>
+				<div class="navigation">
+					<button class="btn navigation__btn _prev">
+						<svg class="navigation__arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<div class="navigation__middle">
+						<button class="btn navigation__btn">1</button>
+						<button class="btn navigation__btn active">2</button>
+						<button class="btn navigation__btn">3</button>
+						<button class="btn navigation__btn">4</button>
+						<button class="btn navigation__btn">5</button>
+						<button class="btn navigation__btn">6</button>
+					</div>
+					<button class="btn navigation__btn _next">
+						<svg class="navigation__arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="catalog__rec">
+					<div class="title-3 catalog__rec-title">Связанные категории</div>
+					<ul class="list catalog__rec-list">
+						<li>
+							<a href="/" class="catalog__rec-btn">Новые Мужские Кроссовки</a>
+						</li>
+						<li>
+							<a href="/" class="catalog__rec-btn">Новые кроссовки Adidas</a>
+						</li>
+						<li>
+							<a href="/" class="catalog__rec-btn">Кроссовки для бега</a>
+						</li>
+						<li>
+							<a href="/" class="catalog__rec-btn">лучшие кроссовки</a>
+						</li>
+						<li>
+							<a href="/" class="catalog__rec-btn">Трендовые Кроссовки</a>
+						</li>
+					</ul>
+					<p class="catalog__rec-content">
+						Не следует, однако забывать, что реализация намеченных плановых заданий играет важную
+						роль в формировании систем массового участия. Равным образом реализация намеченных
+						плановых заданий влечет за собой процесс внедрения и модернизации системы обучения
+						кадров, соответствует насущным потребностям.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
