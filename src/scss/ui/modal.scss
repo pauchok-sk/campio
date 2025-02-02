@@ -12,7 +12,7 @@
       overflow-y: auto;
     }
     .modal__window {
-      transform: translateY(0);
+      transform: translate(0, 0) !important;
     }
   }
   &.hide {
@@ -26,6 +26,19 @@
     }
     .modal__window {
       opacity: 0;
+    }
+  }
+
+  &._right {
+    .modal__overlay {
+      align-items: start;
+      justify-content: end;
+    }
+    .modal__window {
+      height: 100%;
+      overflow-y: auto;
+      margin: 0 !important;
+      transform: translateX(520px);
     }
   }
   &__overlay,

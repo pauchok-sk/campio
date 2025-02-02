@@ -324,8 +324,8 @@ body {
   overflow-y: auto
 }
 .modal.open .modal__window {
-  -webkit-transform: translateY(0);
-  transform: translateY(0)
+  -webkit-transform: translate(0,0)!important;
+  transform: translate(0,0)!important
 }
 .modal.hide .modal__overlay,
 .modal.hide .modal__window {
@@ -337,6 +337,17 @@ body {
 }
 .modal.hide .modal__window {
   opacity: 0
+}
+.modal._right .modal__overlay {
+  align-items: start;
+  justify-content: end
+}
+.modal._right .modal__window {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0!important;
+  -webkit-transform: translateX(520px);
+  transform: translateX(520px)
 }
 .modal__overlay,
 .modal__window {
