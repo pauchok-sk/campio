@@ -324,6 +324,9 @@
       display: grid !important;
     }
     @include laptop {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    @include mobile {
       grid-template-columns: repeat(12, 1fr);
     }
   }
@@ -355,6 +358,9 @@
       border-color: var(--black);
     }
     @include laptop {
+      grid-column: 2 span;
+    }
+    @include mobile {
       grid-column: 3 span;
     }
   }

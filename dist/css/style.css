@@ -6673,10 +6673,10 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 18px
   }
   .single__sizes-body {
-    grid-template-columns: repeat(12,1fr)
+    grid-template-columns: repeat(10,1fr)
   }
   .single__size {
-    grid-column: 3 span
+    grid-column: 2 span
   }
   .buy__basket {
     flex-basis: 490px
@@ -8144,6 +8144,12 @@ html.with-fancybox body.hide-scrollbar {
   .single__credit {
     display: flex;
     margin-bottom: 24px
+  }
+  .single__sizes-body {
+    grid-template-columns: repeat(12,1fr)
+  }
+  .single__size {
+    grid-column: 3 span
   }
   .single__btn-dol {
     display: none
