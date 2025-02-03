@@ -62,8 +62,8 @@
     margin: 0px 0px 24px 0px;
   }
   &__rec-close {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     transition: opacity 0.2s ease;
     @include hover {
       opacity: 0.5;

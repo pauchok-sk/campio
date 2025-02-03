@@ -87,14 +87,16 @@
 					</div>
 				</div>
 				<form action="/">
-					<div class="single__sizes">
+					<div class="parent-tab single__sizes">
 						<div class="single__sizes-head">
 							<span class="single__sizes-title">Размер:</span>
 							<ul class="list single__sizes-list">
-								<li>EU</li>
+								<li data-tab="EU" class="btn-tab active">EU</li>
+								<li data-tab="US" class="btn-tab">US</li>
+								<li data-tab="CM" class="btn-tab">CM</li>
 							</ul>
 						</div>
-						<div class="single__sizes-body">
+						<div data-tab="EU" class="tab single__sizes-body open">
 							<input type="checkbox" id="100СМ" name="100СМ" class="single__size-input" />
 							<label for="100СМ" class="single__size">100СМ</label>
 							<input type="checkbox" id="106СМ" name="106СМ" class="single__size-input" />
@@ -125,6 +127,70 @@
 							<label for="305СМ" class="single__size">305СМ</label>
 							<input type="checkbox" id="405СМ" name="405СМ" class="single__size-input" />
 							<label for="405СМ" class="single__size">405СМ</label>
+						</div>
+						<div data-tab="US" class="tab single__sizes-body">
+							<input type="checkbox" id="100СМ-US" name="100СМ-US" class="single__size-input" />
+							<label for="100СМ-US" class="single__size">100СМ</label>
+							<input type="checkbox" id="106СМ-US" name="106СМ-US" class="single__size-input" />
+							<label for="106СМ-US" class="single__size">106СМ</label>
+							<input type="checkbox" id="107СМ-US" name="107СМ-US" class="single__size-input" />
+							<label for="107СМ-US" class="single__size">107СМ</label>
+							<input type="checkbox" id="108СМ-US" name="108СМ-US" class="single__size-input" />
+							<label for="108СМ-US" class="single__size">108СМ</label>
+							<input type="checkbox" id="109СМ-US" name="109СМ-US" class="single__size-input" />
+							<label for="109СМ-US" class="single__size">109СМ</label>
+							<input type="checkbox" id="110СМ-US" name="110СМ-US" class="single__size-input" />
+							<label for="110СМ-US" class="single__size">110СМ</label>
+							<input type="checkbox" id="122СМ-US" name="122СМ-US" class="single__size-input" />
+							<label for="122СМ-US" class="single__size">122СМ</label>
+							<input type="checkbox" id="123М" name="123М" class="single__size-input" />
+							<label for="123М" class="single__size">123М</label>
+							<input type="checkbox" id="145СМ-US" name="145СМ-US" class="single__size-input" />
+							<label for="145СМ-US" class="single__size">145СМ</label>
+							<input type="checkbox" id="165СМ-US" name="165СМ-US" class="single__size-input" />
+							<label for="165СМ-US" class="single__size">165СМ</label>
+							<input type="checkbox" id="180СМ-US" name="180СМ-US" class="single__size-input" />
+							<label for="180СМ-US" class="single__size">180СМ</label>
+							<input type="checkbox" id="195СМ-US" name="195СМ-US" class="single__size-input" />
+							<label for="195СМ-US" class="single__size">195СМ</label>
+							<input type="checkbox" id="205СМ-US" name="205СМ-US" class="single__size-input" />
+							<label for="205СМ-US" class="single__size">205СМ</label>
+							<input type="checkbox" id="305СМ-US" name="305СМ-US" class="single__size-input" />
+							<label for="305СМ-US" class="single__size">305СМ</label>
+							<input type="checkbox" id="405СМ-US" name="405СМ-US" class="single__size-input" />
+							<label for="405СМ-US" class="single__size">405СМ</label>
+						</div>
+						<div data-tab="CM" class="tab single__sizes-body">
+							<input type="checkbox" id="100СМ-CM" name="100СМ-CM" class="single__size-input" />
+							<label for="100СМ-CM" class="single__size">100СМ</label>
+							<input type="checkbox" id="106СМ-CM" name="106СМ-CM" class="single__size-input" />
+							<label for="106СМ-CM" class="single__size">106СМ</label>
+							<input type="checkbox" id="107СМ-CM" name="107СМ-CM" class="single__size-input" />
+							<label for="107СМ-CM" class="single__size">107СМ</label>
+							<input type="checkbox" id="108СМ-CM" name="108СМ-CM" class="single__size-input" />
+							<label for="108СМ-CM" class="single__size">108СМ</label>
+							<input type="checkbox" id="109СМ-CM" name="109СМ-CM" class="single__size-input" />
+							<label for="109СМ-CM" class="single__size">109СМ</label>
+							<input type="checkbox" id="110СМ-CM" name="110СМ-CM" class="single__size-input" />
+							<label for="110СМ-CM" class="single__size">110СМ</label>
+							<input type="checkbox" id="122СМ-CM" name="122СМ-CM" class="single__size-input" />
+							<label for="122СМ-CM" class="single__size">122СМ</label>
+							<input type="checkbox" id="123М" name="123М" class="single__size-input" />
+							<label for="123М" class="single__size">123М</label>
+							<input type="checkbox" id="145СМ-CM" name="145СМ-CM" class="single__size-input" />
+							<label for="145СМ-CM" class="single__size">145СМ</label>
+							<input type="checkbox" id="165СМ-CM" name="165СМ-CM" class="single__size-input" />
+							<label for="165СМ-CM" class="single__size">165СМ</label>
+							<input type="checkbox" id="180СМ-CM" name="180СМ-CM" class="single__size-input" />
+							<label for="180СМ-CM" class="single__size">180СМ</label>
+							<input type="checkbox" id="195СМ-CM" name="195СМ-CM" class="single__size-input" />
+							<label for="195СМ-CM" class="single__size">195СМ</label>
+							<input type="checkbox" id="205СМ-CM" name="205СМ-CM" class="single__size-input" />
+							<label for="205СМ-CM" class="single__size">205СМ</label>
+							<input type="checkbox" id="305СМ-CM" name="305СМ-CM" class="single__size-input" />
+							<label for="305СМ-CM" class="single__size">305СМ</label>
+							<input type="checkbox" id="405СМ-CM" name="405СМ-CM" class="single__size-input" />
+							<label for="405СМ-CM" class="single__size">405СМ</label>
 						</div>
 					</div>
 					<div class="single__soon">02 дн, 16 час, 20 мин</div>

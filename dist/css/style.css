@@ -1391,8 +1391,8 @@ body {
   margin: 0 0 24px 0
 }
 .basket__rec-close {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   transition: opacity .2s ease
 }
 .basket__rec-close svg {
@@ -2200,6 +2200,7 @@ body {
 }
 .hero__slider {
   width: 100%;
+  height: 640px;
   z-index: 1
 }
 .hero__slider .swiper-slide {
@@ -2277,7 +2278,7 @@ body {
   margin-bottom: 40px
 }
 .rec__slider {
-  padding-bottom: 70px!important
+  padding-bottom: 75px!important
 }
 .rec__slider-wrapper {
   position: relative
@@ -2630,6 +2631,22 @@ body {
 }
 .catalog__spoller {
   padding-bottom: 16px
+}
+.catalog__spoller._scrollbar {
+  overflow-y: auto;
+  max-height: 120px
+}
+.catalog__spoller._scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0,0,0,0)
+}
+.catalog__spoller._scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--black)
+}
+.catalog__spoller._scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0)
 }
 .catalog__label-check {
   cursor: pointer;
@@ -6811,6 +6828,9 @@ html.with-fancybox body.hide-scrollbar {
     top: 88px;
     max-height: calc(100vh - 88px)
   }
+  .hero__slider {
+    height: 460px
+  }
   .about__body {
     flex-wrap: wrap
   }
@@ -7046,6 +7066,9 @@ html.with-fancybox body.hide-scrollbar {
   }
   .hero__slider-nav-btn._next {
     right: 4px
+  }
+  .rec__slider {
+    padding-bottom: 0!important
   }
   .discount {
     padding-top: 80px

@@ -12,7 +12,10 @@
     }
   }
   &__slider {
-    padding-bottom: 70px !important;
+    padding-bottom: 75px !important;
+    @include laptop-min {
+      padding-bottom: 0 !important;
+    }
   }
   &__slider-wrapper {
     position: relative;

@@ -229,6 +229,12 @@
   }
   &__spoller {
     padding-bottom: 16px;
+
+    &._scrollbar {
+      @include scrollbar;
+      overflow-y: auto;
+      max-height: 120px;
+    }
   }
   &__label-check {
     cursor: pointer;
