@@ -299,7 +299,7 @@ body {
   line-height: 56px
 }
 .title-2 {
-  font-size: 40px;
+  font-size: 34px;
   line-height: 48px
 }
 .title-3 {
@@ -2109,6 +2109,9 @@ body {
   gap: 24px;
   flex: 0 1 790px
 }
+.header__dropdown-rec .product-rec {
+  grid-column: 4 span
+}
 .header__nav-footer {
   flex: 1;
   display: none;
@@ -3024,7 +3027,7 @@ body {
   margin-bottom: 48px
 }
 .single__colors-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   margin: 0 0 8px 0
@@ -3061,7 +3064,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 40px
 }
@@ -6679,8 +6682,14 @@ html.with-fancybox body.hide-scrollbar {
   .product-rec {
     grid-column: 6 span
   }
+  .header__dropdown-container {
+    padding: 0 30px
+  }
   .header__dropdown-list {
-    flex: 0 0 565px
+    flex: 0 0 505px
+  }
+  .header__dropdown-list a {
+    font-size: 14px
   }
   .header__navigation {
     gap: 15px
@@ -7045,6 +7054,9 @@ html.with-fancybox body.hide-scrollbar {
   .header__dropdown-list li {
     flex: none;
     width: 100%
+  }
+  .header__dropdown-list a {
+    font-size: 14px
   }
   .header__dropdown-rec {
     flex: none;

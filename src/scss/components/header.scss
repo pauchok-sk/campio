@@ -197,6 +197,9 @@
     @media (max-width: 1699px) {
       gap: 40px;
     }
+    @include laptop {
+      padding: 0 30px;
+    }
     @include laptop-min {
       flex-direction: column;
       justify-content: start;
@@ -217,7 +220,8 @@
       row-gap: 8px;
     }
     @include laptop {
-      flex: 0 0 565px;
+      // flex: 0 0 565px;
+      flex: 0 0 505px;
     }
     @include laptop-min {
       flex: none;
@@ -240,6 +244,12 @@
       font-weight: 500;
       line-height: 24px;
       transition: color 0.2s ease;
+      @include laptop {
+        font-size: 14px;
+      }
+      @include laptop-min {
+        font-size: 14px
+      }
       @include hover {
         color: var(--gray);
       }
@@ -254,6 +264,10 @@
       flex: none;
       width: 100%;
       gap: 16px;
+    }
+
+    .product-rec {
+      grid-column: 4 span;
     }
   }
   &__nav-footer {
