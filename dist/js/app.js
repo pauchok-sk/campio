@@ -4414,6 +4414,7 @@
                 closeSearch();
                 burgerClose();
                 basket.classList.add("open");
+                document.body.classList.add("body-hidden");
                 basketWrapper.forEach((b => b.addEventListener("click", (e => e.stopPropagation()))));
                 basketRecClose.addEventListener("click", (() => basketRec.classList.add("close")));
                 document.body.addEventListener("click", closeBasket);
@@ -4424,6 +4425,7 @@
         const basketRec = document.querySelector(".basket__rec");
         const basket = document.querySelector("#basket");
         basket.classList.remove("open");
+        document.body.classList.remove("body-hidden");
         setTimeout((() => basketRec.classList.remove("close")), 300);
         document.body.removeEventListener("click", closeBasket);
     }
