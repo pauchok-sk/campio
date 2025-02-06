@@ -188,6 +188,7 @@
   &__main-products {
     display: flex;
     flex-direction: column;
+    min-height: 135px;
     overflow-y: auto;
     gap: 16px;
     flex: 1;
@@ -203,6 +204,7 @@
   &__item {
     display: flex;
     gap: 8px;
+    padding-right: 8px;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--light-gray);
   }

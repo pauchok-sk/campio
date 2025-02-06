@@ -1507,6 +1507,7 @@ body {
 .basket__main-products {
   display: flex;
   flex-direction: column;
+  min-height: 135px;
   overflow-y: auto;
   gap: 16px;
   flex: 1
@@ -1522,6 +1523,7 @@ body {
 .basket__item {
   display: flex;
   gap: 8px;
+  padding-right: 8px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--light-gray)
 }
@@ -6691,7 +6693,7 @@ html.with-fancybox body.hide-scrollbar {
     font-size: 14px
   }
   .single__info {
-    flex-basis: 338px
+    flex-basis: 460px
   }
   .single__brand {
     font-size: 20px;

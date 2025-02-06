@@ -120,7 +120,7 @@
     flex: 0 1 520px;
     border-bottom: 1px solid var(--light-gray);
     @include laptop {
-      flex-basis: 338px;
+      flex-basis: 460px;
     }
     @include tablet-big {
       flex-basis: 100%;
